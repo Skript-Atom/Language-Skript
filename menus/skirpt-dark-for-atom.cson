@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle skirpt-dark-for-atom'
+      'command': 'skirpt-dark-for-atom:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'skirpt-dark-for-atom'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'skirpt-dark-for-atom:toggle'
+        }
+      ]
+    ]
+  }
+]
