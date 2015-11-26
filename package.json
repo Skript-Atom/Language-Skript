@@ -1,8 +1,8 @@
 {
-  "name": "atom-skirpt-dark",
-  "main": "./lib/atom-skirpt-dark",
+  "name": "atom-Skript-dark",
+  "main": "./lib/atom-Skript-dark",
   "version": "0.0.0",
-  "description": "SkirptDark for Atom, Easier coding!",
+  "description": "SkriptDark for Atom, Easier coding!",
   "keywords": [
   ],
   "activationCommands": {
