@@ -1,12 +1,12 @@
 {
-  "name": "skirpt-dark-for-atom",
-  "main": "./lib/skirpt-dark-for-atom",
+  "name": "atom-skirpt-dark",
+  "main": "./lib/atom-skirpt-dark",
   "version": "0.0.0",
   "description": "SkirptDark for Atom, Easier coding!",
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "skirpt-dark-for-atom:toggle"
+    "atom-workspace": "atom-skript-dark:toggle"
   },
   "repository": "https://github.com/tim740/SkriptDark-for-Atom",
   "license": "GNU General Public License v3.0",

@@ -1,13 +1,13 @@
 module.exports =
-class SkirptDarkForAtomView
+class atomSkriptDarkView
   constructor: (serializedState) ->
     # Create root element
     @element = document.createElement('div')
-    @element.classList.add('skirpt-dark-for-atom')
+    @element.classList.add('atom-skript-dark')
 
     # Create message element
     message = document.createElement('div')
-    message.textContent = "The SkirptDark-For-Atom package is Alive! It's ALIVE!"
+    message.textContent = "SkirptDark by tim740, has Loaded!"
     message.classList.add('message')
     @element.appendChild(message)
 

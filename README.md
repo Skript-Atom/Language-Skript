@@ -1,6 +1,6 @@
 SkriptDark for Atom
 
-Skript Syntax highlighter
+Skript Syntax highlighter!
 
 Skript: http://dev.bukkit.org/bukkit-plugins/skript/
 

@@ -2,19 +2,19 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Toggle skirpt-dark-for-atom'
-      'command': 'skirpt-dark-for-atom:toggle'
+      'label': 'Toggle atom-skript-dark'
+      'command': 'atom-skript-dark:toggle'
     }
   ]
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'skirpt-dark-for-atom'
+      'label': 'atom-skript-dark'
       'submenu': [
         {
           'label': 'Toggle'
-          'command': 'skirpt-dark-for-atom:toggle'
+          'command': 'atom-skript-dark:toggle'
         }
       ]
     ]
