@@ -1,0 +1,3 @@
+"%string%" is[n't| not] ally with "%string%" 
+%string% is[n't| not] enemy with %string%
+"%string%" is[n't| not] neutral
