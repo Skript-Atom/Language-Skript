@@ -1,0 +1,3 @@
+On SkillAPI class change:
+On SkillAPI experience (gain|loss):
+On SkillAPI level up:
