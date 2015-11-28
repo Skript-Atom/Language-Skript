@@ -7,7 +7,7 @@ class atomSkriptDarkView
 
     # Create message element
     message = document.createElement('div')
-    message.textContent = "SkriptDark by tim740, has Loaded!"
+    message.textContent = "SkriptDark by tim740 +more, has Loaded!"
     message.classList.add('message')
     @element.appendChild(message)
 
