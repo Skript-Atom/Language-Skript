@@ -1,0 +1,4 @@
+%player%'s (prefix|suffix|group)
+(amount|number) of %player%'s plots
+(amount|number) %player% rated
+server motd %server motd%

@@ -1,0 +1,3 @@
+point (1|2) of wg region %string% in [world] %world%
+pos[ition][ ](1|2) of wg region %string% in [world] %world%
+wg region at %location%

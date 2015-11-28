@@ -1,0 +1,24 @@
+[all [of]] [the] active potion effect[s] (of|on) %living entity%
+[all [of]] %living entity%'s active potion effect[s]
+[the] auto[matic] despawn state of %living entity%
+%living entity%'s auto[matic] despawn state
+[the] [wolf] collar [color] of %entity%
+%entity%'s [wolf] collar [color]
+[all] (letters|characters) of %text% [(changed|converted)] [to] (uppercase|caps|lowercase|uncaps)
+[the] (shown|displayed) item on %entity%
+%entity%'s (shown|displayed) item
+[the] [event(-| )]enchant(ed|ing) item [e]xp[erience] cost
+[the] [e]xp[erience] cost of [the] enchant(ing|ment)
+[the] held item of [the] enderman %entity%
+[the] enderman %entity%'s held item
+[the] (restore[d]|heal[ed]|regenerat[ed]) (amount|number|health)
+[the] (invulnerability [time]|no damage [time]) of %living entity%
+%living entity%'s (invulnerability [time]|no damage [time])
+[the] (shown|displayed) rotation on %entity%
+%entity%'s (shown|displayed) rotation
+[the] pickup state of %living entity%
+%living entity%'s pickup state
+%number% rounded [to] %number% decimal (digit[s]|place[s])
+[the] saturation [level] of %player%
+%player%'s saturation [level]
+[the] (number [of times] [that]|count of) %string% appear(s|ing| ) in[side] %string% [the] (number [of times] [that]|count of) case(-| )sensitive %string% appear(s|ing| ) in[side] %string%
