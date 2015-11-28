@@ -1,0 +1,2 @@
+[on] crop grow
+crop (trampl(e|ing)|break[ing]|stomp[ing]|step[ping] on|destroy[ing])
