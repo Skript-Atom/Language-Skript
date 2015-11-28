@@ -1,0 +1,62 @@
+RandomSK - [if] [bed] %block% (is|are) occupied [if] [bed] %block% (is|are)(n't| not) occupied
+SkQuery - %boolean% not %boolean%
+Skript - can[not] build at %location%
+Skript - %inventories% (can hold|ha(s|ve) [enough] space (for|to hold)) %item-types% %inventories% (can(no|')t hold|(ha(s|ve) not|ha(s|ve)n't|do[es]n't have) [enough] space (for|to hold)) %item types%
+Skript - chance of %number%[\%]
+SkRayFall - (NPC|Citizen) is %number% (NPC|Citizen) is %number% %entity% is [a] (npc|citizen) %entity% is (citizen|npc) %number%
+SkRayFall - (NPC|Citizen)['s] [is] name[d] [is] %string%
+Skript - [neither] %objects% ((is|are) ((greater|more|higher|bigger|larger) than|above)|>) %objects% [neither](neither)|isn't|aren't) ((less|smaller) than|below)|>=) %objects% [neither] %objects% ((is|are) ((less|smaller) than|below)|<) %objects% [neither](neither)|isn't|aren't) ((greater|more|higher|bigger|larger) than|above)|<=) %objects% [neither](neither)|isn't|aren't|!=) [equal to] %objects% [neither] %objects% (is|are|=) [(equal to|the same as)] %objects% [neither] %objects% (is|are) between %objects% and %objects% [neither](is not|are not|isn't|aren't) between %objects% and %objects%
+SkQuery - %object% == %object% %object% === %object% %object% > %object% %object% < %object% %object% >= %object% %object% <= %object%
+SkQuery - %boolean% ? %object% to return if true :%object% to return if false %object% ? %object% to return if the first object is not set
+Skript - %inventories% ha(s|ve) %item types% [in [(the[ir]|his|her|its)] inventory] %inventories/texts/objects% contain[s] %item types/texts/objects% %inventories% do[es](n't| not) have %item types% [in [(the[ir]|his|her|its)] inventory] %inventories/texts/objects% do[es](n't| not) contain %item types/texts/objects%
+ExtrasSK - %text% (has|contain[s]) case(-| )sensitive %text% %text% do[es](n't| not) contain case(-| )sensitive %text% %text% is [equal to] case(-| )sensitive %text% %text% is( not|n't) [equal to] case(-| )sensitive %text%
+Skript - [the] damage [(n('|o)]t) [been] (caused|done|made) by %damage cause%
+Skript - %~objects% (exist[s]|(is|are) set) %~objects% (do[es](n't| not) exist|(is|are)(n't| not) set)
+WildSkript - (file|folder) [in] %text% exists (file|folder) [in] %text% (does not|doesn't|is not|isn't) exists
+RandomSK - %player/entity/item type/world% (has|have) [fixed] metadata [value] %text% %player/entity/item type/world% doesn't have [fixed] metadata [value] %text%
+RandomSK - %villager% (has|have) (offers|trades) %villager% doesn't have (offers|trade)
+Skript - [%players/console%] (do[es]n't|don't|do[es] not) have [the] permission[s] %texts% [%players/console%] ha(s|ve) [the] permission[s] %texts%
+Skript - %offline player% [(has|did)] [already] play[ed] [on (this|the) server] (before|already) %offline player% (has not|hasn't|did not|didn't) [(already|yet)] play[ed] [on (this|the) server] (before|already|yet
+SkQuery - %living entities% has %potion% %living entities% does(n't| not) have %potion%
+RandomSK - %trade% (has|have) second item %trade% doesn't have second item
+RandomSK - %villager% (has|have) (offer|trade) [number] %number% %villager% doesn't have (offer|trade) [number] %number%
+Skript - %living entities% (alive|dead) %living entities% (alive|dead)
+Umbaska - "%string%" is ally with "%string%" "%string%" is(n't| not) ally with "%string%"
+Skript - %offline player/texts% (is|are) banned %players/texts% [(is|are) IP(-| )]banned %offline player/texts% (isn't|is not|aren't|are not) banned %players/texts% [(isn't|is not|aren't|are not) IP(-| )]banned
+SkQuery - %item type% is [a] block %item type% is not [a] block
+Skript - %players% (is|are) (blocking|defending) %players% (isn't|is not|aren't|are not) (blocking|defending)
+Skript - %entities% (is|are) (burning|ignited|on fire) %entities% (isn't|is not|aren't|are not) (burning|ignited|on fire)
+SkQuery - %number% is divisible by %number% %number% is not divisible by %number%
+Skript - %inventories/slots/texts% (is|are) empty %inventories/slots/texts% (isn't|is not|aren't|are not) empty
+Skript - %item types% (is|are) enchanted [with %enchantment type%] %item types% (isn't|is not|aren't|are not) enchanted [with %enchantment type%]
+Umbaska - %string% is enemy with %string% %string% is(n't| not) enemy with %string%
+Skript - %players% (is|are) flying %players% (isn't|is not|aren't|are not) flying
+Skript - [%living entities%] ha(s|ve) %item types% in hand [%living entities%] (is|are) holding %item types% [%living entities%] (ha(s|ve) not|do[es]n't have) %item types% in hand [%living entities%] (is not|isn't) holding %item types%
+RandomSK - %player% is in sleep[ing] animation %player% is not in sleep[ing] animation
+Skript - %entities% (is|are) in [[the] world[s]] %worlds% %entities% (is not|isn't|are not|aren't) in [[the] world[s]] %worlds%
+AuthMeSkAddon - %player% is logged %player% is not logged
+Skript - %players% (is[n't| not]|are[n't| not]) member[s] of %regions% %players% (is[n't| not]|are[n't| not]) [the] owner[s] of %regions%
+Umbaska - "%string%" is neutral "%string%" is(n't| not) neutral
+Skript - %item stacks/entities% (is|are) of type[s] %item types/entity types% %item stacks/entities% (isn't|is not|aren't|are not) of type[s] %item types/entity types%
+RandomSK - %entity% is on ground %entity% is not on ground
+Skript - %offline players% ((is|are) online|(is not|isn't|are not|aren't) offline) %offline players% ((is|are) offline|(is not|isn't|are not|aren't) online)
+Skript - %living entities% (is|are) poisoned %living entities% (isn't|is not|aren't|are not) poisoned
+SkQuery - %number% is prime %number% is not prime
+AuthMeSkAddon - %text% is registered %text% is not registered
+Skript - %entities% (is|are) riding [%entity types%] %entities% (isn't|is not|aren't|are not) riding [%entity types%]
+Skript - %players% (is|are) sleeping %players% (isn't|is not|aren't|are not) sleeping
+Skript - %players% (is|are) sneaking %players% (isn't|is not|aren't|are not) sneaking
+SpectateHook - %player% (is|is[n't| not]) spectating %player% (is|is[n't| not]) being spectated
+Skript - %players% (is|are) sprinting %players% (isn't|is not|aren't|are not) sprinting
+WildSkript - %entity% is tamed %entity% (is not|isn't) tamed
+Skript - %living entities% (is|are) wearing %item types% %living entities% (isn't|is not|aren't|are not) wearing %item types%
+SkQuery - %location% is within %location% to %location% %location% is not within %location% to %location%
+SkAction - motd equals %string%
+SkRambled - player is using admin(chat| chat)^ player is not using admin(chat| chat)
+SkRambled - player is using party(chat| chat)^ player is not using party(chat| chat)
+SkAction - %player% (has|owns) %number% plots
+Skript - (is PvP|PvP is) enabled [in %worlds%] (is PvP|PvP is) disabled [in %worlds%]
+Skript - %players (is|are) in [the] region %region% region contains %locations%
+SkRayFall - side bar is set for %player%
+Skript - %date% (was|were)( more|(n't| not) less) than %time span% [ago] %date% (was|were)((n't| not) more| less) than %time span% [ago]
+Skript - is %weather types% [in %worlds%]
