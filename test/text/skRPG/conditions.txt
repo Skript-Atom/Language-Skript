@@ -1,0 +1,4 @@
+SkillAPI %player% has skillbar enabled
+SkillAPI %player% can profess
+SkillAPI %player% skillbar is setup
+SkillAPI %player% has skill %string%

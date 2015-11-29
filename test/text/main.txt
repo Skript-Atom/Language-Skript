@@ -1,0 +1,201 @@
+fire
+lava
+speed
+zombies
+resistance
+haste
+hunger
+levitate
+mining fatigue
+instant damage
+efficiency
+silk touch
+unbreaking
+unbreakable
+fortune
+luck of the sea
+lure
+protection
+fire protection
+feather falling
+blast protection
+projectile protection
+respiration
+aqua affinity
+thorns
+depth strider
+sharpness
+smite
+bane of arthropods
+knockback
+fire aspect
+looting
+power
+punch
+flame
+infinity
+angry
+heart
+hearts
+unextended
+non-splash
+extended
+splash
+enchanted
+snowball
+nausea
+blindness
+regeneration
+swiftness
+healing
+fire resistance
+poison
+instant health
+night vision
+weakness
+strength
+slowness
+leaping
+jump boost
+harming
+water breathing
+invisibility
+levitate
+levitation
+killer rabbit
+arrow
+boat
+egg
+ender crystal
+bat
+chicken
+cow
+mooshroom
+pig
+rabbit
+sheep
+squid
+villager
+cave spider
+cavespider
+enderman
+spider
+zombie
+pigman
+blaze
+chicken jockey
+creeper
+elderguardian
+elder guardian
+endermite
+ghast
+guardian
+magma cube
+silverfish
+skeleton
+slime
+spider jockey
+wither skeleton
+zombie villager
+donkey
+horse
+mule
+skeleton horse
+undead horse
+ocelot
+wolf
+witch
+witchs
+dropped
+squids
+iron golem
+snow golem
+enderdragon
+enderdragon
+wither
+shulker
+giant
+shulker bullet
+fireball
+potion
+splash potion
+minecart
+living entity
+painting
+armor stand
+armour stand
+creature
+tnt
+primed tnt
+experience
+projectile
+ender pearl
+zombie
+killer rabbits
+arrows
+boats
+eggs
+ender crystalsquot;
+bats
+chickens
+cows
+mooshrooms
+pigs
+rabbits
+sheeps
+squids
+villagers
+cave spiders
+cavespiders
+endermans
+spiders
+zombies
+pigmans
+blazes
+chicken jockeys
+creepers
+elderguardians
+elder guardians
+endermites
+ghasts
+guardians
+magma cubes
+silverfishs
+skeletons
+slimes
+spider jockeys
+wither skeletons
+zombies
+zombie villagers
+donkeys
+horses
+mules
+skeleton horses
+undead horses
+ocelots
+wolfs
+iron golems
+snow golems
+enderdragons
+enderdragons
+withers
+shulkers
+giants
+shulker bullets
+fireballs
+
+
+night vision
+invisibility
+leaping
+Fire resistance
+swiftness
+slowness
+water breathing
+harming
+poison
+regeneration
+strength
+weakness
+luck
+bad luck
