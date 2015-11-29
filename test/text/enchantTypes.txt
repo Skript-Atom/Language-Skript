@@ -1,0 +1,24 @@
+[fire |blast |projectile ]protection
+feather falling
+respiration
+aqua affinity
+thorns
+depth strider
+frost walker
+sharpness
+smite
+bane of arthropods
+knockback
+fire aspect
+looting
+efficiency
+silk touch
+unbreaking
+fortune
+power
+punch
+flame
+infinity
+luck of the sea
+lure
+mending

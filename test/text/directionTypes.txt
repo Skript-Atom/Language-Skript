@@ -1,0 +1,18 @@
+[north |south ](north|east|south|west)
+(back|down)wards
+
+top
+upper
+front
+horizontal
+behind
+direction
+towards
+forward[s]
+above
+over
+up
+down
+below
+under
+beneath
