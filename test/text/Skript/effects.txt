@@ -1,0 +1,58 @@
+ban %texts/offline players% [(by reason of|because [of]|on account of|due to) %text%] unban %texts/offline players%
+ban %players% by IP [(by reason of|because [of]|on account of|due to) %text%]
+unban %players% by IP
+IP(-| )ban %players% [(by reason of|because [of]|on account of|due to) %text%]
+(IP(-| )unban|un[-]IP[-]ban) %players%
+broadcast %texts% [(to|in) %worlds%]
+[un]cancel [the] event
+(add|give) %objects% to %~objects% increase %~objects% by %objects%
+give %~objects% %objects% set %~objects% to %objects% remove (all|every) %objects% from %~objects%
+(remove|subtract) %objects% from %~objects% reduce %~objects% by %objects%
+(delete|clear) %~objects% reset %~objects%
+(dye|colo[u]r|paint) %slots/item stack% %color%
+(dye|colo[u]r|paint) %slots/item stack% (%number%, %number%, %number%)
+[execute] [the] command %texts% [by %players/console%]
+[execute] [the] %players/console% command %texts%
+(let|make) %players/console% execute [[the] command] %texts%
+damage %slots/living entities/item stack% by %number% [heart[s]]
+heal %living entities% [by %number% [heart[s]]]
+repair %slots/item stack% [by %number%]
+(wait|halt) [for] %time span%
+drop %item types/experience point% [%directions% %locations%]
+enchant %~item stack% with %enchantment types%
+disenchant %~item stack%
+equip [%living entity%] with %item types%
+make %living entity% wear %item types%
+(exit|stop) [trigger] (section|loop|conditional) (section|loop|conditional)s (section|loop|conditional)s
+[(create|make)] [an] explosion (of|with) (force|strength|power) %{types|Number|number}}% [%directions% %locations%]
+[(create|make)] [a] safe explosion (of|with) (force|strength|power) %{types|Number|number}}% [%directions% %locationss%]
+[(create|make)] [a] fake explosion [%directions% %locations%]
+[(create|make)] [an] explosion[ ]effect [%directions% %locations%]
+(ignite|set fire to) %entities% [for %time span%]
+(set|light) %entities% on fire [for %time span%]
+extinguish %entities%
+kick %players% [(by reason of|because [of]|on account of|due to) %text%]
+kill %entities%
+strike lightning [effect] %directions% %locations%
+log %texts% [(to|in) [file[s]] %texts%]
+(message|send [message]) %texts% [to %players/console%]
+[de[-]]op %offline players%
+[(open|show) ((crafting [table]|workbench) (view|window|inventory)]|%inventory%) (to|for) %players%
+close [the] inventory [view] (to|of|for) %players%
+close %players%'[s] inventory
+[view](play|show) %visual effect% (on|%directions%) %entities/locations% [to %players%]
+(poison|cure|unpoison) %living entities% [for %time span%]
+apply [potion of] %potions% [potion] [[[of] tier] %number%] to %living entities% [for %time span%]
+(push|thrust) %entities% %direction% [(at|with) (speed|velocity|force) %number%]
+(enable|disable) PvP [in %worlds%]
+replace [(all|every)] %texts% (with %text% in|in %text% with) %text%
+[un[-]]shear %living entities%
+shoot %entity types% [from %living entities/locations%] [(at|with) (speed|velocity) %number%] [%direction%]
+(make|let) %living entities/locations% shoot %entity types% [(at|with) (speed|velocity) %number%] [%direction%]
+spawn [%number% of ]%entity types% [%directions% %locations%]
+teleport %entities% (to|%direction%) %location%
+(close|turn off|de[-]activate) %blocks% (toggle|switch) [[the] state of] %blocks% (open|turn on|activate) %blocks%
+(grow|create|generate) (%tree type% [tree]|tree [of type %tree type%]) %directions% %locations%
+(make|let|force) %entities% [to] (ride|mount) [(in|on)] %entity/entity type%
+[(make|let|force) %entities% [to] (dismount|(dismount|leave) (from|of)] [(any|the[ir]|his|her)] vehicle[s])
+[(eject|dismount) (any|the)] passenger[s] (of|from) %entities%

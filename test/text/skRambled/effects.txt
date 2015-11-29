@@ -1,0 +1,8 @@
+claim land for [the faction] %faction% at %location%
+[skrambled] create a faction [with name] %string% with leader %player%
+[skrambled] disband [the faction] %faction%
+invite %player% to [the faction] %string%
+[skrambled] remove %player% from [the faction] %faction%
+send %string% to [the] admin[chat| chat] from [a] player named %string%
+send %string% to [the] party %party% from [a] player named %string%
+unclaim land at %location%

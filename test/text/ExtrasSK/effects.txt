@@ -1,0 +1,2 @@
+play [the] [sound] %string% (only|specifically) to %player% [with pitch %number%] [[and] volume %number%]
+spawn [a[n]] [(unique|special)] %string% horse [(colored|with color) %string% [and] (styled|marked|with pattern[s]) [of] %string%] at [location] %location%
