@@ -1,2 +1,36 @@
 'file-types':
   'ex_em_el': 'text.sk'
+
+'skConfig':
+  'Addons': [
+    {
+      'load_AuthMe-SkAddon': true
+      'load_ExtrasSK': true
+      'load_PirateSK': true
+      'load_RandomSK': true
+      'load_skAction': true
+      'load_skQuery': true
+      'load_skRambled': true
+      'load_skRayFall': true
+      'load_Skript': true
+      'load_SkriptEvolved': true
+      'load_skRPG': true
+      'load_skStuff': true
+      'load_SpectateHook': true
+      'load_Umbaska': true
+      'load_WildSkript': true
+    }
+  ]
+  'Code': [
+      'codeSuggest': true
+      'showErrors': true
+      'colorTypes': true
+      'colorTempVars': true
+      'colorVars': true
+      'colorBrackets': true
+      'colorOptions': true
+      'colorExpr-Wrap': true
+      'colorNumber': true
+    {
+  ]
+}
