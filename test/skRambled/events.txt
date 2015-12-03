@@ -1,4 +1,2 @@
-On Faction Create
-faction description change
-On Faction Disband
-On Faction Name Change
+[on] faction (create|disband) 
+[on] faction (name|description) change
