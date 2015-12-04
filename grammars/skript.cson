@@ -82,4 +82,8 @@ repository:
         match: "\\b(if|else|loop)\\b"
         name: "keyword.control.skript"
       }
+      {
+        match: "\\b&[0-9]+\\b"
+        name: "keyword.color.skript"
+      }
     ]
