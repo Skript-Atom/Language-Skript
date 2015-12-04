@@ -83,7 +83,75 @@ repository:
         name: "keyword.control.skript"
       }
       {
-        match: "\\b&[0-9]+\\b"
-        name: "keyword.color.skript"
+        match: "\\b(player|victim|attacker|shooter|entity)('s|s|)\\b"
+        name: "keyword.player.skript"
+      }
+      {
+        match: "\\b%.+%\\b"
+        name: "keyword.exprwrap.skript"
+      }
+      {
+        match: "(&|§)0"
+        name: "keyword.mccolor.black.skript"
+      }
+      {
+        match: "(&|§)1"
+        name: "keyword.mccolor.dark_blue.skript"
+      }
+      {
+        match: "(&|§)2"
+        name: "keyword.mccolor.dark_green.skript"
+      }
+      {
+        match: "(&|§)3"
+        name: "keyword.mccolor.dark_aqua.skript"
+      }
+      {
+        match: "(&|§)4"
+        name: "keyword.mccolor.dark_red.skript"
+      }
+      {
+        match: "(&|§)5"
+        name: "keyword.mccolor.dark_purple.skript"
+      }
+      {
+        match: "(&|§)6"
+        name: "keyword.mccolor.gold.skript"
+      }
+      {
+        match: "(&|§)7"
+        name: "keyword.mccolor.gray.skript"
+      }
+      {
+        match: "(&|§)8"
+        name: "keyword.mccolor.dark_gray.skript"
+      }
+      {
+        match: "(&|§)9"
+        name: "keyword.mccolor.blue.skript"
+      }
+      {
+        match: "(&|§)a"
+        name: "keyword.mccolor.green.skript"
+      }
+      {
+        match: "(&|§)b"
+        name: "keyword.mccolor.aqua.skript"
+      }
+      {
+        match: "(&|§)c"
+        name: "keyword.mccolor.red.skript"
+      }
+      {
+        match: "(&|§)d"
+        name: "keyword.mccolor.light_purple.skript"
+      }
+      {
+        match: "(&|§)e"
+        name: "keyword.mccolor.yellow.skript"
+      }
+      {
+        match: "(&|§)f"
+        name: "keyword.mccolor.white.skript"
       }
     ]
