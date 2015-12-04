@@ -14,6 +14,9 @@ patterns: [
     include: "#strings"
   }
   {
+    include: "#variables"
+  }
+  {
     include: "#comments"
   }
 ]
@@ -31,10 +34,28 @@ repository:
           }
         ]
       }
+    ]
+  variables:
+    patterns: [
       {
         begin: '{'
         end: '}'
-        name: "string.bracket.double.skript"
+        name: "variable.normal.skript"
+      }
+      {
+        begin: '{_'
+        end: '}'
+        name: "variable.temp.skript"
+      }
+      {
+        begin: '%{'
+        end: '}%'
+        name: "variable.expr.skript"
+      }
+      {
+        begin: '%{_'
+        end: '}%'
+        name: "variable.tempexpr.skript"
       }
     ]
   comments:
