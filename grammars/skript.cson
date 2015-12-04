@@ -31,6 +31,11 @@ repository:
           }
         ]
       }
+      {
+        begin: '{'
+        end: '}'
+        name: "string.bracket.double.skript"
+      }
     ]
   comments:
     patterns: [
