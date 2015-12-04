@@ -1,0 +1,11 @@
+[on] achievement [get]
+[on] brew
+[on] enchant prepare
+[on] health regen
+[on] inventory open
+[on] leash
+[on] note play
+[on] potion splash
+[on] sheep wool regrow
+[on] slime split
+[on] unleash

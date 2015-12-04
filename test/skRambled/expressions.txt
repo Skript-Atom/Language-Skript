@@ -1,0 +1,23 @@
+description of %faction%
+[the] faction at %location%
+faction of player
+home of faction
+faction's home
+list of [all] (factions|(players|allies|enemies) of [the faction] %faction%)
+[all] players list of [the faction] %faction%
+[all] faction allies list of [the faction] %faction%
+[all] faction enemies list of %faction%
+factions list
+all factions
+list of [all] truces of [the faction] %faction%
+[all] faction truces list of %faction%
+motd of faction
+name of %faction%
+power(level| level) of player^ player's power(level| level)
+power[boost] of (faction|player)
+faction's power[boost]
+relation[ship] [status] between [the faction] %faction% (and|with) [the faction] %faction%
+role of [the player] %player%
+[mcmmo] %skill% level of %player%
+title of player
+player's title

@@ -1,0 +1,5 @@
+displayslot[s]
+fireworktype[s]
+lambda
+markup
+particletypes[s]

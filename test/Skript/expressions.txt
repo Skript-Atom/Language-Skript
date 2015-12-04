@@ -1,0 +1,168 @@
+([craft]bukkit|minecraft|skript)( |-)version
+[the] altitude[s] of %locations%
+%locations%'[s] altitude[s]
+(amount|number|size) of %objects%
+[the] (amount|number) of %item type% (in|of) %inventories%
+[the] last arg[ument][s] [the] arg[ument][s](-| )<(d+)>
+[the] <(d*1)st|(d*2)nd|(d*3)rd|(d*[4-90])th> arg[ument][s]
+[the] arg[ument][s] [the] %*type%( |-)arg[ument][( |-)]
+[the] arg[ument]( |-)%*type%[( |-)]
+%number%[ ](+|-|*|/|^)[ ]%number%
+[the] (boot[s]|shoe[s]|leg[ging][s]|chestplate[s]|helm[et][s]) [slot] of %living entities%
+%living entities%'[s] (boot[s]|shoe[s]|leg[ging][s]|chestplate[s]|helm[et][s]) [slot]
+[the] (attacked|damaged|victim) [<(.+)>]
+[the] (attacker|damager)
+[the] bed[s] [location[s]] of %players% %players%'[s] bed[s] [location[s]]
+[the] biome (of|%direction%) %location% %location%'[s] biome
+[the] [event-]block [the] block %{{types|Direction|direction|}}% [%location%]
+[(all|the)] blocks in radius %number% [(of|around) %location%]
+[(all|the)] blocks around %location% in radius %number%
+[the] blocks %direction% [%locations%] [the] blocks from %location% [on] %direction% [the] blocks from %block% to %block% [the] blocks between %block% and %block%
+[the] blocks in [the] region %region%
+[the] chunk[s] (of|%directions%) %locations%
+%locations%'[s] chunk[s]
+[the] clicked (block|%*item type/entity type%)
+[the] colo[u]r[s] of %item stacks/entities%
+%item stacks/entities%'[s] colo[u]r[s]
+(colo[u]r-|colo[u]red )%texts%
+(un|non)[-](colo[u]r-|colo[u]red )%texts%
+[the] (full|complete|whole) command
+[the] command [label] [the] arguments
+[the] [command['s]] (sender|executor)
+[the] compass target of %players%
+%players%'[s] compass target
+[the] (console|server)
+[the] (x|y|z)(-| )(coord[inate]|pos[ition]|loc[ation])[s] of %locations%
+%locations%'[s] (x|y|z)(-| )(coord[inate]|pos[ition]|loc[ation])[s]
+[the] [event-]<.+>
+[the] damage
+[the] damage (cause|type)
+[the] ((data|damage)[s] [value[s]]|durabilit(y|ies)) of %item stacks/slots%
+%item stacks/slots%'[s] ((data|damage)[s] [value[s]]|durabilit(y|ies))
+difference (between|of) %object% and %object%
+[%number% [(north[(east|west)][(south[(east|west)][(east|west)[(above|over|up|down)[ward(below|under[neath]|beneath) [%direction%] [%number% [[(direction|horizontal direction|facing|horizontal facing) of %entity/block% (of|from)] [%number% [[(direction|horizontal direction|facing|horizontal facing) (of|from)] [%number% [(in[ ]front [of]|forward[s]|behind|backwards|right|left) [of]) [%number% [(in[ ]front [of]|forward[s]|behind|backwards|right|left) [of])
+[the] distance between %location% and %location%
+[the] drops
+([the] first|[the] last|[a] random) element [out] of %objects%
+[the] (%enchantment% level|level of [[the] enchant[ment]] %enchantment%) o(f|n) %item types%
+%item types%'[s] (%enchantment% level|level of [[the] enchant[ment]] %enchantment%)
+[the] ender[ ]chest[s] of %players%
+%players%'[s] ender[ ]chest[s]
+[all] %*entity types% [(in|of) [world[s]] %worlds%]
+[all] %*entity types% (within|[with]in radius) %number% [(block[s]|met(er|re)[s])] (of|around) %location%
+[all] entities of type[s] %entity types% ([(in|of) [world[s]] %worlds%]|in radius %number% (of|around) %location%)
+[the] [(spawned|dropped)] [e]xp[erience] [orb[s]]
+[the] [horizontal] facing of %living entities/blocks%
+%living entities/blocks%'[s] [horizontal] facing
+[the] (food|hunger)[[ ](level|met(er|re)|bar)] [of %player%]
+%player%'[s] (food|hunger)[[ ](level|met(er|re)|bar)]
+[the] (former|past|old) [state] [of] %~object% %~object% before [the event]
+[the] (future|to-be|new) [state] [of] %~object% %~object%(-to-be| after[(wards| the event)])
+[the] (ore|fuel|result)[s] [slot[s]] of %blocks%
+%blocks%'[s] (ore|fuel|result)[s] [slot[s]]
+[the] game[ ]mode of %players%
+%players%'[s] game[ ]mode
+[md5][( |-)hash(ed|[( |-)]code] of) %texts%
+[the] (head|eye[s]) [location[s]] of %living entities%
+%living entities%'[s] (head|eye[s]) [location[s]]
+[the] health of %living entities%
+%living entities%'[s] health
+[the] id[s] of %item type%
+%item type%'[s] id[s]
+[the] [(first|last)] index of %text% in %text%
+[the] inventor(y|ies) of %inventoryholders%
+%inventoryholders%'[s] inventor(y|ies)
+IP[s][( |-)address[es]] of %players%
+%players%'[s] IP[s][( |-)address[es]]
+[the] item
+[(all|every)] (block(s|[ ]types)|item(s|[ ]types)
+(blocks|items) of type[s] %item types%
+[all] items (inventor(y|ies)) %inventories%
+concat[enate]|join) %text% [(with|using|by) [[the] delimiter] %text%]
+split %text% (at|using|by) [[the] delimiter] %text%
+%text% [split] (at|using|by) [[the] delimiter] %text%
+[the] [last[ly]] (spawned|shot) %*entity type%
+[the] length of %texts%
+%texts%'[s] length
+[the] level of %players%
+%players%'[s] level
+[the] level progress of %players% %players%'[s] level progress
+[(sky|sun|block)[ ]]light[ ]level [(of|%direction%) %location%]
+[the] [event-](location|position)
+[the] (location|position) %direction% [%location%]
+[the] (location|position) [at] [(][x[ ][=[ ]]]%number%^ [y[ ][=[ ]]]%number%^ [and] [z[ ][=[ ]]]%number%[)] [[(in|of) [[the] world]] %world%]
+(location|position) of %location%
+%location%'[s] (location|position)
+[the] loop-<.+>
+[the] line %number% of [the] lore of [%item stack/item type%]
+[the] line %number% of %item stack/item type%'[s] lore
+[the] %number%(st|nd|rd|th) line of [the] lore of [%item stack/item typee%]
+[the] %number%(st|nd|rd|th) line of %item stack/item type%'[s] lore
+[the] max[imum] health of %living entities%
+%living entities%'[s] max[imum] health
+[the] max[imum] stack[[ ]size] of %item stack%
+%item stack%'[s] max[imum] stack[[ ]size]
+me my[self]
+[the] [chat( |-)]message [the] (join|log[ ]in)( |-)message [the] (quit|leave|log[ ]out|kick)( |-)message [the] death( |-)message
+%player%'s (money|balance|account) (money|balance|account) of %player%
+[the] (player|tab)[ ]list name[s] of %players%
+%players%'[s] (player|tab)[ ]list name[s]
+[the] (display|nick|chat)[ ]name[s] of %slots/item stacks/living entities/players%
+%slots/item stacks/living entities/players%'[s] (display|nick|chat)[ ]name[s]
+[the] name[s] of %slots/item stacks/living entities/players% %slots/item stacks/living entities/players%'[s] name[s]
+%item types% (named|with name[s]) %text%
+now
+[(integers) (between|from) %number% (and|to) %number% %number% times
+%text% parsed as (%*type%|"<.*>")
+[the] [last] [parse] error
+[the] passenger[s] of %entities%
+%entities%'[s] passenger[s]
+%player%'s (prefix|suffix)
+(prefix|suffix) of %player%
+[a] random %*type% [out] of %objects%
+[a] random (integer|number) (from|between) %number% (to|and) %number%
+region
+owner[s] of %region%
+region[s] at %location/block%
+[the] remaining air of %living entities%
+%living entities%'[s] remaining air
+(floor|round)(%number%)
+[(a|the)] round[ed] [down|up] %number%
+ceil[ing](%number%)
+[the] script[['s] name]
+[the] shooter [of %projectile%]
+[the] line %number% [of %block%]
+[the] (1st|first|2nd|second|3rd|third|4th|fourth) line [of %block%]
+[the] skull of %offline players/entities/entity types%
+%offline players/entities/entity types%'[s] skull
+[the] spawn[s] [(point|location)[s]] [of %worlds%]
+%worlds%'[s] spawn[s] [(point|location)[s]]
+[the] (walk[ing]|fl(y[ing]|ight))[( |-])speed of %players%
+%players%'[s] (walk[ing]|fl(y[ing]|ight))[( |-])speed
+[the] [(part|sub[ ](text|string)) of %texts% (between|from) (ind(ex|ices)|character[s])] %number% [(and|to) (index|character)] %number%
+[the] (first|last) [%number%] character[s] of %texts%
+[the] %number% (first|last) characters of %texts%
+[the] target[[ed] %*entity type%] [of %living entities%]
+%living entities%'[s] target[[ed] %*entity type%]
+[the] target[ed] block[s] [of %players%]
+%players%'[s] target[ed] block[s]
+[the] actual[ly] target[ed] block[s] [of %players%]
+%players%'[s] actual[ly] target[ed] block[s]
+[the] UUID of %players/worlds%
+%players/worlds%'[s] UUID
+[the] time [(in|of) %worlds%]
+%worlds%'[s] time
+[the] (tool|held item|weapon) [of %living entities%]
+%living entities%'[s] (tool|held item|weapon)
+[the] type of %entity types/item stacks%
+%entity types/item stacks%'[s] type
+[the] vehicle[s] of %entities%
+%entities%'[s] vehicle[s]
+[the] weather [(in|of) %worlds%]
+%worlds%'[s] weather
+[the] world [of %entity/location%]
+%entity/location%'[s] world
+[(the|all)] worlds
+%number% of %item stacks/entity type%
+[the] (yaw|pitch) of %locations%
+%locations%'[s] (yaw|pitch)

@@ -1,0 +1,18 @@
+{
+  "name": "atom-Skript-dark",
+  "main": "./lib/atom-Skript-dark",
+  "version": "0.1.0",
+  "description": "SkriptDark for Atom, Easier coding!",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "atom-skript-dark:toggle"
+  },
+  "repository": "https://github.com/tim740/SkriptDark-for-Atom",
+  "license": "GNU General Public License v3.0",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

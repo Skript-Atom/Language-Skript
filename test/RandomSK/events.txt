@@ -1,0 +1,7 @@
+[on] [villager] gui trade
+[on] item break
+[on] fishing state of %state%
+[on] item (despawn|despawning)
+[on] [named] sound [(trigger|play) [on] player hear sound
+[on] statistics (increment|increase) [of %statistic%]
+[on] vehicle (steer|button press)

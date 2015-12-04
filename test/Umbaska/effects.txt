@@ -1,0 +1,71 @@
+(send|set) [advanced] (footer|header) to %string% (to|for) %players%
+allow %player% to %string%
+copy (d|dir|dire|directory) %string% to %string% copy file %string% to %string%
+create [new] file %string%
+create [a ]new following holo[gram] (to|that) follow[s] %entity% with [text] %string%
+create [a ]new holo[gram] named %string%
+set custom name of %entities% to %name%
+(df|delete) [file] %string%
+delete holo[gram] %string%
+deny %player% from %string%
+disguise %players% as %string% disguise %players% as %string% with custom name %string% undisguise %players%
+disguise %entities% as %text%
+drop a spawner at %location% based on %block%
+(remove|delete) %block% from [better][ ][new] exploded blocks (remove|delete|clear) all [better] exploded blocks
+force drop inventory of %player% at %location%
+generate chunk %location%
+give a spawner to %player% based on %block%
+protocol hide %entity% from %player%
+protocol show %entity% to %player%
+toggle visibility of %entity% for %player%
+set holo[gram] type to (wither skulls|armor stands)
+update inventory of %player%
+load chunk at %location%
+make holo[gram] %hologram% follow %entity%
+move holo[gram] %string% to %location%
+move %plot% to %plot% in %world%
+[(1.8|Umbaska|skquery isnt updated)] (summon|play|create|activate|spawn) %integer% [of] [particle] %particleenum%[:%number%] [offset (at|by|from) %number%, %number% (,|and) %number%] at %locations% (to|for) %players% [[ with] data %integer%]" [(1.8|Umbaska|skquery isnt updated)] (summon|play|create|activate|spawn) %integer% [of] [particle] %particleenum%[:%number%] [offset (at|by|from) %number%, %number% (,|and) %number%] at %locations% [[ with] data %integer%]
+play (track|song|midi) %string% to %player%
+(remove|add) [player] %offlineplayer% (from|to) team %string% in [score][board] %string%
+create [a] [new] %string% objective for [score][board] %string% (called|named) %string%
+create [a] new scoreboard [named] %string%
+create team %string% in [score][board] %string%
+unregister objective %string% in [score][board] %string%
+reset [value] [of] score %string% (for|in) [score][board] %string%
+set friendly fire for team %string% in [score][board] %string% to %boolean%
+set objective display name for [objective] %string% in [score][board] %string% to %string%
+set objective display slot for [objective] %string% in [score][board] %string% to %string%
+set scoreboard of %players% to %string%
+set value of score %string% (for|in) [score][board] %string% objective %string% to %number%
+set see friendly invisibles for team %string% in [score][board] %string% to %boolean%
+set (0¦suffix|1¦prefix) for team %string% in [score][board] %string% to %string%
+send action bar from %string% to %players%
+send %player% to %string%
+send title from %string% and %string% to %players% for %number%, %number%, %number%
+set delay of %location% to %integer%
+set holo[gram] lines of %hologram% to %string%
+set line %integer% in [file] %string% to %string%
+set name tag of %player% to %string%, %string%, %string%
+set spawner %location% to %string%
+set spawner at %location% to its type
+set (prefix|suffix) of %player% to %string%
+set (owner|price) of plot at %location% to %player%
+set dynmap visibility of %player% to %boolean%
+show %player% image %string% with %string%, %string%, %string%
+show %player% image from %string% with %string%, %string%, %string%
+create [a] new simple scoreboard [named] %string%
+debug simple %string%
+set display title for simple [score][board] %string% to %string%
+set (slot|value|score) %integer% of simple [score][ ][board] %string% to %string%
+set simple [score][ ][board] of %players% to %string%
+[umbaska] spawn [an] (armour|armor) stand at %locations%
+(start|stop) holo[gram] %string%
+teleport %player% to %plot% in %world%
+undisguise %entities%
+unload chunk at %location%
+create [a] new world [name[d]] %string%
+delete world %string% unload world %string%
+load world %string%
+create world named %string% from [folder] %string%
+(write|wf) %string% to %string%
+write %string% with [value] %string% to %string%

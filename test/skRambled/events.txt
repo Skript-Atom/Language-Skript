@@ -1,0 +1,2 @@
+[on] faction (create|disband) 
+[on] faction (name|description) change

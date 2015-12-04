@@ -1,0 +1,13 @@
+night vision
+invisibility
+leaping
+fire resistance
+water breathing
+harming
+poison
+regeneration
+strength
+(swift|weak|slow)ness
+[bad ]luck
+jump boost
+levitat(e|ion)

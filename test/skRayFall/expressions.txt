@@ -1,0 +1,11 @@
+for builder %number% get the location of the bottom right of schematic centered at %location%
+citizen id of %entity%
+owner of npc %number%
+(gun|crackshot weapon) %string%
+citizen %number%
+group score (value|number|name|title) (of|from) id %string%
+last created citizen [id]
+name of citizen %number%
+%itemstack% with no NBT
+shiny %itemstack%
+score (value|number|name|title) (of|from) id %string%

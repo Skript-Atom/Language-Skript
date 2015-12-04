@@ -1,0 +1,10 @@
+[dark ](blue|green|aqua|red|gray)
+(dark|light) purple
+gold
+black
+yellow
+white
+
+<COLOR>
+&COLOR
+§COLOR

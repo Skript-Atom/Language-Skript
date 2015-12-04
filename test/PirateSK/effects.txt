@@ -1,0 +1,7 @@
+add (member|owner) %players/offline players/strings% to wg region %string% in [world] %world%
+create wg region %string% between %location% and %location% in [world] %world%
+delete wg region %string% in [world] %world%
+paste schematic %string% at %location%
+remove (member|owner) %players/offline players/strings% from wg region %string% in [world] %world%
+save %worlds%
+set [all] blocks in wg region %string% in [world] %world% to %item stack%

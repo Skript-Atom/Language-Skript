@@ -1,0 +1,5 @@
+[on] download
+[on] [player] edit book
+[on] jump[ing]
+[on] prepare item craft
+[on] [server] [list] ping

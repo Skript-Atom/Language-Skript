@@ -1,0 +1,5 @@
+player['s|s]
+victim['s|s]
+attacker['s|s]
+shooter['s|s]
+entity['s|s]

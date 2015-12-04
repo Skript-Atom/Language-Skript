@@ -1,0 +1,11 @@
+[on] sheep dye
+[on] tab complet(er|ion) [for [command]] %text%
+[on] vehicle (entity collide|collide with entity)
+[on] horse jump
+[on] inventory click
+[on] inventory close
+[on] any move
+[on] block land
+[on] [book] edit
+[on] enchant [item]
+[on] [player] toggl(e|ing) (flight|fly) [on] [player] (flight|fly) toggl(e|ing)

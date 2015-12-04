@@ -1,0 +1,8 @@
+%boolean% not %boolean%
+%object% == %object% %object% === %object% %object% > %object% %object% < %object% %object% >= %object% %object% <= %object%
+%boolean% ? %object% to return if true :%object% to return if false %object% ? %object% to return if the first object is not set
+%living entities% (has|does(n't| not) have) %potion% 
+%item type% is[ not] [a] block
+%number% is[ not] divisible by %number%
+%number% is prime %number% is not prime
+%location% is [not ]within %location% to %location%

@@ -1,0 +1,9 @@
+send bossbar %string% with percent %number% to %player%
+remove bossbar from %player%
+[un]deny %player% from %string%
+open a dispenser named %string% for %player%
+set group of %player% to %string%
+add permission %string% to %player%
+set %player%'s (prefix|suffix) to %string%
+add %player% to (member|trusted) for %string%
+remove %player% from (member|trusted) for %string%

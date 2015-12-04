@@ -1,0 +1,3 @@
+(java|lua) of [file] {var}
+{var} = "file[.(java|lua)]"
+{var} = "(java|lua) code"
