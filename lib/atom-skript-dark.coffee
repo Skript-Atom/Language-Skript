@@ -1,4 +1,5 @@
 atomSkriptDarkView = require './atom-skript-dark-view'
+codesuggestionschecked = true
 {CompositeDisposable} = require 'atom'
 
 module.exports = atomSkriptDark =
@@ -14,7 +15,9 @@ module.exports = atomSkriptDark =
     @subscriptions = new CompositeDisposable
 
     # Register command that toggles this view
-    @subscriptions.add atom.commands.add 'atom-workspace', 'atom-skript-dark:toggle': => @toggle()
+    @subscriptions.add atom.commands.add('atom-workspace', {
+      'atom-skript-dark:toggle': => @toggle()
+      })
 
   deactivate: ->
     @modalPanel.destroy()

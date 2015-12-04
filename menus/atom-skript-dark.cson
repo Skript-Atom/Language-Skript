@@ -16,6 +16,46 @@
           'label': 'Toggle'
           'command': 'atom-skript-dark:toggle'
         }
+        {
+          'label': 'Code Suggestions'
+          'command': 'atom-skript-dark:code-suggestions'
+          'type': 'checkbox'
+        }
+        {
+          'label': 'Show Errors'
+          'command': 'atom-skript-dark:show-errors'
+          'type': 'checkbox'
+        }
+        {
+          'label': 'Color Types'
+          'command': 'atom-skript-dark:color-types'
+          'type': 'checkbox'
+        }
+        {
+          'label': 'Color Temp Variables'
+          'command': 'atom-skript-dark:color-temp-variables'
+          'type': 'checkbox'
+        }
+        {
+          'label': 'Color Variables'
+          'command': 'atom-skript-dark:color-variables'
+          'type': 'checkbox'
+        }
+        {
+          'label': 'Color Brackets'
+          'command': 'atom-skript-dark:color-brackets'
+          'type': 'checkbox'
+        }
+        {
+          'label': 'Color Options'
+          'command': 'atom-skript-dark:color-options'
+          'type': 'checkbox'
+        }
+        {
+          'label': 'Color Numbers'
+          'command': 'atom-skript-dark:color-numbers'
+          'type': 'checkbox'
+        }
       ]
     ]
   }

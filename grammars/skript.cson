@@ -1,10 +1,59 @@
-'scopeName': 'Skript'
+'scopeName': 'source.skript'
 'fileTypes': [
   'sk'
 ]
 'name': 'Skript'
-'patterns': [
+patterns: [
   {
-    
+    include: "#numbers"
+  }
+  {
+    include: "#keywords"
+  }
+  {
+    include: "#strings"
+  }
+  {
+    include: "#comments"
   }
 ]
+repository:
+  strings:
+    patterns: [
+      {
+        begin: '"'
+        end: '"'
+        name: "string.quoted.double.skript"
+        patterns: [
+          {
+            match: "\\."
+            name: "constant.character.escape.skript"
+          }
+        ]
+      }
+    ]
+  comments:
+    patterns: [
+      {
+        begin: "(#)"
+        beginCaptures:
+          1:
+            name: "punctuation.definition.comment.skript"
+        end: "\\n"
+        name: "comment.line.number-sign.skript"
+      }
+    ]
+  numbers:
+    patterns: [
+      {
+        match: "\\b[0-9]+\\b"
+        name: "constant.numeric.skript"
+      }
+    ]
+  keywords:
+    patterns: [
+      {
+        match: "\\b(if|else|loop)\\b"
+        name: "keyword.control.skript"
+      }
+    ]
