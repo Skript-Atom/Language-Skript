@@ -1,1 +1,0 @@
-loop-(block|item|index|value|num[ber]|player|entity|integer|attacker|victim|shooter|world|chunk|projectile|button)['s|s]

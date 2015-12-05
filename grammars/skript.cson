@@ -80,15 +80,47 @@ repository:
     patterns: [
       {
         match: "\\b(if|else|loop)\\b"
-        name: "keyword.control.skript"
-      }
-      {
-        match: "\\b(player|victim|attacker|shooter|entity)('s|s|)\\b"
-        name: "keyword.player.skript"
+        name: "keyword.else.skript"
       }
       {
         match: "\\b%.+%\\b"
         name: "keyword.exprwrap.skript"
+      }
+      {
+        match: "(player|victim|attacker|shooter|entity)('s|s|)"
+        name: "keyword.type.player.skript"
+      }
+      {
+        match: "(bat|chicken|mooshroom|pig|squid|sheep|(cave |)spider|ender(man|mite)|blaze|creeper|(elder |)guardian|ghast|magma cube|zombie( pigman|)|silverfish|slime|(chicken|spider) jockey|witch|(wither |)skeleton|(zombie |)villager|donkey|mule|ocelot|wolf|(iron|snow) golem|ender( |)dragon|wither|shulker|giant|(killer |)rabbit|(zombie |skeleton |)horse)('s|s|)"
+        name: "keyword.type.entity.skript"
+      }
+      {
+        match: "\\b(trigger|command \/[a-zA-Z]+|permission: .+|description: .+|aliases: .+|function |(s(k|c)ript |)options)\\b"
+        name: "keyword.type.cmd.skript"
+      }
+      {
+        match: "((north |south |)(north|east|south|west)|(back|down)wards|top|upper|front|horizontal|behind|direction|towards|forward(s|)|above|over|up|down|below|under|beneath)"
+        name: "keyword.type.direction.skript"
+      }
+      {
+        match: "loop-(block|item|index|value|num(ber|)|player|entity|integer|attacker|victim|shooter|world|chunk|projectile|button)('s|s|-|)"
+        name: "keyword.type.loop.skript"
+      }
+      {
+        match: "event-(block|item|index|value|num(ber|)|player|entity|integer|attacker|victim|shooter|world|chunk|projectile|button)('s|s|)"
+        name: "keyword.type.event.skript"
+      }
+      {
+        match: "((fire |blast |projectile |)protection|feather falling|respiration|aqua affinity|thorns|depth strider|frost walker|sharpness|smite|bane of arthropods|knockback|fire aspect|looting|efficiency|silk touch|unbreaking|fortune|power|punch|flame|infinity|luck of the sea|lure|mending)"
+        name: "keyword.type.enchant.skript"
+      }
+      {
+        match: "(night vision|invisibility|leaping|fire resistance|water breathing|harming|poison|regeneration|strength|(swift|weak|slow)ness|(bad |)luck|jump boost|levitat(e|ion))"
+        name: "keyword.type.potion.skript"
+      }
+      {
+        match: "((dark |)(blue|green|aqua|red|gray)|(dark|light) purple|gold|black|yellow|white)"
+        name: "keyword.type.color.skript"
       }
       {
         match: "(&|§)0"
