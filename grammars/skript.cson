@@ -29,8 +29,92 @@ repository:
         name: "string.quoted.double.skript"
         patterns: [
           {
-            match: "\\."
+            match: "\\\\(x\\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]|37[0-7]?|[4-7][0-7]?|.)"
             name: "constant.character.escape.skript"
+          }
+          {
+            match: "(&|§)0"
+            name: "keyword.mccolor.black.skript"
+          }
+          {
+            match: "(&|§)1"
+            name: "keyword.mccolor.dark_blue.skript"
+          }
+          {
+            match: "(&|§)2"
+            name: "keyword.mccolor.dark_green.skript"
+          }
+          {
+            match: "(&|§)3"
+            name: "keyword.mccolor.dark_aqua.skript"
+          }
+          {
+            match: "(&|§)4"
+            name: "keyword.mccolor.dark_red.skript"
+          }
+          {
+            match: "(&|§)5"
+            name: "keyword.mccolor.dark_purple.skript"
+          }
+          {
+            match: "(&|§)6"
+            name: "keyword.mccolor.gold.skript"
+          }
+          {
+            match: "(&|§)7"
+            name: "keyword.mccolor.gray.skript"
+          }
+          {
+            match: "(&|§)8"
+            name: "keyword.mccolor.dark_gray.skript"
+          }
+          {
+            match: "(&|§)9"
+            name: "keyword.mccolor.blue.skript"
+          }
+          {
+            match: "(&|§)a"
+            name: "keyword.mccolor.green.skript"
+          }
+          {
+            match: "(&|§)b"
+            name: "keyword.mccolor.aqua.skript"
+          }
+          {
+            match: "(&|§)c"
+            name: "keyword.mccolor.red.skript"
+          }
+          {
+            match: "(&|§)d"
+            name: "keyword.mccolor.light_purple.skript"
+          }
+          {
+            match: "(&|§)e"
+            name: "keyword.mccolor.yellow.skript"
+          }
+          {
+            match: "(&|§)f"
+            name: "keyword.mccolor.white.skript"
+          }
+          {
+            begin: '{'
+            end: '}'
+            name: "variable.normal.skript"
+          }
+          {
+            begin: '{_'
+            end: '}'
+            name: "variable.temp.skript"
+          }
+          {
+            begin: '%{'
+            end: '}%'
+            name: "variable.expr.skript"
+          }
+          {
+            begin: '%{_'
+            end: '}%'
+            name: "variable.tempexpr.skript"
           }
         ]
       }
@@ -79,11 +163,47 @@ repository:
   keywords:
     patterns: [
       {
-        match: "\\b(if|else|loop)\\b"
-        name: "keyword.control.skript"
+        match: "\\b(if|else|loop(?!-))\\b"
+        name: "keyword.else.skript"
       }
       {
-        match: "\\b&[0-9]+\\b"
-        name: "keyword.color.skript"
+        match: "\\b%.+%\\b"
+        name: "keyword.exprwrap.skript"
+      }
+      {
+        match: "(player|victim|attacker|shooter|entity)('s|s|)"
+        name: "keyword.type.player.skript"
+      }
+      {
+        match: "(bat|chicken|mooshroom|pig|squid|sheep|(cave |)spider|ender(man|mite)|blaze|creeper|(elder |)guardian|ghast|magma cube|zombie( pigman|)|silverfish|slime|(chicken|spider) jockey|witch|(wither |)skeleton|(zombie |)villager|donkey|mule|ocelot|wolf|(iron|snow) golem|ender( |)dragon|wither|shulker|giant|(killer |)rabbit|(zombie |skeleton |)horse)('s|s|)"
+        name: "keyword.type.entity.skript"
+      }
+      {
+        match: "\\b(trigger|command \/[a-zA-Z]+|permission: .+|description: .+|aliases: .+|function |(s(k|c)ript |)options)\\b"
+        name: "keyword.type.cmd.skript"
+      }
+      {
+        match: "((north |south |)(north|east|south|west)|(back|down)wards|top|upper|front|horizontal|behind|direction|towards|forward(s|)|above|over|up|down|below|under|beneath)"
+        name: "keyword.type.direction.skript"
+      }
+      {
+        match: "loop-(block|item|index|value|num(ber|)|player|entity|integer|attacker|victim|shooter|world|chunk|projectile|button)('s|s|-|)"
+        name: "keyword.type.loop.skript"
+      }
+      {
+        match: "event-(block|item|index|value|num(ber|)|player|entity|integer|attacker|victim|shooter|world|chunk|projectile|button)('s|s|)"
+        name: "keyword.type.event.skript"
+      }
+      {
+        match: "((fire |blast |projectile |)protection|feather falling|respiration|aqua affinity|thorns|depth strider|frost walker|sharpness|smite|bane of arthropods|knockback|fire aspect|looting|efficiency|silk touch|unbreaking|fortune|power|punch|flame|infinity|luck of the sea|lure|mending)"
+        name: "keyword.type.enchant.skript"
+      }
+      {
+        match: "(night vision|invisibility|leaping|fire resistance|water breathing|harming|poison|regeneration|strength|(swift|weak|slow)ness|(bad |)luck|jump boost|levitat(e|ion))"
+        name: "keyword.type.potion.skript"
+      }
+      {
+        match: "((dark |)(blue|green|aqua|red|gray)|(dark|light) purple|gold|black|yellow|white)"
+        name: "keyword.type.color.skript"
       }
     ]
