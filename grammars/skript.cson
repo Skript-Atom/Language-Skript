@@ -107,8 +107,7 @@ repository:
             name: "variable.temp.skript"
           }
           {
-            begin: '%'
-            end: '%'
+            match: "%.+%"
             name: "variable.exprwrap.skript"
           }
         ]
@@ -127,8 +126,7 @@ repository:
         name: "variable.normal.skript"
       }
       {
-        begin: '%'
-        end: '%'
+        match: "%.+%"
         name: "variable.exprwrap.skript"
       }
     ]
