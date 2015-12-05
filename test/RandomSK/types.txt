@@ -1,2 +1,0 @@
-statistic
-%item stack% and %item stack% for %item stack% with %number% max uses %item stack% for %item stack% with %number% max uses

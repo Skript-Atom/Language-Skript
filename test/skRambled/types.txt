@@ -1,4 +1,0 @@
-faction
-party
-rel
-skill
