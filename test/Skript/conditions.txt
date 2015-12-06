@@ -36,6 +36,7 @@ chance of %number%[\%]
 (is PvP|PvP is) (enabled|disabled) [in %worlds%]
 %players% (is|are) in [the] region %region%
 region contains %locations%
-%date% (was|were)( more|(n't| not) less) than %time span% [ago] %date% (was|were)((n't| not) more| less) than %time span% [ago]
+%date% (was|were)( more|(n't| not) less) than %time span% [ago]
+%date% (was|were)((n't| not) more| less) than %time span% [ago]
 
 is %weather types% [in %worlds%] - %text% (has|contain[s]) case(-| )sensitive %text% %text% do[es](n't| not) contain case(-| )sensitive %text% %text% is [equal to] case(-| )sensitive %text% %text% is( not|n't) [equal to] case(-| )sensitive %text%
