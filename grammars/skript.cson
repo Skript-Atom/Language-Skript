@@ -311,6 +311,10 @@ repository:
         match: "\\b(biome(s)?|block(s)?|boolean(s)?|chunk(s)?|colo(u)?r(s)?|(command(s)?)?( )?(sender|executor)(s)?|damage cause(s)?|date(s)?|direction(s)?|enchantment(s)?|enchant(ing|ment) type(s)?|entit(y|ies)|entity( )?type(s)?|game( )?mode(s)?|inventor(y|ies)|item material|item( )?type(s)?|items materials|living( )?entit(y|ies)|location(s)?|num(ber)?(s)?|integer(s)?|offline( )?player(s)?|potion(( )?effect)?(( )?type)?(s)?|projectile(s)?|(inventory )?slot(s)?|sound(s)?|(text|string)(s)?|time(s)?|time( )?period(s)?|duration(s)?|time( )?span(s)?|tree(( )?type)?(s)?|type(s)?|(visual|particle) effect(s)?|weather( )?type(s)?|weather( condition)?(s)?|world(s)?)\\b"
         name: "keyword.skript.addon.type.main"
       }
+      {
+        match: "\\b((un)?ban|(by reason of|because( of)?|on account of|due to)|ip|IP(-| )ban|(IP(-| )unban|un(-)?IP(-)?ban)|broadcast|(un)?cancel (the)? event|(add|give)|increase|set|remove (all|every)|(remove|subtract|reduce)|(delete|clear|reset)|(dye|colo(u)?r|paint)|(let|make)|execute|damage|heal|hearts|repair|(wait|halt)|drop|(dis)?enchant|equip|make|wear|(exit|stop)( trigger| (section|loop|conditional)(s)?)? |(create |make )?(a(n)? )?(safe |fake )?explosion|(create |make )?(an )?explosion( )?effect |(ignite|set fire to)|(force|strength|power|speed|velocity)|(set|light)|on fire|extinguish|kick|kill|strike lightning( effect)?|log|(message|send( message)?)|(de(-)?)op|(open|show) (crafting (table)?|workbench)( view|window|inventory)?|op|close( the)? inventory( view)?|close|inventory|(view)?(play|show)|(poison|cure|unpoison)|apply( potion of)?|(push|thrust)|(enable|disable) pvp|replace( all|every)?|(un(-)?)?shear|shoot|(make|let)|spawn|teleport|(close|turn off|de(-)?activate)|(toggle|switch)( (the)? state of)?|(open|turn on|activate)|(grow|create|generate) (oak|spruce|birch|jungle|dark oak|acacia) (tree)?|(make|let|force)|(ride|mount)|(dismount|(dismount|leave) (from|of))? ((any|the(ir)?|his|her))? vehicle(s)?|((eject|dismount)( any| the))? passenger(s)?)\\b"
+        name: "keyword.skript.addon.effect.main"
+      }
 
       {
         match: "statistic"
