@@ -164,7 +164,7 @@ repository:
   keywords:
     patterns: [
       {
-        match: "\\b(tick|millisecond|second|minute|hour|day|week|month|year|now)(s)?\\b"
+        match: "\\b(tick|(milli)?second|minute|hour|day|week|month|year|now)(s)?\\b"
         name: "keyword.skript.type.timespan"
       }
       {
@@ -321,6 +321,33 @@ repository:
       }
 
       {
+        match: "\\b(is( not)? (logged|registered))\\b"
+        name: "keyword.skript.addon.event.authmeskaddon"
+      }
+
+      {
+        match: "\\b(on crop (trampl(e|ing)|break(ing)?|stomp(ing)?|step[ping] on|destroy(ing)?|grow))\\b"
+        name: "keyword.skript.addon.event.extrassk"
+      }
+      {
+        match: "\\b(play (the )?(sound)?|spawn (a(n)? )?((unique|special))?|(styled|marked|with pattern(s)?))\\b"
+        name: "keyword.skript.addon.effect.extrassk"
+      }
+      {
+        match: "\\b(active potion effect(s)?auto(matic)? despawn state|(wolf )?collar (color)?|(letters|characters)|(changed|converted)|((upp|low)ercase|(un)?caps)|(shown|displayed) item|(event(-| ))?enchant(ed|ing) item (e)?xp(erience)? cost|(e)?xp(erience)? cost of enchant(ing|ment)|(restore(d)?|heal(ed)?|regenerat(ed)?) (amount|number|health)|(invulnerability (time)?|no damage (time)?)|(shown|displayed) rotation|pickup state|saturation (level)?|(number (of times)? (that)?|count of)( case(-| )sensitive)?)\\b"
+        name: "keyword.skript.addon.expression.extrassk"
+      }
+
+      {
+        match: "\\b((add|remove) (member|owner)|(crea|dele)te wg region|paste schematic|save)\\b"
+        name: "keyword.skript.addon.effect.piratesk"
+      }
+      {
+        match: "\\b(pos(it(ion)?)?[ ](1|2)|wg region)\\b"
+        name: "keyword.skript.addon.expression.piratesk"
+      }
+
+      {
         match: "statistic"
         name: "keyword.skript.addon.type.randomsk"
       }
@@ -336,8 +363,60 @@ repository:
         match: "effectlibparticle(s)?"
         name: "keyword.skript.addon.type.skrayfall"
       }
+
+      {
+        match: "\\b(on skillapi (class change|exp(erience)? (gain|loss)|level up|skill (cast|unlock|heal|damage)|(gain|loss)))\\b"
+        name: "keyword.skript.addon.event.skrpg"
+      }
       {
         match: "\\b(mob|block_(break|place)|craft|special|exp_bottle|smelt|quest)\\b"
         name: "keyword.skript.addon.type.skrpg"
+      }
+      {
+        match: "\\b(skillapi(exp(erience)?|(sp|skillpoint(s)?|skill point(s)?)|refund|attribute points|clear|data|toggle|skillbar|toggle skillbar|regen(erate )?mana|attr(ibute )?menu|allowed exp(erience )?sources|cast skill|profess)|MythicMobs spawn level)\\b"
+        name: "keyword.skript.addon.effect.skrpg"
+      }
+      {
+        match: "\\b(skillapi(max (mana|health|level)|main class|attribute points|class group|total experience|mana|required exp(erience)?|(mana|health) scale|(chat colo(u)?r|chatcolo(u)?r)|mana regen|(attacker|victim)|expsource|exp(erience )?(gained|Lost)|mana (gained|Lost)|skill casted|levels gained|class (group|base)?|unlocked skill))\\b"
+        name: "keyword.skript.addon.expression.skrpg"
+      }
+      {
+        match: "\\b(SkillAPI|skill(bar enabled)?|can profess|skillbar is setup)\\b"
+        name: "keyword.skript.addon.condition.skrpg"
+      }
+
+      {
+        match: "\\b(java|lua)( file)?\\b"
+        name: "keyword.skript.addon.expression.skriptevolved"
+      }
+
+      {
+        match: "\\b(compound|editsession)\\b"
+        name: "keyword.skript.addon.type.skstuff"
+      }
+      {
+        match: "\\b((create|draw|make) (a)?((no(n|t)(-| )hollow|filled)|hollow) line|thick(ness)?|(undo|redo)(last)? (change|edit)(s)?)\\b"
+        name: "keyword.skript.addon.effect.skstuff"
+      }
+      {
+        match: "\\b(area of (schem(atic)?|(world( )?edit |we )?selection)|((x|y|z)( |-)size|height) of schem(atic)?|(y( |-)size|height) of (world( )?edit |we )?selection|((world( )?edit|we) )?selection (y( |-)size|height)|(custom )?nbt(( )?tag(s)?)?|(block )?limit( change)? of( edit( )?session)?|nbt(( )?tag(s)?)?|new edit( )?session|(max(imum)?)?( block)? limit( change)?|number of (all )?changed blocks (in|of)( edit( )?session)?|(world( )?edit |we )?po(s|int)|nbt (compound)?|volume of schem(atic)?|volume of (world( )?edit |we )?selection|(world( )?edit |we )?selection (volume|area)|(x( |-)size|width)(of schem(atic)?)?|(world( )?edit |we )? selection( x( |-)size| width)?)\\b"
+        name: "keyword.skript.addon.expression.skstuff"
+      }
+      {
+        match: "\\b(((world( )?edit|we))? selection|(contains|has)|does(n't| not) (contain|have))\\b"
+        name: "keyword.skript.addon.condition.skstuff"
+      }
+
+      {
+        match: "\\b(spectate|stop spectating|change spectate angle)\\b"
+        name: "keyword.skript.addon.effect.spectatehook"
+      }
+      {
+        match: "\\b(spectate (angle|target))\\b"
+        name: "keyword.skript.addon.expression.spectatehook"
+      }
+      {
+        match: "\\b(is|is[n't| not]) (spectating|being spectated)\\b"
+        name: "keyword.skript.addon.condition.spectatehook"
       }
     ]
