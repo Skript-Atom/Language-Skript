@@ -1,2 +1,0 @@
-%player% is logged %player% is not logged
-%text% is registered %text% is not registered

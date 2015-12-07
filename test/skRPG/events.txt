@@ -1,5 +1,0 @@
-on SkillAPI class change:
-on SkillAPI exp[erience] (gain|loss):
-on SkillAPI level up:
-on SkillAPI skill (cast|unlock|heal|damage)
-on SkillAPI mana (gain|loss)

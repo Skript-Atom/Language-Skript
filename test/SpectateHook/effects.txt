@@ -1,3 +1,0 @@
-make %player% spectate %player%
-make %player% stop spectating
-change spectate angle of %player% to %text%

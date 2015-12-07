@@ -1,2 +1,0 @@
-motd equals %string%
-%player% (has|owns) %number% plots

@@ -1,2 +1,0 @@
-spectate (angle|target) of %player%
-%player%'s spectate (angle|target)

@@ -1,5 +1,0 @@
-(NPC|Citizen) is %number%
-(NPC|Citizen) is %number% 
-%entity% is [a] (npc|citizen) %entity% is (citizen|npc) %number%
-(NPC|Citizen)['s] [is] name[d] [is] %string%
-side bar is set for %player%

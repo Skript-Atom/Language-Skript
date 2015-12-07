@@ -1,2 +1,0 @@
-(file|folder) [in] %text% [does not |doesn't |is not |isn't ]exists 
-%entity% (is not|isn't|is) tamed

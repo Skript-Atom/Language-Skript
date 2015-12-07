@@ -1,1 +1,0 @@
-%player% (is|is[n't| not]) (spectating|being spectated)

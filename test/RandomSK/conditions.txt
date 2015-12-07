@@ -1,7 +1,0 @@
-[if] [bed] %block% (is|are) occupied [if] [bed] %block% (is|are)(n't| not) occupied
-%player/entity/item type/world% (has|have) [fixed] metadata [value] %text% %player/entity/item type/world% doesn't have [fixed] metadata [value] %text%
-%villager% (has|have) (offers|trades) %villager% doesn't have (offers|trade)
-%trade% (has|have) second item %trade% doesn't have second item
-%villager% (has|have) (offer|trade) [number] %number% %villager% doesn't have (offer|trade) [number] %number%
-%player% is in sleep[ing] animation %player% is not in sleep[ing] animation
-%entity% is on ground %entity% is not on ground

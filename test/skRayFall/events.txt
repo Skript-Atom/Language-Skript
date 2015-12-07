@@ -1,9 +1,0 @@
-[on] (store|chest add)
-[on] (unstore|chest remove)
-[on] Vote
-[on] hologram pickup
-[on] hologram (touch|click)
-on (crackshot|weapon|gun) damage
-[on] (crackshot|weapon|gun) shoot
-[on] (NPC|Citizen) (right|left) click
-[on] crafting click in slot <0-4>
