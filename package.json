@@ -8,7 +8,7 @@
   "activationCommands": {
     "atom-workspace": "atom-skript-dark:toggle"
   },
-  "repository": "https://github.com/SkriptAtom/Language-Skript",
+  "repository": "https://github.com/Skript-Atom/Language-Skript",
   "license": "GNU General Public License v3.0",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
