@@ -1,7 +1,7 @@
 {
   "name": "atom-Skript-dark",
   "main": "./lib/atom-Skript-dark",
-  "version": "0.1.0",
+  "version": "0.9.0",
   "description": "SkriptDark for Atom, Easier coding!",
   "keywords": [
   ],

@@ -1,3 +1,4 @@
 ## 0.1.0 - First Release
-* Every feature added
-* Every bug fixed
+* All Types
+* Skript's Effects, Events & Expressions!
+* Plus more
