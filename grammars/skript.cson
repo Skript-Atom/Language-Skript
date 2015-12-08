@@ -312,7 +312,7 @@ repository:
         name: "keyword.skript.addon.type.main"
       }
       {
-        match: "\\b((un)?ban|(by reason of|because( of)?|on account of|due to)|ip|IP(-| )ban|(IP(-| )unban|un(-)?IP(-)?ban)|broadcast|(un)?cancel (the)? event|(add|give)|increase|set|remove (all|every)|(remove|subtract|reduce)|(delete|clear|reset)|(dye|colo(u)?r|paint)|(let|make)|execute|damage|heal|hearts|repair|(wait|halt)|drop|(dis)?enchant|equip|make|wear|(exit|stop)( trigger| (section|loop|conditional)(s)?)? |(create |make )?(a(n)? )?(safe |fake )?explosion|(create |make )?(an )?explosion( )?effect |(ignite|set fire to)|(force|strength|power|speed|velocity)|(set|light)|on fire|extinguish|kick|kill|strike lightning( effect)?|log|(message|send( message)?)|(de(-)?)op|(open|show) (crafting (table)?|workbench)( view|window|inventory)?|op|close( the)? inventory( view)?|close|inventory|(view)?(play|show)|(poison|cure|unpoison)|apply( potion of)?|(push|thrust)|(enable|disable) pvp|replace( all|every)?|(un(-)?)?shear|shoot|(make|let)|spawn|teleport|(close|turn off|de(-)?activate)|(toggle|switch) (the)? state|(open|turn on|activate)|(grow|create|generate) (oak|spruce|birch|jungle|dark oak|acacia) (tree)?|(make|let|force)|(ride|mount)|(dismount|(dismount|leave) (from|of))? ((any|the(ir)?|his|her))? vehicle(s)?|((eject|dismount)( any| the))? passenger(s)?)\\b"
+        match: "\\b((un)?ban|(by reason of|because( of)?|on account of|due to)|speed|volume|ip|IP(-| )ban|(IP(-| )unban|un(-)?IP(-)?ban)|broadcast|(un)?cancel (the)? event|(add|give)|increase|set|remove (all|every)|(remove|subtract|reduce)|(delete|clear|reset)|(dye|colo(u)?r|paint)|(let|make)|execute|damage|heal|hearts|repair|(wait|halt)|drop|(dis)?enchant|equip|make|wear|(exit|stop)( trigger| (section|loop|conditional)(s)?)? |(create |make )?(a(n)? )?(safe |fake )?explosion|(create |make )?(an )?explosion( )?effect |(ignite|set fire to)|(force|strength|power|speed|velocity)|(set|light)|on fire|extinguish|kick|kill|strike lightning( effect)?|log|(message|send( message)?)|(de(-)?)op|(open|show) (crafting (table)?|workbench)( view|window|inventory)?|op|close( the)? inventory( view)?|close|inventory|(view)?(play|show)|(poison|cure|unpoison)|apply( potion of)?|(push|thrust)|(enable|disable) pvp|replace( all|every)?|(un(-)?)?shear|shoot|(make|let)|spawn|teleport|(close|turn off|de(-)?activate)|(toggle|switch) (the)? state|(open|turn on|activate)|(grow|create|generate) (oak|spruce|birch|jungle|dark oak|acacia) (tree)?|(make|let|force)|(ride|mount)|(dismount|(dismount|leave) (from|of))? ((any|the(ir)?|his|her))? vehicle(s)?|((eject|dismount)( any| the))? passenger(s)?)\\b"
         name: "keyword.skript.addon.effect.main"
       }
       {
@@ -351,17 +351,69 @@ repository:
         match: "statistic"
         name: "keyword.skript.addon.type.randomsk"
       }
+
+      {
+        match: "\\b(on plot (enter|leave|rate))\\b"
+        name: "keyword.skript.addon.event.skaction"
+      }
+      {
+        match: "\\b(send bossbar|with percent|(un)?deny|open (a )?dispenser( named)?|group of|member|trusted)\\b"
+        name: "keyword.skript.addon.effect.skaction"
+      }
+      {
+        match: "\\b(prefix|suffix|group|plots|rated|server motd)\\b"
+        name: "keyword.skript.addon.expression.skaction"
+      }
+      {
+        match: "\\b(motd equals)\\b"
+        name: "keyword.skript.addon.condition.skaction"
+      }
+
       {
         match: "\\b(displayslot(s)?|fireworktype(s)?|lambda|markup|particletypes(s)?)\\b"
         name: "keyword.skript.addon.type.skquery"
+      }
+
+      {
+        match: "\\b(on faction ((create|disband)|(name|description) change))\\b"
+        name: "keyword.skript.addon.event.skrambled"
       }
       {
         match: "\\b(faction|party|rel|skill)\\b"
         name: "keyword.skript.addon.type.skrambled"
       }
       {
+        match: "\\b((un)?claim land|create a faction|with leader|disband|invite|(admin[chat| chat]|party))\\b"
+        name: "keyword.skript.addon.effect.skrambled"
+      }
+      {
+        match: "\\b(description of|home|list of (all )?(factions|players|allies|enemies)|(all )?players list|(all )?faction (all|enem)ies list|factions list|all factions|list of (all )?truces|(all )?faction truces list|motd|power(level| level)|power(boost)?|faction's power(boost)?|relation(ship )?(status )?between (the faction)?|(and|with)( the faction)?|role of|mcmmo)\\b"
+        name: "keyword.skript.addon.expression.skrambled"
+      }
+      {
+        match: "\\b(not )?using (party|admin)(chat| chat)\\b"
+        name: "keyword.skript.addon.condition.skrambled"
+      }
+
+      {
+        match: "\\b(on (((un)?store|chest (add|remove))|vote|hologram (touch|click|pickup)|(crackshot|weapon|gun) (damage|shoot)|(npc|Citizen) (right|left) click|crafting click)\\b"
+        name: "keyword.skript.addon.event.skrayfall"
+      }
+      {
         match: "effectlibparticle(s)?"
         name: "keyword.skript.addon.type.skrayfall"
+      }
+      {
+        match: "\\b(group score (with id)?|(spawn|create|apply) (a|the|an) (animated ball|atom|bleed|circle) (effect|formation) (at|on|for|to)|bind hologram|change citizen|skin|(invulnerable|vulnerable)|(set|make) citizen(s)?|max health|nametag (invisible|visible)|give npc|the look close trait|create (a )?citizen named|create bound holo object|(set|create) group id (based )?score|create hologram|create|display|show|create (client side )?holo object|create interactive (client side )?holo object|(delete|remove) score(s)? (with )?group id|(delete|remove) score (with )?id|delete holo object|delete score|(delete|stop) (effect|formation)|(edit|update) score (with)?|edit holo object|and set interactivity|(equip|give|m(ov|ak)e|despawn) citizen|(create|strike) (fake|ultra|no sound) fake lightning|(spawn|create|apply) (a|the|an) line (effect|formation)|(attack|fight)|(say|communicate)|set rf max(imum)? h(ealth|p)|(place|set|spawn) mine|play|tab name|set citizen|protect|(remove|destroy) citizen|respawn citizen|(sub)?title|fade (in|out)|action bar|(set|create) id (based )?score|set name of sidebar|set score|set tab header|set tab(list )?score|offset by x, y (and|,) z|(spawn|create|apply) (a|the|an) text (effect|formation) with text|(spawn|create|apply) (a|the|an) tornado (effect|formation)|(edit|update) score (with)?(in )?group (id)?|(spawn|create|apply) (a|the|an) wave (effect|formation)|with particle(s)?|(wipe|erase) below score(s)?|(wipe|erase|delete)|score from tab(list)?)\\b"
+        name: "keyword.skript.addon.effect.skrayfall"
+      }
+      {
+        match: "\\b(citizen id|owner of npc|(gun|crackshot weapon)|group score (value|number|name|title) (of|from) id|last created citizen( id)?|name of citizen|no nbt|shiny|score (value|number|name|title))\\b"
+        name: "keyword.skript.addon.expression.skrayfall"
+      }
+      {
+        match: "\\b(npc|citizen|side( )?bar)\\b"
+        name: "keyword.skript.addon.condition.skrayfall"
       }
 
       {
