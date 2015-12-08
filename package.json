@@ -1,7 +1,7 @@
 {
   "name": "SkriptDark-Language",
   "main": "./lib/atom-Skript-dark",
-  "version": "0.90.0",
+  "version": "0.95.0",
   "description": "SkriptDark-Language, Easier coding!",
   "keywords": [],
   "activationCommands": {
