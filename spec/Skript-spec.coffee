@@ -1,40 +1,40 @@
-atomSkriptDark = require '../lib/atom-skript-dark'
+Skript = require '../lib/Skript'
 
 # Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 #
 # To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 # or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe "atomSkriptDark", ->
+describe "Skript", ->
   [workspaceElement, activationPromise] = []
 
   beforeEach ->
     workspaceElement = atom.views.getView(atom.workspace)
-    activationPromise = atom.packages.activatePackage('atom-skript-dark')
+    activationPromise = atom.packages.activatePackage('Skript')
 
-  describe "when the atom-skript-dark:toggle event is triggered", ->
+  describe "when the Skript:toggle event is triggered", ->
     it "hides and shows the modal panel", ->
       # Before the activation event the view is not on the DOM, and no panel
       # has been created
-      expect(workspaceElement.querySelector('.atom-skript-dark')).not.toExist()
+      expect(workspaceElement.querySelector('.Skript')).not.toExist()
 
       # This is an activation event, triggering it will cause the package to be
       # activated.
-      atom.commands.dispatch workspaceElement, 'atom-skript-dark:toggle'
+      atom.commands.dispatch workspaceElement, 'Skript:toggle'
 
       waitsForPromise ->
         activationPromise
 
       runs ->
-        expect(workspaceElement.querySelector('.atom-skript-dark')).toExist()
+        expect(workspaceElement.querySelector('.Skript')).toExist()
 
-        atomSkriptDarkElement = workspaceElement.querySelector('.atom-skript-dark')
-        expect(atomSkriptDarkElement).toExist()
+        SkriptElement = workspaceElement.querySelector('.Skript')
+        expect(SkriptElement).toExist()
 
-        atomSkriptDarkPanel = atom.workspace.panelForItem(atomSkriptDarkElement)
-        expect(atomSkriptDarkPanel.isVisible()).toBe true
-        atom.commands.dispatch workspaceElement, 'atom-skript-dark:toggle'
-        expect(atomSkriptDarkPanel.isVisible()).toBe false
+        SkriptPanel = atom.workspace.panelForItem(SkriptElement)
+        expect(SkriptPanel.isVisible()).toBe true
+        atom.commands.dispatch workspaceElement, 'Skript:toggle'
+        expect(SkriptPanel.isVisible()).toBe false
 
     it "hides and shows the view", ->
       # This test shows you an integration test testing at the view level.
@@ -45,18 +45,18 @@ describe "atomSkriptDark", ->
       # workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement)
 
-      expect(workspaceElement.querySelector('.atom-skript-dark')).not.toExist()
+      expect(workspaceElement.querySelector('.Skript')).not.toExist()
 
       # This is an activation event, triggering it causes the package to be
       # activated.
-      atom.commands.dispatch workspaceElement, 'atom-skript-dark:toggle'
+      atom.commands.dispatch workspaceElement, 'Skript:toggle'
 
       waitsForPromise ->
         activationPromise
 
       runs ->
         # Now we can test for view visibility
-        atomSkriptDarkElement = workspaceElement.querySelector('.atom-skript-dark')
-        expect(atomSkriptDarkElement).toBeVisible()
-        atom.commands.dispatch workspaceElement, 'atom-skript-dark:toggle'
-        expect(atomSkriptDarkElement).not.toBeVisible()
+        SkriptElement = workspaceElement.querySelector('.Skript')
+        expect(SkriptElement).toBeVisible()
+        atom.commands.dispatch workspaceElement, 'Skript:toggle'
+        expect(SkriptElement).not.toBeVisible()

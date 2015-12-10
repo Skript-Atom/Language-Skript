@@ -1,11 +1,11 @@
 {
-  "name": "SkriptDark-Language",
-  "main": "./lib/atom-Skript-dark",
+  "name": "Language-Skript",
+  "main": "./lib/Skript",
   "version": "0.96.0",
-  "description": "SkriptDark-Language, Easier coding!",
+  "description": "Skript-Language, Easier coding!",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "atom-skript-dark:toggle"
+    "atom-workspace": "Skript:toggle"
   },
   "repository": "https://github.com/Skript-Atom/Language-Skript",
   "license": "GNU General Public License v3.0",
