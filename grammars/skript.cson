@@ -318,7 +318,7 @@ repository:
       }
 
       {
-        match: "\\b(HOLDERrs1)\\b"
+        match: "\\b(on ((villager )?gui trade|item break|fishing state|item (despawn|despawning)|(named )?sound (trigger|play)|player hear sound|statistics (increment|increase)|vehicle (steer|button press)))\\b"
         name: "keyword.addon.event.randomsk.skript"
       }
       {
@@ -334,7 +334,7 @@ repository:
         name: "keyword.addon.expression.randomsk.skript"
       }
       {
-        match: "\\b(HOLDERrs4)\\b"
+        match: "\\b((is|are)(n't| not) occupied|(has|have) (fixed )?metadata( value)?|doesn't have (fixed )?metadata( value)?|(has|have|doesn't have) (offers|trades)|(has|have|doesn't have) second item|(has|have|doesn't have) (offer|trade)( number)?|is( not)? in sleep(ing )?animation|is not on ground)\\b"
         name: "keyword.addon.condition.randomsk.skript"
       }
 
@@ -472,5 +472,21 @@ repository:
       {
         match: "\\b((is|is(n't| not)?) (spectating|being spectated))\\b"
         name: "keyword.addon.condition.spectatehook.skript"
+      }
+      {
+        match: "\\b(on (download|(player )?edit book|jump(ing)?|prepare item craft|(server )?(list )?ping))\\b"
+        name: "keyword.addon.event.wildskript.skript"
+      }
+      {
+        match: "\\b(HOLDWK2)\\b"
+        name: "keyword.addon.effect.wildskript.skript"
+      }
+      {
+        match: "\\b((text|percent)|bossbar|(configuration )?section(s)?|result of connect|content of file|(allow|access to) end|(all )?file(s)?|ip|max players|(allow|access to) nether|online mode|random (char|color)|server('s)? (ip|name|port)|(clicked )?slot|(single )?value list|view distance|wildskript version|version of wildskript)\\b"
+        name: "keyword.addon.expression.wildskript.skript"
+      }
+      {
+        match: "\\b((file|folder)( in)?|(is not|isn't|is) tamed)\\b"
+        name: "keyword.addon.condition.wildskript.skript"
       }
     ]
