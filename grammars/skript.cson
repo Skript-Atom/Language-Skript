@@ -326,11 +326,11 @@ repository:
         name: "keyword.addon.type.randomsk.skript"
       }
       {
-        match: "\\b(HOLDERrs2)\\b"
+        match: "\\b((animation )?(on|to)show (stacking )?block break (animation )?stage|change (yaw|pitch)|(appear|look) (open|closed)|play chest (open|closed) animation (at|on)|change (sky|environment)|force respawn|force (the)?|to respawn|register furnace recipe with (result)?|for (source)?|with data|reset (all )?recipes|sleep at|open (villager )?trade (gui )?named|wake up)\\b"
         name: "keyword.addon.effect.randomsk.skript"
       }
       {
-        match: "\\b(HOLDERrs3)\\b"
+        match: "\\b(age|enchantment level|(catch|caught entity)|(chat )?recipients|direction of|(monster|animal|water((-| ))?animals|ambient) spawn limit(s)?|final damage|fishing state|(fishing )?(hook|lure)|(first|second|third) item|(item|items) (within|inside)|vector|max uses|(maximum )?damage delay|(fixed )?metadata( value)?|name visibility|(new )?vector (from)?|(highest to lowest|lowest to highest)?( with (output|format))?|pick up delay|with (entity|material)|value of|slime size|(match(es|ing)|compared to)|(case(-)?sensitive)?|(current )?system (millis|nanos)|time lived|unix time|version|(viewers|observers)|(trades|offers))\\b"
         name: "keyword.addon.expression.randomsk.skript"
       }
       {
@@ -473,12 +473,30 @@ repository:
         match: "\\b((is|is(n't| not)?) (spectating|being spectated))\\b"
         name: "keyword.addon.condition.spectatehook.skript"
       }
+
+      {
+        match: "\\b(on (achievement( get)?|brew|enchant prepare|health regen|inventory open|leash|note play|potion splash|sheep wool regrow|slime split|unleash))\\b"
+        name: "keyword.addon.event.umbaska.skript"
+      }
+      {
+        match: "\\b(HOLDUM1)\\b"
+        name: "keyword.addon.effect.umbaska.skript"
+      }
+      {
+        match: "\\b(HOLDUM2)\\b"
+        name: "keyword.addon.expression.umbaska.skript"
+      }
+      {
+        match: "\\b(is(n't| not)? (enem|all)y with|is(n't| not)? neutral)\\b"
+        name: "keyword.addon.condition.umbaska.skript"
+      }
+
       {
         match: "\\b(on (download|(player )?edit book|jump(ing)?|prepare item craft|(server )?(list )?ping))\\b"
         name: "keyword.addon.event.wildskript.skript"
       }
       {
-        match: "\\b(HOLDWK2)\\b"
+        match: "\\b(as op|remove bossbar|bungeecord connect|create (file|folder)|d(elete|f) (file|folder)|download (from)?|open ((virtual|fake) )?(furnace|anvil) (to|for) (the)?|(set|change) slot|hand( bar)?|display hologram|change server icon to image from (file|url)|(prefix|suffix) as|enable metrics for|set motd|(en|dis)able plugin|replace last|load scripts from folder|load script from( file|url)?|((yaml|yml) )?(file)?|(set|edit) tag|(c(reate)?|g(enerate)?) l(ine)?|w(rite )?f(ile)?)\\b"
         name: "keyword.addon.effect.wildskript.skript"
       }
       {
