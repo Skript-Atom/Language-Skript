@@ -1,4 +1,4 @@
-'scopeName': 'source.skript'
+'scopeName': 'source'
 'fileTypes': [
   'sk'
 ]
@@ -26,84 +26,84 @@ repository:
       {
         begin: '"'
         end: '("|\\n)'
-        name: "string.skript.quoted.double"
+        name: "string.quoted.double.skript"
         patterns: [
           {
             match: "\\\\(x\\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]|37[0-7]?|[4-7][0-7]?|.)"
-            name: "constant.skript.character.escape"
+            name: "constant.character.escape.skript"
           }
           {
             match: "(&|§)0"
-            name: "keyword.skript.type.mccolor.black"
+            name: "keyword.type.mccolor.black.skript"
           }
           {
             match: "(&|§)1"
-            name: "keyword.skript.type.mccolor.dark_blue"
+            name: "keyword.type.mccolor.dark_blue.skript"
           }
           {
             match: "(&|§)2"
-            name: "keyword.skript.type.mccolor.dark_green"
+            name: "keyword.type.mccolor.dark_green.skript"
           }
           {
             match: "(&|§)3"
-            name: "keyword.skript.type.mccolor.dark_aqua"
+            name: "keyword.type.mccolor.dark_aqua.skript"
           }
           {
             match: "(&|§)4"
-            name: "keyword.skript.type.mccolor.dark_red"
+            name: "keyword.type.mccolor.dark_red.skript"
           }
           {
             match: "(&|§)5"
-            name: "keyword.skript.type.mccolor.dark_purple"
+            name: "keyword.type.mccolor.dark_purple.skript"
           }
           {
             match: "(&|§)6"
-            name: "keyword.skript.type.mccolor.gold"
+            name: "keyword.type.mccolor.gold.skript"
           }
           {
             match: "(&|§)7"
-            name: "keyword.skript.type.mccolor.gray"
+            name: "keyword.type.mccolor.gray.skript"
           }
           {
             match: "(&|§)8"
-            name: "keyword.skript.type.mccolor.dark_gray"
+            name: "keyword.type.mccolor.dark_gray.skript"
           }
           {
             match: "(&|§)9"
-            name: "keyword.skript.type.mccolor.blue"
+            name: "keyword.type.mccolor.blue.skript"
           }
           {
             match: "(&|§)a"
-            name: "keyword.skript.type.mccolor.green"
+            name: "keyword.type.mccolor.green.skript"
           }
           {
             match: "(&|§)b"
-            name: "keyword.skript.type.mccolor.aqua"
+            name: "keyword.type.mccolor.aqua.skript"
           }
           {
             match: "(&|§)c"
-            name: "keyword.skript.type.mccolor.red"
+            name: "keyword.type.mccolor.red.skript"
           }
           {
             match: "(&|§)d"
-            name: "keyword.skript.type.mccolor.light_purple"
+            name: "keyword.type.mccolor.light_purple.skript"
           }
           {
             match: "(&|§)e"
-            name: "keyword.skript.type.mccolor.yellow"
+            name: "keyword.type.mccolor.yellow.skript"
           }
           {
             match: "(&|§)f"
-            name: "keyword.skript.type.mccolor.white"
+            name: "keyword.type.mccolor.white.skript"
           }
           {
             begin: '%'
             end: '(%|"|\\n)'
-            name: "variable.skript.exprwrap"
+            name: "variable.exprwrap.skript"
           }
           {
             match: "{@[a-zA-Z0-9]+}"
-            name: "variable.skript.type.option"
+            name: "variable.type.option"
           }
         ]
       }
@@ -113,21 +113,21 @@ repository:
       {
         begin: '%'
         end: '(%|"|\\n)'
-        name: "variable.skript.exprwrap"
+        name: "variable.exprwrap.skript"
       }
       {
         match: "{@[a-zA-Z0-9]+}"
-        name: "variable.skript.type.option"
+        name: "variable.type.option.skript"
       }
       {
         begin: '{_'
         end: '(}|\\n)'
-        name: "variable.skript.temp"
+        name: "variable.temp.skript"
       }
       {
         begin: '{'
         end: '(}|\\n)'
-        name: "variable.skript.normal"
+        name: "variable.normal.skript"
       }
     ]
   comments:
@@ -153,352 +153,324 @@ repository:
     patterns: [
       {
         match: "\\b([0-9]+)\\b"
-        name: "constant.skript.numeric"
+        name: "constant.numeric.skript"
       }
     ]
   keywords:
     patterns: [
       {
         match: "\\b(tick|(milli)?second|minute|hour|day|week|month|year|now)(s)?\\b"
-        name: "keyword.skript.type.timespan"
+        name: "keyword.type.timespan.skript"
       }
       {
         match: "\\b(trigger|permission: .+|description: .+|aliases: .+|function |command \/[a-zA-Z]+|(s(k|c)ript )?options)\\b"
-        name: "keyword.skript.type.cmd"
+        name: "keyword.type.cmd.skript"
       }
       {
         match: "\\b((north |south )?(north|east|south|west)|(back|down)wards|top|upper|front|horizontal|behind|direction|towards|forward(s)?|above|over|up|down|below|under|beneath)\\b"
-        name: "keyword.skript.type.direction"
+        name: "keyword.type.direction.skript"
       }
       {
         match: "loop-(block|item|index|value|num(ber)?|player|entity|integer|attacker|victim|shooter|world|chunk|projectile|button)('s|s|-)?"
-        name: "keyword.skript.type.loop"
+        name: "keyword.type.loop.skript"
       }
       {
         match: "event-(block|item|index|value|num(ber)?|player|entity|integer|attacker|victim|shooter|world|chunk|projectile|button)('s|s)?"
-        name: "keyword.skript.type.event"
+        name: "keyword.type.event.skript"
       }
       {
         match: "\\b((fire |blast |projectile )?protection|feather falling|respiration|aqua affinity|thorns|depth strider|frost walker|sharpness|smite|bane of arthropods|knockback|fire aspect|looting|efficiency|silk touch|unbreaking|fortune|power|punch|flame|infinity|luck of the sea|lure|mending)\\b"
-        name: "keyword.skript.type.enchant"
+        name: "keyword.type.enchant.skript"
       }
       {
         match: "\\b(night vision|invisibility|leaping|fire resistance|water breathing|harming|poison|regeneration|strength|(swift|weak|slow)ness|(bad )?luck|jump boost|levitat(e|ion))\\b"
-        name: "keyword.skript.type.potion"
+        name: "keyword.type.potion.skript"
       }
       {
         match: "\\b((dark )?(blue|green|aqua|red|gray)|(dark|light) purple|gold|black|yellow|white)\\b"
-        name: "keyword.skript.type.color"
+        name: "keyword.type.color.skript"
       }
       {
         match: "\\b(if|else|loop)\\b"
-        name: "keyword.skript.else"
+        name: "keyword.else.skript"
       }
       {
         begin: '%'
         end: '(%|"|\\n)'
-        name: "variable.skript.exprwrap"
+        name: "variable.exprwrap.skript"
       }
       {
         match: "\\b((play|attack|shoot|send|damag|serv)er|victim|entity|executor|console)('s|s)?\\b"
-        name: "keyword.skript.type.player"
+        name: "keyword.type.player.skript"
       }
       {
         match: "\\b(bat|chicken|mooshroom|pig|squid|sheep|(cave )?spider|ender(man|mite)|blaze|creeper|(elder )?guardian|ghast|magma cube|zombie( pigman)?|silverfish|slime|(chicken|spider) jockey|witch|(wither )?skeleton|(zombie )?villager|donkey|mule|ocelot|wolf|(iron|snow) golem|ender( )?dragon|wither|shulker|giant|(killer )?rabbit|(zombie |skeleton )?horse)('s|s)?\\b"
-        name: "keyword.skript.type.entity"
-      }
-      {
-        match: "\\b(trigger|permission: .+|description: .+|aliases: .+|function |(s(k|c)ript )?options)\\b"
-        name: "keyword.skript.type.cmd"
-      }
-      {
-        match: "\\b((north |south )?(north|east|south|west)|(back|down)wards|top|upper|front|horizontal|behind|direction|towards|forward(s)?|above|over|up|down|below|under|beneath)\\b"
-        name: "keyword.skript.type.direction"
-      }
-      {
-        match: "loop-(block|item|index|value|num(ber)?|player|entity|integer|attacker|victim|shooter|world|chunk|projectile|button)('s|s|-)?"
-        name: "keyword.skript.type.loop"
-      }
-      {
-        match: "event-(block|item|index|value|num(ber)?|player|entity|integer|attacker|victim|shooter|world|chunk|projectile|button)('s|s)?"
-        name: "keyword.skript.type.event"
-      }
-      {
-        match: "\\b((fire |blast |projectile )?protection|feather falling|respiration|aqua affinity|thorns|depth strider|frost walker|sharpness|smite|bane of arthropods|knockback|fire aspect|looting|efficiency|silk touch|unbreaking|fortune|power|punch|flame|infinity|luck of the sea|lure|mending)\\b"
-        name: "keyword.skript.type.enchant"
-      }
-      {
-        match: "\\b(night vision|invisibility|leaping|fire resistance|water breathing|harming|poison|regeneration|strength|(swift|weak|slow)ness|(bad )?luck|jump boost|levitat(e|ion))\\b"
-        name: "keyword.skript.type.potion"
-      }
-      {
-        match: "\\b((dark )?(blue|green|aqua|red|gray)|(dark|light) purple|gold|black|yellow|white)\\b"
-        name: "keyword.skript.type.color"
+        name: "keyword.type.entity.skript"
       }
 
       {
         match: "(&|§)0"
-        name: "keyword.skript.type.mccolor.black"
+        name: "keyword.type.mccolor.black.skript"
       }
       {
         match: "(&|§)1"
-        name: "keyword.skript.type.mccolor.dark_blue"
+        name: "keyword.type.mccolor.dark_blue.skript"
       }
       {
         match: "(&|§)2"
-        name: "keyword.skript.type.mccolor.dark_green"
+        name: "keyword.type.mccolor.dark_green.skript"
       }
       {
         match: "(&|§)3"
-        name: "keyword.skript.type.mccolor.dark_aqua"
+        name: "keyword.type.mccolor.dark_aqua.skript"
       }
       {
         match: "(&|§)4"
-        name: "keyword.skript.type.mccolor.dark_red"
+        name: "keyword.type.mccolor.dark_red.skript"
       }
       {
         match: "(&|§)5"
-        name: "keyword.skript.type.mccolor.dark_purple"
+        name: "keyword.type.mccolor.dark_purple.skript"
       }
       {
         match: "(&|§)6"
-        name: "keyword.skript.type.mccolor.gold"
+        name: "keyword.type.mccolor.gold.skript"
       }
       {
         match: "(&|§)7"
-        name: "keyword.skript.type.mccolor.gray"
+        name: "keyword.type.mccolor.gray.skript"
       }
       {
         match: "(&|§)8"
-        name: "keyword.skript.type.mccolor.dark_gray"
+        name: "keyword.type.mccolor.dark_gray.skript"
       }
       {
         match: "(&|§)9"
-        name: "keyword.skript.type.mccolor.blue"
+        name: "keyword.type.mccolor.blue.skript"
       }
       {
         match: "(&|§)a"
-        name: "keyword.skript.type.mccolor.green"
+        name: "keyword.type.mccolor.green.skript"
       }
       {
         match: "(&|§)b"
-        name: "keyword.skript.type.mccolor.aqua"
+        name: "keyword.type.mccolor.aqua.skript"
       }
       {
         match: "(&|§)c"
-        name: "keyword.skript.type.mccolor.red"
+        name: "keyword.type.mccolor.red.skript"
       }
       {
         match: "(&|§)d"
-        name: "keyword.skript.type.mccolor.light_purple"
+        name: "keyword.type.mccolor.light_purple.skript"
       }
       {
         match: "(&|§)e"
-        name: "keyword.skript.type.mccolor.yellow"
+        name: "keyword.type.mccolor.yellow.skript"
       }
       {
         match: "(&|§)f"
-        name: "keyword.skript.type.mccolor.white"
+        name: "keyword.type.mccolor.white.skript"
       }
 
       {
         match: "\\b(on ((trip|(step(ping)?))|projectile hit|(quit(ting)?|disconnect(ing)?|log( )?out|logging out)|redstone( current)?( chang(e|ing))|region( leave| exit| enter)|(player )?respawn(ing)?|(script )?(load|init|enable|unload|disable)|(projectile )?shoot|sign( chang(e|ing)| edit)(ing)?|(player )?(chang(e)?|edit)(ing)?|(server|skript) (start|load|enable|stop|unload|disable)|(ore)? smelt(ing)?|(smelt|spawn)(ing )?|(world )?spawn change|spread(ing)?|(player )?toggl(e|ing) (sprint|sneak)|(player )?(sprint|sneak) toggl(e|ing)|(entity )?tam(e|ing)|(entity )?(un(-)?)?target|(player )?teleport(ing)?|throw(ing )?|(player )?egg throw|(player(''s)? )?(tool|item held|held item) chang(e|ing)|vehicle (create|damage|destory|enter|exit)|(creat(e|ing|ion)|damag(e|ing)|destr(oy(ing)?|uction)|(enter|exit)(ing)?) (a )?vehicle|weather change|world( (un)?load(ing)?| sav(e|ing)| init)|zombie break(ing)?|(block )?fad(e|ing)|first (join|login)|(player )?fish(ing)?|(block )?flow(ing)?|block mov(e|ing)|(block )?form(ing)?|fuel burn(ing)?|game( )?mode change (to (survival|adventure|creative|spectator))?|grow (of (oak|spruce|birch|jungle|dark oak|acacia))?|heal(ing)?|(food|hunger) (level|met(er|re)|bar) chang(e|ing)|(block )?ignit(e|ion)|(player )?tool break(ing)?|(player )?break(ing)? ((a|the) )?tool|item spawn(ing)?|(player )?(login|logging in|join(ing)?|kick|being kicked)|leaves decay(ing)?|(player )?level( change)?|lightning( strike)?|(step|walk)(ing)? (on|over)|(block )?physics|(player )?(pick( )?up|picking up)|pig( )?zap|piston( extend| retract)(ing)?|(block )?(plac(e|ing)|build(ing)?)|(player )?portal|portal (create|enter)|entering( a)? portal|bucket (empty|fill)(ing)?|(player )?(empty|fill)(ing)?( a)? bucket|bucket fill(ing)?|(block )?burn(ing)?|(block )?can build check|chat|chunk (generat|populat)(e|ing)|chunk (un)?load(ing)?|((right|left)(( |-))?)?(mouse(( |-))?)?click(ing)?|combust(ing)?|(player )?connect(ing)?|(player )?((eat|drink)(ing)?|consum(e|ing))|(player )?craft(ing)?|creeper power|damag(e|ing)|death|dispens(e|ing)|(player )?drop(ing)?|enderman (place|pickup)|sheep eat|(e)?xp(erience)? (orb)? spawn|spawn of (a(n)?)? (e)?xp(erience)? (orb)?|explo(d(e|ing)|sion)( prime)?|bed (enter(ing)?|leav(e|ing))|(player)? (enter(ing)?|leav(e|ing)) (a)? bed|block damage|command|(block)? (min(e|ing))|every|at))\\b"
-        name: "keyword.skript.addon.event.main"
+        name: "keyword.addon.event.main.skript"
       }
       {
         match: "\\b(biome(s)?|block(s)?|boolean(s)?|chunk(s)?|colo(u)?r(s)?|(command(s)?)?( )?(sender|executor)(s)?|damage cause(s)?|date(s)?|direction(s)?|enchantment(s)?|enchant(ing|ment) type(s)?|entit(y|ies)|entity( )?type(s)?|game( )?mode(s)?|inventor(y|ies)|item material|item( )?type(s)?|items materials|meter(s)?|living( )?entit(y|ies)|location(s)?|num(ber)?(s)?|integer(s)?|offline( )?player(s)?|potion(( )?effect)?(( )?type)?(s)?|projectile(s)?|(inventory )?slot(s)?|sound(s)?|(text|string)(s)?|time(s)?|time( )?period(s)?|duration(s)?|time( )?span(s)?|tree(( )?type)?(s)?|type(s)?|(visual|particle) effect(s)?|weather( )?type(s)?|weather( condition)?(s)?|world(s)?)\\b"
-        name: "keyword.skript.addon.type.main"
+        name: "keyword.addon.type.main.skript"
       }
       {
         match: "\\b((un)?ban|(by reason of|because( of)?|on account of|due to)|ip|IP(-| )ban|(IP(-| )unban|un(-)?IP(-)?ban)|broadcast|(un)?cancel (the)? event|(add|give)|increase|set|remove (all|every)|(remove|subtract|reduce)|(delete|clear|reset)|(dye|colo(u)?r|paint)|(let|make)|execute|damage|heal|hearts|repair|(wait|halt)|drop|(dis)?enchant|equip|make|wear|(exit|stop)( trigger| (section|loop|conditional)(s)?)? |(create |make )?(a(n)? )?(safe |fake )?explosion|(create |make )?(an )?explosion( )?effect |(ignite|set fire to)|(force|strength|power|speed|velocity)|(set|light)|on fire|extinguish|kick|kill|strike lightning( effect)?|log|(message|send( message)?)|(de(-)?)op|(open|show) (crafting (table)?|workbench)( view|window|inventory)?|op|close( the)? inventory( view)?|close|inventory|(view)?(play|show)|(poison|cure|unpoison)|apply( potion)?|(push|thrust)|(enable|disable) pvp|replace( all|every)?|(un(-)?)?shear|shoot|(make|let)|spawn|teleport|(close|turn off|de(-)?activate)|(toggle|switch) (the)? state|(open|turn on|activate)|(grow|create|generate) (oak|spruce|birch|jungle|dark oak|acacia) (tree)?|(make|let|force)|(ride|mount)|(dismount|(dismount|leave) (from|of))? ((any|the(ir)?|his|her))? vehicle(s)?|((eject|dismount)( any| the))? passenger(s)?)\\b"
-        name: "keyword.skript.addon.effect.main"
+        name: "keyword.addon.effect.main.skript"
       }
       {
         match: "\\b(((craft)?bukkit|minecraft|skript)( |-)version|altitude(s)?|command|(doesn't have|has) permission|speed|volume|amount|number|size|arg(ument)?(s)?|(boot|shoe|leg(ging)?|chestplate|helm(et)?)(s)? (slot)?|bed(s)? (location(s)?)?|biome|(the )?(event-)?block|blocks (in radius|around)?|in radius|blocks|between|chunk(s)?|clicked|(non( |-)?|un( |-))??colo(u)?r(s|ed)?|(full|complete|whole) command|label|compass target|(x|y|z)(-| )(coord(inate)?|pos(ition)?|loc(ation)?)(s)?|damage( cause| type)?|((data|damage)(s)? (value(s)?)?|durabilit(y|ies))|difference( between)?|distance between|drops|random element( out)?|level|enchant(ment)?|ender( )?chest(s)?|(within|(with)?in radius)|around|entities of type(s)?|((spawned|dropped) )?(e)?xp(erience )?(orb(s)?)?|(horizontal )?facing|(food|hunger)(( )?(level|met(er|re)|bar) )?|(former|past|old|future|to-be|new) (state )?|before (the event)?|(ore|fuel|result)(s )?(slot(s)?)?|game( )?mode|md5( |-)hash(ed|(( |-))?code )?|(head|eye(s)?) (location(s)?)?|health|id(s)?|index|inventor(y|ies)|IP(s)?(( |-)address(es)?)?|item|block(s|( )?types)|item(s|( )?types)|(blocks|items) of type(s )?|(inventor(y|ies))|concat(enate)?|join|(with|by|using|at) delimiter|split|(last(ly)? )?(spawned|shot)|length|level( progress)?|((sky|sun|block)( )?)?light( )?level|(location|position)|line|lore|max(imum)? health|stack(( )?size )?|max(imum )?stack(( )?size)?|me my(self)?|(chat|join|log( )?(in|out)?|quit|leave|kick|death|)( |-)message|money|balance|account|(the )?(player|tab)( )?list name(s )?|(display|nick|chat)( )?name(s )?|name(s)?|(named|with name(s)?)|(integers) (between|from)|parsed as|(last )?(parse )?error|passenger(s)?|(prefix|suffix)|random|out|random (integer|number) (from|between)|owner(s )?|region(s )?|remaining air|(floor|round)|ceil(ing)?|script(('s )?name)?|line|skull|spawn(s )?((point|location)(s)?)?|(walk(ing)?|fl(y(ing)?|ight))(( |-)?)speed|(part|sub( )?(text|string))|(between|from)|ind(ex|ices)|character(s)?|uuid|time|tool|held item|weapon|type|vehicle|yaw|pitch)\\b"
-        name: "keyword.skript.addon.expression.main"
+        name: "keyword.addon.expression.main.skript"
       }
 
       {
         match: "\\b(is( not)? (logged|registered))\\b"
-        name: "keyword.skript.addon.event.authmeskaddon"
+        name: "keyword.addon.event.authmeskaddon.skript"
       }
 
       {
         match: "\\b(on crop (trampl(e|ing)|break(ing)?|stomp(ing)?|step[ping] on|destroy(ing)?|grow))\\b"
-        name: "keyword.skript.addon.event.extrassk"
+        name: "keyword.addon.event.extrassk.skript"
       }
       {
         match: "\\b(play (the )?(sound)?|spawn (a(n)? )?((unique|special))?|(styled|marked|with pattern(s)?))\\b"
-        name: "keyword.skript.addon.effect.extrassk"
+        name: "keyword.addon.effect.extrassk.skript"
       }
       {
         match: "\\b(active potion effect(s)?auto(matic)? despawn state|(wolf )?collar (color)?|(letters|characters)|(changed|converted)|((upp|low)ercase|(un)?caps)|(shown|displayed) item|(event(-| ))?enchant(ed|ing) item (e)?xp(erience)? cost|(e)?xp(erience)? cost of enchant(ing|ment)|(restore(d)?|heal(ed)?|regenerat(ed)?) (amount|number|health)|(invulnerability (time)?|no damage (time)?)|(shown|displayed) rotation|pickup state|saturation (level)?|(number (of times)? (that)?|count of)( case(-| )sensitive)?)\\b"
-        name: "keyword.skript.addon.expression.extrassk"
+        name: "keyword.addon.expression.extrassk.skript"
       }
 
       {
         match: "\\b((add|remove) (member|owner)|(crea|dele)te wg region|paste schematic|save)\\b"
-        name: "keyword.skript.addon.effect.piratesk"
+        name: "keyword.addon.effect.piratesk.skript"
       }
       {
         match: "\\b(pos(it(ion)?)?( )?(1|2)|wg region)\\b"
-        name: "keyword.skript.addon.expression.piratesk"
+        name: "keyword.addon.expression.piratesk.skript"
       }
 
       {
         match: "\\b(HOLDERrs1)\\b"
-        name: "keyword.skript.addon.event.randomsk"
+        name: "keyword.addon.event.randomsk.skript"
       }
       {
         match: "\\b(statistic)\\b"
-        name: "keyword.skript.addon.type.randomsk"
+        name: "keyword.addon.type.randomsk.skript"
       }
       {
         match: "\\b(HOLDERrs2)\\b"
-        name: "keyword.skript.addon.effect.randomsk"
+        name: "keyword.addon.effect.randomsk.skript"
       }
       {
         match: "\\b(HOLDERrs3)\\b"
-        name: "keyword.skript.addon.expression.randomsk"
+        name: "keyword.addon.expression.randomsk.skript"
       }
       {
         match: "\\b(HOLDERrs4)\\b"
-        name: "keyword.skript.addon.condition.randomsk"
+        name: "keyword.addon.condition.randomsk.skript"
       }
 
       {
         match: "\\b(on plot (enter|leave|rate))\\b"
-        name: "keyword.skript.addon.event.skaction"
+        name: "keyword.addon.event.skaction.skript"
       }
       {
         match: "\\b(send bossbar|with percent|(un)?deny|open (a )?dispenser( named)?|group of|member|trusted)\\b"
-        name: "keyword.skript.addon.effect.skaction"
+        name: "keyword.addon.effect.skaction.skript"
       }
       {
         match: "\\b(prefix|suffix|group|plots|rated|server motd)\\b"
-        name: "keyword.skript.addon.expression.skaction"
+        name: "keyword.addon.expression.skaction.skript"
       }
       {
         match: "\\b(motd equals)\\b"
-        name: "keyword.skript.addon.condition.skaction"
+        name: "keyword.addon.condition.skaction.skript"
       }
 
       {
         match: "\\b(on (sheep dye|tab complet(er|ion)|vehicle (entity collide|collide with entity)|horse jump|inventory cl(ick|ose)|any move|block land|(book )?edit|enchant( item)?|(player )?toggl(e|ing) (flight|fly)|(player )?(flight|fly) toggl(e|ing)))\\b"
-        name: "keyword.skript.addon.event.skquery"
+        name: "keyword.addon.event.skquery.skript"
       }
       {
         match: "\\b(displayslot(s)?|fireworktype(s)?|lambda|markup|particletypes(s)?)\\b"
-        name: "keyword.skript.addon.type.skquery"
+        name: "keyword.addon.type.skquery.skript"
       }
       {
         match: "\\b(HOLDERsq1)\\b"
-        name: "keyword.skript.addon.effect.skquery"
+        name: "keyword.addon.effect.skquery.skript"
       }
       {
         match: "\\b(HOLDERsq2)\\b"
-        name: "keyword.skript.addon.expression.skquery"
+        name: "keyword.addon.expression.skquery.skript"
       }
       {
         match: "\\b(isn't|doesn't|(has|does(n't| not) have)|is( not)?( a)? block|is( not)? divisible by|is( not)? prime|is (not )?within)\\b"
-        name: "keyword.skript.addon.condition.skquery"
+        name: "keyword.addon.condition.skquery.skript"
       }
 
       {
         match: "\\b(on faction ((create|disband)|(name|description) change))\\b"
-        name: "keyword.skript.addon.event.skrambled"
+        name: "keyword.addon.event.skrambled.skript"
       }
       {
         match: "\\b(faction|party|rel|skill)\\b"
-        name: "keyword.skript.addon.type.skrambled"
+        name: "keyword.addon.type.skrambled.skript"
       }
       {
         match: "\\b((un)?claim land|create a faction|with leader|disband|invite|(admin[chat| chat]|party))\\b"
-        name: "keyword.skript.addon.effect.skrambled"
+        name: "keyword.addon.effect.skrambled.skript"
       }
       {
         match: "\\b(description of|home|list of (all )?(factions|players|allies|enemies)|(all )?players list|(all )?faction (all|enem)ies list|factions list|all factions|list of (all )?truces|(all )?faction truces list|motd|power(level| level)|power(boost)?|faction's power(boost)?|relation(ship )?(status )?between (the faction)?|(and|with)( the faction)?|role of|mcmmo)\\b"
-        name: "keyword.skript.addon.expression.skrambled"
+        name: "keyword.addon.expression.skrambled.skript"
       }
       {
         match: "\\b(not )?using (party|admin)(chat| chat)\\b"
-        name: "keyword.skript.addon.condition.skrambled"
+        name: "keyword.addon.condition.skrambled.skript"
       }
 
       {
         match: "\\b(on (((un)?store|chest (add|remove))|vote|hologram (touch|click|pickup)|(crackshot|weapon|gun) (damage|shoot)|(npc|Citizen) (right|left) click|crafting click))\\b"
-        name: "keyword.skript.addon.event.skrayfall"
+        name: "keyword.addon.event.skrayfall.skript"
       }
       {
         match: "effectlibparticle(s)?"
-        name: "keyword.skript.addon.type.skrayfall"
+        name: "keyword.addon.type.skrayfall.skript"
       }
       {
         match: "\\b(group score (with id)?|(spawn|create|apply) (a|the|an) (animated ball|atom|bleed|circle) (effect|formation) (at|on|for|to)|bind hologram|change citizen|skin|(invulnerable|vulnerable)|(set|make) citizen(s)?|max health|nametag (invisible|visible)|give npc|the look close trait|create (a )?citizen named|create bound holo object|(set|create) group id (based )?score|create hologram|create|display|show|create (client side )?holo object|create interactive (client side )?holo object|(delete|remove) score(s)? (with )?group id|(delete|remove) score (with )?id|delete holo object|delete score|(delete|stop) (effect|formation)|(edit|update) score (with)?|edit holo object|and set interactivity|(equip|give|m(ov|ak)e|despawn) citizen|(create|strike) (fake|ultra|no sound) fake lightning|(spawn|create|apply) (a|the|an) line (effect|formation)|(attack|fight)|(say|communicate)|set rf max(imum)? h(ealth|p)|(place|set|spawn) mine|play|tab name|set citizen|protect|(remove|destroy) citizen|respawn citizen|(sub)?title|fade (in|out)|action bar|(set|create) id (based )?score|set name of sidebar|set score|set tab header|set tab(list )?score|offset by x, y (and|,) z|(spawn|create|apply) (a|the|an) text (effect|formation) with text|(spawn|create|apply) (a|the|an) tornado (effect|formation)|(edit|update) score (with)?(in )?group (id)?|(spawn|create|apply) (a|the|an) wave (effect|formation)|with particle(s)?|(wipe|erase) below score(s)?|(wipe|erase|delete)|score from tab(list)?)\\b"
-        name: "keyword.skript.addon.effect.skrayfall"
+        name: "keyword.addon.effect.skrayfall.skript"
       }
       {
         match: "\\b(citizen id|owner of npc|(gun|crackshot weapon)|group score (value|number|name|title) (of|from) id|last created citizen( id)?|name of citizen|no nbt|shiny|score (value|number|name|title))\\b"
-        name: "keyword.skript.addon.expression.skrayfall"
+        name: "keyword.addon.expression.skrayfall.skript"
       }
       {
         match: "\\b(npc|citizen|side( )?bar)\\b"
-        name: "keyword.skript.addon.condition.skrayfall"
+        name: "keyword.addon.condition.skrayfall.skript"
       }
 
       {
         match: "\\b(on skillapi (class change|exp(erience)? (gain|loss)|level up|skill (cast|unlock|heal|damage)|(gain|loss)))\\b"
-        name: "keyword.skript.addon.event.skrpg"
+        name: "keyword.addon.event.skrpg.skript"
       }
       {
         match: "\\b(mob|block_(break|place)|craft|special|exp_bottle|smelt|quest)\\b"
-        name: "keyword.skript.addon.type.skrpg"
+        name: "keyword.addon.type.skrpg.skript"
       }
       {
         match: "\\b(skillapi(exp(erience)?|(sp|skillpoint(s)?|skill point(s)?)|refund|attribute points|clear|data|toggle|skillbar|toggle skillbar|regen(erate )?mana|attr(ibute )?menu|allowed exp(erience )?sources|cast skill|profess)|MythicMobs spawn level)\\b"
-        name: "keyword.skript.addon.effect.skrpg"
+        name: "keyword.addon.effect.skrpg.skript"
       }
       {
         match: "\\b(skillapi (max (mana|health|level)|main class|attribute points|class group|total experience|mana|required exp(erience)?|(mana|health) scale|(chat colo(u)?r|chatcolo(u)?r)|mana regen|(attacker|victim)|expsource|exp(erience )?(gained|Lost)|mana (gained|Lost)|skill casted|levels gained|class (group|base)?|unlocked skill))\\b"
-        name: "keyword.skript.addon.expression.skrpg"
+        name: "keyword.addon.expression.skrpg.skript"
       }
       {
         match: "\\b(SkillAPI|skill(bar enabled)?|can profess|skillbar is setup)\\b"
-        name: "keyword.skript.addon.condition.skrpg"
+        name: "keyword.addon.condition.skrpg.skript"
       }
 
       {
         match: "\\b((java|lua)( file)?)\\b"
-        name: "keyword.skript.addon.expression.skriptevolved"
+        name: "keyword.addon.expressionevolved.skript"
       }
 
       {
         match: "\\b(compound|editsession)\\b"
-        name: "keyword.skript.addon.type.skstuff"
+        name: "keyword.addon.type.skstuff.skript"
       }
       {
         match: "\\b((create|draw|make) (a)?((no(n|t)(-| )hollow|filled)|hollow) line|thick(ness)?|(undo|redo)(last)? (change|edit)(s)?)\\b"
-        name: "keyword.skript.addon.effect.skstuff"
+        name: "keyword.addon.effect.skstuff.skript"
       }
       {
         match: "\\b(area of (schem(atic)?|(world( )?edit |we )?selection)|((x|y|z)( |-)size|height) of schem(atic)?|(y( |-)size|height) of (world( )?edit |we )?selection|((world( )?edit|we) )?selection (y( |-)size|height)|(custom )?nbt(( )?tag(s)?)?|(block )?limit( change)? of( edit( )?session)?|nbt(( )?tag(s)?)?|new edit( )?session|(max(imum)?)?( block)? limit( change)?|number of (all )?changed blocks (in|of)( edit( )?session)?|(world( )?edit |we )?po(s|int)|nbt (compound)?|volume of schem(atic)?|volume of (world( )?edit |we )?selection|(world( )?edit |we )?selection (volume|area)|(x( |-)size|width)(of schem(atic)?)?|(world( )?edit |we )? selection( x( |-)size| width)?)\\b"
-        name: "keyword.skript.addon.expression.skstuff"
+        name: "keyword.addon.expression.skstuff.skript"
       }
       {
         match: "\\b((world( )?edit|we)? selection|(contains|has)|does(n't| not) (contain|have))\\b"
-        name: "keyword.skript.addon.condition.skstuff"
+        name: "keyword.addon.condition.skstuff.skript"
       }
 
       {
         match: "\\b(spectate|stop spectating|change spectate angle)\\b"
-        name: "keyword.skript.addon.effect.spectatehook"
+        name: "keyword.addon.effect.spectatehook.skript"
       }
       {
         match: "\\b(spectate (angle|target))\\b"
-        name: "keyword.skript.addon.expression.spectatehook"
+        name: "keyword.addon.expression.spectatehook.skript"
       }
       {
         match: "\\b((is|is(n't| not)?) (spectating|being spectated))\\b"
-        name: "keyword.skript.addon.condition.spectatehook"
+        name: "keyword.addon.condition.spectatehook.skript"
       }
     ]
