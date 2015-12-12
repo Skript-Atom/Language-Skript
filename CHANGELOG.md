@@ -1,3 +1,7 @@
+## 0.98.0
+* Added More Syntax
+* Fixed Bugs
+
 ## 0.97.0
 * Fixed some bugs
 * Added Some of RandomSk
