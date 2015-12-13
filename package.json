@@ -3,10 +3,9 @@
   "main": "./lib/Skript",
   "version": "1.0.0",
   "description": "Skript-Language, Easier coding!",
-  "keywords": [],
-  "activationCommands": {
-    "atom-workspace": "Skript:toggle"
-  },
+  "keywords": [
+    "Skript"
+  ],
   "repository": "https://github.com/Skript-Atom/Language-Skript",
   "license": "GNU General Public License v3.0",
   "engines": {

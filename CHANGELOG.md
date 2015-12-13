@@ -1,3 +1,6 @@
+## 1.0.1
+* CleanUp
+
 ## 1.0.0
 * Improved loading time
 * Cleaned up
