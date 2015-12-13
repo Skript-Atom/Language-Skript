@@ -1,6 +1,3 @@
-# If you want some examples of settings, check out:
-# https://github.com/atom/language-gfm/blob/master/settings/gfm.cson
-
 '.source.skript':
   'editor':
     'foldEndPattern': '(?x:        # turn on extended mode\n\t                        ^        # a line beginning with\n\t                        \\s*      # some optional space\n\t                        [}\\]]    # and the close of an object or array\n\t                      )'

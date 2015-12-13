@@ -97,6 +97,22 @@ repository:
             name: "keyword.type.mccolor.white.skript"
           }
           {
+            match: "(&|§)i"
+            name: "keyword.type.mccolor.bold.skript"
+          }
+          {
+            match: "(&|§)m"
+            name: "keyword.type.mccolor.strikethrough.skript"
+          }
+          {
+            match: "(&|§)n"
+            name: "keyword.type.mccolor.underline.skript"
+          }
+          {
+            match: "(&|§)o"
+            name: "keyword.type.mccolor.italic.skript"
+          }
+          {
             begin: '%'
             end: '(%|"|\\n)'
             name: "variable.exprwrap.skript"
@@ -272,6 +288,22 @@ repository:
       {
         match: "(&|§)f"
         name: "keyword.type.mccolor.white.skript"
+      }
+      {
+        match: "(&|§)i"
+        name: "keyword.type.mccolor.bold.skript"
+      }
+      {
+        match: "(&|§)m"
+        name: "keyword.type.mccolor.strikethrough.skript"
+      }
+      {
+        match: "(&|§)n"
+        name: "keyword.type.mccolor.underline.skript"
+      }
+      {
+        match: "(&|§)o"
+        name: "keyword.type.mccolor.italic.skript"
       }
 #EVENTS
       {
