@@ -1,7 +1,7 @@
 {
   "name": "Language-Skript",
   "main": "./lib/Skript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Skript-Language, Easier coding!",
   "keywords": [
     "Skript"
