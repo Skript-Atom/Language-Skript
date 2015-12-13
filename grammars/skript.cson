@@ -279,11 +279,7 @@ repository:
         name: "keyword.addon.event.main.skript"
       }
       {
-        match: "\\b(is( not)? (logged|registered))\\b"
-        name: "keyword.addon.event.authmeskaddon.skript"
-      }
-      {
-        match: "\\b(on crop (trampl(e|ing)|break(ing)?|stomp(ing)?|step[ping] on|destroy(ing)?|grow))\\b"
+        match: "\\b(on crop (trampl(e|ing)|break(ing)?|stomp(ing)?|step(ping)? on|destroy(ing)?|grow))\\b"
         name: "keyword.addon.event.extrassk.skript"
       }
       {
@@ -349,9 +345,13 @@ repository:
       }
 #CONDITIONS
 #      {
-#        match: "\\b\\b"
+#        match: "\\b((can(not)? build)|can(no|')t hold|(ha(s|ve) not|ha(s|ve)n't|do(es)?n't have)|(can hold|ha(s|ve) (enough)? space (for|to hold))|chance|((neither)?((neither)|isn't|aren't) ((less|smaller) than|below)|>=)|((neither)?((neither)|isn't|aren't) ((greater|more|higher|bigger|larger) than|above)|<=)|((neither)?(neither)|isn't|aren't|!= (equal to)?|(neither)?|(is|are|=) ((equal to|the same as))?)|(is|are) between|(neither)?(is not|are not|isn't|aren't) between|(neither)?|(((is|are) ((less|smaller) than|below)|<|(greater|more|higher|bigger|larger) than|above)|>)|(ha(s|ve)|do(es)?(n't| not) have)|(in ((the(ir)?|his|her|its))? inventory)?|(do(es)?(n't| not) contain|contain(s)?)|(the)? damage ((n('|o))?t) (been)? (caused|done|made)|(do(es)?(n't| not) exist|(is|are)(n't| not) set|exist(s)?|(is|are) set)|(ha(s|ve)|(do(es)?n't|don't|do(es)? not) have) (the)? permission(s)?|((has not|hasn't|did not|didn't|has|did))? ((already|yet))? play(ed)? (on (this|the) server)? (before|already|yet)|(alive|dead)|(isn't|is not|aren't|are not|is|are) banned|((isn't|is not|aren't|are not|is|are) IP(-| ))?banned|(is|are|isn't|is not|aren't|are not) (blocking|defending)|(isn't|is not|aren't|are not|is|are) (burning|ignited|on fire)|(isn't|is not|aren't|are not|is|are) (empty|enchanted)|(isn't|is not|aren't|are not|is|are) flying|(is not|isn't|is|are) holding|(ha(s|ve) not|do(es)?n't have)|(is not|isn't|are not|aren't|is|are) in ((the)? world(s)?)?|(is(n't| not)?|are(n't| not)?) ((the)? owner(s)?|member(s)?)|(isn't|is not|aren't|are not|is|are) of type(s)?|((is|are) online|(is not|isn't|are not|aren't) offline)|((is|are) offline|(is not|isn't|are not|aren't) online)|(isn't|is not|aren't|are not|is|are) poisoned|(isn't|is not|aren't|are not|is|are) riding|(isn't|is not|aren't|are not|is|are) (sleeping|sneaking|sprinting)|(isn't|is not|aren't|are not|is|are) wearing|(is PvP|PvP is) (enabled|disabled)|(is|are) in (the)? region|region contains|(was|were)( more|(n't| not) less) than|(was|were)((n't| not) more| less) than|(true|false))\\b"
 #        name: "keyword.addon.condition.main.skript"
 #      }
+      {
+        match: "\\b(is( not)? (logged|registered))\\b"
+        name: "keyword.addon.condition.authmeskaddon.skript"
+      }
       {
         match: "\\b((is|are)(n't| not) occupied|(has|(doesn't )?have) (fixed )?metadata( value)?|(has|have|doesn't have) (offers|trades)|(has|have|doesn't have) second item|(has|have|doesn't have) (offer|trade)( number)?|is( not)? in sleep(ing )?animation|is not on ground)\\b"
         name: "keyword.addon.condition.randomsk.skript"
