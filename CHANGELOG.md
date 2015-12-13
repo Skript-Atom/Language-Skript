@@ -1,3 +1,7 @@
+## 1.0.0
+* Improved loading time
+* Cleaned up
+
 ## 0.99.0
 * Fixed Bugs
 
