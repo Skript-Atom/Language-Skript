@@ -1,3 +1,6 @@
+## 0.99.0
+* Fixed Bugs
+
 ## 0.98.0
 * Added More Syntax
 * Fixed Bugs
