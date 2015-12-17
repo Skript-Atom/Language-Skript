@@ -33,67 +33,67 @@ repository:
             name: "constant.character.escape.skript"
           }
           {
-            match: "(&|§)0"
+            match: "((&|§)0|\\b(?i)black\\b)"
             name: "keyword.type.mccolor.black.skript"
           }
           {
-            match: "(&|§)1"
+            match: "((&|§)1|\\b(?i)dark blue\\b)"
             name: "keyword.type.mccolor.dark_blue.skript"
           }
           {
-            match: "(&|§)2"
+            match: "((&|§)2|\\b(?i)dark green\\b)"
             name: "keyword.type.mccolor.dark_green.skript"
           }
           {
-            match: "(&|§)3"
+            match: "((&|§)3|\\b(?i)dark aqua\\b)"
             name: "keyword.type.mccolor.dark_aqua.skript"
           }
           {
-            match: "(&|§)4"
+            match: "((&|§)4|\\b(?i)dark red\\b)"
             name: "keyword.type.mccolor.dark_red.skript"
           }
           {
-            match: "(&|§)5"
+            match: "((&|§)5|\\b(?i)dark purple\\b)"
             name: "keyword.type.mccolor.dark_purple.skript"
           }
           {
-            match: "(&|§)6"
+            match: "((&|§)6|\\b(?i)gold\\b)"
             name: "keyword.type.mccolor.gold.skript"
           }
           {
-            match: "(&|§)7"
+            match: "((&|§)7|\\b(?i)gray\\b)"
             name: "keyword.type.mccolor.gray.skript"
           }
           {
-            match: "(&|§)8"
+            match: "((&|§)8|\\b(?i)dark gray\\b)"
             name: "keyword.type.mccolor.dark_gray.skript"
           }
           {
-            match: "(&|§)9"
+            match: "((&|§)9|\\b(?i)blue\\b)"
             name: "keyword.type.mccolor.blue.skript"
           }
           {
-            match: "(&|§)(a|A)"
+            match: "((&|§)(a|A)|\\b(?i)green\\b)"
             name: "keyword.type.mccolor.green.skript"
           }
           {
-            match: "(&|§)(b|B)"
+            match: "((&|§)(b|B)|\\b(?i)aqua\\b)"
             name: "keyword.type.mccolor.aqua.skript"
           }
           {
-            match: "(&|§)(c|C)"
+            match: "((&|§)(c|C)|\\b(?i)red\\b)"
             name: "keyword.type.mccolor.red.skript"
           }
           {
-            match: "(&|§)(d|D)"
+            match: "((&|§)(d|D)|\\b(?i)light purple\\b)"
             name: "keyword.type.mccolor.light_purple.skript"
           }
           {
-            match: "(&|§)(e|E)"
+            match: "((&|§)(e|E)|\\b(?i)yellow\\b)"
             name: "keyword.type.mccolor.yellow.skript"
           }
           {
-            match: "(&|§)(f|F)"
+            match: "((&|§)(f|F)|\\b(?i)white\\b)"
             name: "keyword.type.mccolor.white.skript"
           }
           {
@@ -114,7 +114,7 @@ repository:
           }
           {
             begin: '%'
-            end: '(%|"|\\n)'
+            end: '(%|\\n)'
             name: "variable.exprwrap.skript"
           }
           {
@@ -128,7 +128,7 @@ repository:
     patterns: [
       {
         begin: '%'
-        end: '(%|"|\\n)'
+        end: '(%|\\n)'
         name: "variable.exprwrap.skript"
       }
       {
@@ -203,17 +203,13 @@ repository:
         name: "keyword.type.potion.skript"
       }
       {
-        match: "\\b(?i)((dark )?(blue|green|aqua|red|gray)|(dark|light) purple|gold|black|yellow|white)\\b"
-        name: "keyword.type.color.skript"
-      }
-      {
         match: "\\b(?i)(if|else|if else|loop|while|every|at)\\b"
         name: "keyword.else.skript"
       }
 
       {
         begin: '%'
-        end: '(%|"|\\n)'
+        end: '(%|\\n)'
         name: "variable.exprwrap.skript"
       }
       {
@@ -226,67 +222,67 @@ repository:
       }
 
       {
-        match: "(&|§)0"
+        match: "((&|§)0|\\b(?i)black\\b)"
         name: "keyword.type.mccolor.black.skript"
       }
       {
-        match: "(&|§)1"
+        match: "((&|§)1|\\b(?i)dark blue\\b)"
         name: "keyword.type.mccolor.dark_blue.skript"
       }
       {
-        match: "(&|§)2"
+        match: "((&|§)2|\\b(?i)dark green\\b)"
         name: "keyword.type.mccolor.dark_green.skript"
       }
       {
-        match: "(&|§)3"
+        match: "((&|§)3|\\b(?i)dark aqua\\b)"
         name: "keyword.type.mccolor.dark_aqua.skript"
       }
       {
-        match: "(&|§)4"
+        match: "((&|§)4|\\b(?i)dark red\\b)"
         name: "keyword.type.mccolor.dark_red.skript"
       }
       {
-        match: "(&|§)5"
+        match: "((&|§)5|\\b(?i)dark purple\\b)"
         name: "keyword.type.mccolor.dark_purple.skript"
       }
       {
-        match: "(&|§)6"
+        match: "((&|§)6|\\b(?i)gold\\b)"
         name: "keyword.type.mccolor.gold.skript"
       }
       {
-        match: "(&|§)7"
+        match: "((&|§)7|\\b(?i)gray\\b)"
         name: "keyword.type.mccolor.gray.skript"
       }
       {
-        match: "(&|§)8"
+        match: "((&|§)8|\\b(?i)dark gray\\b)"
         name: "keyword.type.mccolor.dark_gray.skript"
       }
       {
-        match: "(&|§)9"
+        match: "((&|§)9|\\b(?i)blue\\b)"
         name: "keyword.type.mccolor.blue.skript"
       }
       {
-        match: "(&|§)(a|A)"
+        match: "((&|§)(a|A)|\\b(?i)green\\b)"
         name: "keyword.type.mccolor.green.skript"
       }
       {
-        match: "(&|§)(b|B)"
+        match: "((&|§)(b|B)|\\b(?i)aqua\\b)"
         name: "keyword.type.mccolor.aqua.skript"
       }
       {
-        match: "(&|§)(c|C)"
+        match: "((&|§)(c|C)|\\b(?i)red\\b)"
         name: "keyword.type.mccolor.red.skript"
       }
       {
-        match: "(&|§)(d|D)"
+        match: "((&|§)(d|D)|\\b(?i)light purple\\b)"
         name: "keyword.type.mccolor.light_purple.skript"
       }
       {
-        match: "(&|§)(e|E)"
+        match: "((&|§)(e|E)|\\b(?i)yellow\\b)"
         name: "keyword.type.mccolor.yellow.skript"
       }
       {
-        match: "(&|§)(f|F)"
+        match: "((&|§)(f|F)|\\b(?i)white\\b)"
         name: "keyword.type.mccolor.white.skript"
       }
       {
@@ -438,7 +434,7 @@ repository:
         name: "keyword.addon.effect.piratesk.skript"
       }
       {
-        match: "\\b(?i)((animation )?(on|to)show (stacking )?block break (animation )?stage|change (yaw|pitch)|(appear|look) (open|closed)|play chest (open|closed) animation (at|on)|change (sky|environment)|force respawn|force (the)?|to respawn|register furnace recipe with (result)?|for (source)?|reset (all )?recipes|sleep at|open (villager )?trade (gui )?named|wake up)\\b"
+        match: "\\b(?i)((animation )?(on|to)show (stacking )?block break (animation )?stage|change (yaw|pitch)|(appear|look) (open|closed)|play chest (open|closed) animation (at|on)|change (sky|environment)|force respawn|force (the)?|to respawn|register furnace recipe with (result)?|source|reset (all )?recipes|sleep at|open (villager )?trade (gui )?named|wake up)\\b"
         name: "keyword.addon.effect.randomsk.skript"
       }
       {
