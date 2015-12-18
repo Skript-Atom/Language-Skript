@@ -127,11 +127,6 @@ repository:
   variables:
     patterns: [
       {
-        begin: '%'
-        end: '(%|\\n)'
-        name: "variable.exprwrap.skript"
-      }
-      {
         match: "{@[a-zA-Z0-9]+}"
         name: "variable.type.option.skript"
       }
@@ -145,22 +140,21 @@ repository:
         end: '(}|\\n)'
         name: "variable.normal.skript"
       }
+      {
+        begin: '%'
+        end: '(%|\\n)'
+        name: "variable.exprwrap.skript"
+      }
     ]
   comments:
     patterns: [
       {
         begin: "(#!)"
-        beginCaptures:
-          1:
-            name: "comment.mark.skript"
         end: "(!#|\\n)"
         name: "comment.mark.skript"
       }
       {
         begin: "(#)"
-        beginCaptures:
-          1:
-            name: "comment.hash.skript"
         end: "\\n"
         name: "comment.hash.skript"
       }
@@ -187,7 +181,7 @@ repository:
         name: "keyword.type.direction.skript"
       }
       {
-        match: "loop-(block|item|index|value|num(ber)?|player|entity|integer|attacker|victim|shooter|world|chunk|projectile|button)('s|s|-)?"
+        match: "loop-(block|item|index|value|num(ber)?|player|entity|integer|attacker|victim|shooter|world|chunk|projectile|button)('s|s)?"
         name: "keyword.type.loop.skript"
       }
       {
@@ -203,7 +197,7 @@ repository:
         name: "keyword.type.potion.skript"
       }
       {
-        match: "\\b(?i)(if|else|if else|loop|while|every|at)\\b"
+        match: "\\b(?i)((else )?if|else|loop|while|every|at)\\b"
         name: "keyword.else.skript"
       }
 
@@ -441,12 +435,12 @@ repository:
         match: "\\b(?i)(send bossbar|with percent|(un)?deny|open (a )?dispenser( named)?|group of|member|trusted)\\b"
         name: "keyword.addon.effect.skaction.skript"
       }
-#      {
-#        match: "\\b(?i)\\b"
-#        name: "keyword.addon.effect.skquery.skript"
-#      }
       {
-        match: "\\b(?i)((un)?claim land|create a faction|with leader|disband|invite|(admin[chat| chat]|party))\\b"
+        match: "\\b(?i)(branch|crafting recipes|see( lines)?|($ )?(developer mode|access|init (.+)|use permissions|db (password|url|username) (.+))|do|draw buffered( )?image|draw|map|starting|normally|(erase|wipe)( map)?|escape|l(ine|evel)(s)?|evaluate|run|(un)?format slot|(be|act) unstealable|access|invoke|launch|deploy|timed|leash|(manage|share|over(rid|writ)e) map( id)?|pathfind|play midi|play raw sound|pop|register new shape(d|less) recipe|send map|permanently restore updates|restore all updates|move display|make score|(score)?board|display credits|(soft )?return|spawn( damaging( undroppable)?| undroppable( damaging)?)? falling block|update|shutdown|tame|send (resource|texture) pack|trail|reveal|hide)\\b"
+        name: "keyword.addon.effect.skquery.skript"
+      }
+      {
+        match: "\\b(?i)((un)?claim land|create a faction|with leader|disband|invite|(admin(chat| chat)?|party))\\b"
         name: "keyword.addon.effect.skrambled.skript"
       }
       {
@@ -499,7 +493,7 @@ repository:
 #        name: "keyword.addon.expression.skquery.skript"
 #      }
       {
-        match: "\\b(?i)(description of|home|list of (all )?(factions|players|allies|enemies)|(all )?players list|(all )?faction (all|enem)ies list|factions list|all factions|list of (all )?truces|(all )?faction truces list|motd|power(level| level)|power(boost)?|faction's power(boost)?|relation(ship )?(status )?between (the faction)?|(and|with)( the faction)?|role of|mcmmo)\\b"
+        match: "\\b(?i)(description of|home|list of (all )?(factions|players|allies|enemies)|(all )?players list|(all )?faction (all|enem)ies list|factions list|all factions|list of (all )?truces|(all )?faction truces list|motd|power(level| level)|power(boost)?|faction's power(boost)?|relation(ship )?(status )?between (the faction)?|with the faction|role of|mcmmo)\\b"
         name: "keyword.addon.expression.skrambled.skript"
       }
       {
