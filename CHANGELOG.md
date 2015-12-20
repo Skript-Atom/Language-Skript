@@ -1,3 +1,14 @@
+# 1.2.0
+* Added skQuery's Effects
+* Fixed Bugs
+
+# 1.1.1
+* Changed how some things work
+* Fixed Bugs
+
+# 1.1.0
+* Fixed Bugs
+
 ## 1.0.1
 * CleanUp
 
