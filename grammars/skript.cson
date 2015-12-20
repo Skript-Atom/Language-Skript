@@ -162,7 +162,7 @@ repository:
   numbers:
     patterns: [
       {
-        match: "\\b(?i)([0-9]+)\\b"
+        match: "\\b(?i)([0-9]+)((a|p)m)?\\b"
         name: "constant.numeric.skript"
       }
     ]
@@ -207,7 +207,7 @@ repository:
         name: "variable.exprwrap.skript"
       }
       {
-        match: "\\b(?i)((play|attack|shoot|send|damag|serv)er|victim|(targeted )?entity|executor|console)('s|s)?\\b"
+        match: "\\b(?i)((play|attack|shoot|send|damag|serv)er|victim|(targeted |clicked )?entity|executor|console)('s|s)?\\b"
         name: "keyword.type.player.skript"
       }
       {
@@ -416,7 +416,7 @@ repository:
       }
 #EFFECTS
       {
-        match: "\\b(?i)((un)?ban|(by reason of|because( of)?|on account of|due to)|ip|IP(-| )ban|(IP(-| )unban|un(-)?IP(-)?ban)|broadcast|(un)?cancel( the)? event|(add|give)|increase|set|remove (all|every)|(remove|subtract|reduce)|(delete|clear|reset)|(dye|colo(u)?r|paint)|(let|make)|execute|damage|heal|hearts|repair|(wait|halt)|drop|(dis)?enchant|equip|make|wear|(exit|stop)( trigger| (section|loop|conditional)(s)?)?|(create |make )?(a(n)? )?(safe |fake )?explosion|(create |make )?(an )?explosion( )?effect |(ignite|set fire to)|(force|strength|power|velocity)|(set|light)|on fire|extinguish|kick|kill|strike lightning( effect)?|log|(message|send( message)?)|(de(-)?)op|(open|show) (crafting (table)?|workbench)( view|window|inventory)?|op|close( the)? inventory( view)?|close|inventory|(view)?(play|show)|(poison|cure|unpoison)|apply( potion)?|(push|thrust)|(enable|disable) pvp|replace( all|every)?|(un(-)?)?shear|shoot|(make|let)|spawn|teleport|(close|turn off|de(-)?activate)|(toggle|switch) (the)? state|(open|turn on|activate)|(grow|create|generate) (oak|spruce|birch|jungle|dark oak|acacia) (tree)?|(make|let|force)|(ride|mount)|(dismount|(dismount|leave) (from|of))? ((any|the(ir)?|his|her))? vehicle(s)?|((eject|dismount)( any| the))? passenger(s)?)\\b"
+        match: "\\b(?i)((un)?ban|(by reason of|because( of)?|on account of|due to)|ip|IP(-| )ban|(IP(-| )unban|un(-)?IP(-)?ban)|broadcast|(un)?cancel( the)? event|(add|give)|increase|set|remove (all|every)|(remove|subtract|reduce)|(delete|clear|reset)|(dye|colo(u)?r|paint)|(let|make)|execute|damage|heal|heart(s)?|repair|(wait|halt)|drop|(dis)?enchant|equip|make|wear|(exit|stop)( trigger| (section|loop|conditional)(s)?)?|(create |make )?(a(n)? )?(safe |fake )?explosion|(create |make )?(an )?explosion( )?effect |(ignite|set fire to)|(force|strength|power|velocity)|(set|light)|on fire|extinguish|kick|kill|strike lightning( effect)?|log|(message|send( message)?)|(de(-)?)op|(open|show) (crafting (table)?|workbench)( view|window|inventory)?|op|close( the)? inventory( view)?|close|inventory|(view)?(play|show)|(poison|cure|unpoison)|apply( potion)?|(push|thrust)|(enable|disable) pvp|replace( all|every)?|(un(-)?)?shear|shoot|(make|let)|spawn|teleport|(close|turn off|de(-)?activate)|(toggle|switch) (the)? state|(open|turn on|activate)|(grow|create|generate) (oak|spruce|birch|jungle|dark oak|acacia) (tree)?|(make|let|force)|(ride|mount)|(dismount|(dismount|leave) (from|of))? ((any|the(ir)?|his|her))? vehicle(s)?|((eject|dismount)( any| the))? passenger(s)?)\\b"
         name: "keyword.addon.effect.main.skript"
       }
       {
