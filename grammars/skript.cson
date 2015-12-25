@@ -85,7 +85,7 @@ repository:
             name: "keyword.type.mccolor.red.skript"
           }
           {
-            match: "((&|§)(d|D)|\\b(?i)light purple\\b)"
+            match: "((&|§)(d|D)|\\b(?i)(light )?purple\\b)"
             name: "keyword.type.mccolor.light_purple.skript"
           }
           {
@@ -268,7 +268,7 @@ repository:
         name: "keyword.type.mccolor.red.skript"
       }
       {
-        match: "((&|§)(d|D)|\\b(?i)light purple\\b)"
+        match: "((&|§)(d|D)|\\b(?i)(light )?purple\\b)"
         name: "keyword.type.mccolor.light_purple.skript"
       }
       {
@@ -383,7 +383,7 @@ repository:
         name: "keyword.addon.condition.skaction.skript"
       }
       {
-        match: "\\b(?i)(isn't|doesn't|(has|does(n't| not) have)|is( not)?( a)? block|is( not)? divisible by|is( not)? prime|is (not )?within)\\b"
+        match: "\\b(?i)(is( not)?( a)? block|is( not)? divisible by|is( not)? prime|is (not )?within)\\b"
         name: "keyword.addon.condition.skquery.skript"
       }
       {
@@ -399,7 +399,7 @@ repository:
         name: "keyword.addon.condition.skrpg.skript"
       }
       {
-        match: "\\b(?i)((world( )?edit|we)? selection|(contains|has)|does(n't| not) (contain|have))\\b"
+        match: "\\b(?i)((world( )?edit|we)? selection|does(n't| not) (contain|have))\\b"
         name: "keyword.addon.condition.skstuff.skript"
       }
       {
@@ -416,7 +416,7 @@ repository:
       }
 #EFFECTS
       {
-        match: "\\b(?i)((un)?ban|(by reason of|because( of)?|on account of|due to)|ip|IP(-| )ban|(IP(-| )unban|un(-)?IP(-)?ban)|broadcast|(un)?cancel( the)? event|(add|give)|increase|set|remove (all|every)|(remove|subtract|reduce)|(delete|clear|reset)|(dye|colo(u)?r|paint)|(let|make)|execute|damage|heal|heart(s)?|repair|(wait|halt)|drop|(dis)?enchant|equip|make|wear|(exit|stop)( trigger| (section|loop|conditional)(s)?)?|(create |make )?(a(n)? )?(safe |fake )?explosion|(create |make )?(an )?explosion( )?effect |(ignite|set fire to)|(force|strength|power|velocity)|(set|light)|on fire|extinguish|kick|kill|strike lightning( effect)?|log|(message|send( message)?)|(de(-)?)op|(open|show) (crafting (table)?|workbench)( view|window|inventory)?|op|close( the)? inventory( view)?|close|inventory|(view)?(play|show)|(poison|cure|unpoison)|apply( potion)?|(push|thrust)|(enable|disable) pvp|replace( all|every)?|(un(-)?)?shear|shoot|(make|let)|spawn|teleport|(close|turn off|de(-)?activate)|(toggle|switch) (the)? state|(open|turn on|activate)|(grow|create|generate) (oak|spruce|birch|jungle|dark oak|acacia) (tree)?|(make|let|force)|(ride|mount)|(dismount|(dismount|leave) (from|of))? ((any|the(ir)?|his|her))? vehicle(s)?|((eject|dismount)( any| the))? passenger(s)?)\\b"
+        match: "\\b(?i)((un)?ban|(by reason of|because( of)?|on account of|due to)|ip|IP(-| )ban|(IP(-| )unban|un(-)?IP(-)?ban)|broadcast|(un)?cancel( the)? event|add|give|increase|remove(all|every)?|subtract|reduce|delete|clear|(re)?set|(dye|colo(u)?r|paint)|(let|make)|execute|damage|heal|heart(s)?|repair|(wait|halt)|drop|(dis)?enchant|equip|make|wear|(exit|stop)( trigger| (section|loop|conditional)(s)?)?|(create |make )?(a(n)? )?(safe |fake )?explosion|(create |make )?(an )?explosion( )?effect|(ignite|set fire to)|(force|speed|volume|strength|power|velocity)|light|on fire|extinguish|kick|kill|strike lightning( effect)?|log|(message|send( message)?)|(de(-)?)op|(open|show) (crafting (table)?|workbench)( view|window|inventory)?|op|close( the)? inventory( view)?|close|inventory|(view)?(play|show)|(poison|cure|unpoison)|apply( potion)?|(push|thrust)|(enable|disable) pvp|replace( all|every)?|(un(-)?)?shear|shoot|(make|let)|spawn|teleport|(close|turn off|de(-)?activate)|(toggle|switch) (the)? state|(open|turn on|activate)|(grow|create|generate) (oak|spruce|birch|jungle|dark oak|acacia) (tree)?|(make|let|force)|(ride|mount)|(dismount|(dismount|leave) (from|of))? ((any|the(ir)?|his|her))? vehicle(s)?|((eject|dismount)( any| the))? passenger(s)?)\\b"
         name: "keyword.addon.effect.main.skript"
       }
       {
@@ -469,7 +469,7 @@ repository:
 #      }
 #EXPRESSIONS
       {
-        match: "\\b(?i)(((craft)?bukkit|minecraft|skript)( |-)version|altitude(s)?|command|(doesn't have|has) permission|speed|volume|amount|number|size|arg(ument)?(s)?|(boot|shoe|leg(ging)?|chestplate|helm(et)?)(s)? (slot)?|bed(s)? (location(s)?)?|biome|(the )?(event-)?block|blocks (in radius|around)?|in radius|blocks|between|chunk(s)?|clicked|(non( |-)?|un( |-))??colo(u)?r(s|ed)?|(full|complete|whole) command|label|compass target|(x|y|z)(-| )(coord(inate)?|pos(ition)?|loc(ation)?)(s)?|damage( cause| type)?|((data|damage)(s)? (value(s)?)?|durabilit(y|ies))|difference( between)?|distance between|drops|random element( out)?|level|enchant(ment)?|ender( )?chest(s)?|(within|(with)?in radius)|around|entities of type(s)?|((spawned|dropped) )?(e)?xp(erience )?(orb(s)?)?|(horizontal )?facing|(food|hunger)(( )?(level|met(er|re)|bar) )?|(former|past|old|future|to-be|new) (state )?|before (the event)?|(ore|fuel|result)(s )?(slot(s)?)?|game( )?mode|md5( |-)hash(ed|(( |-))?code )?|(head|eye(s)?) (location(s)?)?|health|id(s)?|index|inventor(y|ies)|IP(s)?(( |-)address(es)?)?|item|block(s|( )?types)|item(s|( )?types)|(blocks|items) of type(s )?|(inventor(y|ies))|concat(enate)?|join|(with|by|using|at) delimiter|split|(last(ly)? )?(spawned|shot)|length|level( progress)?|((sky|sun|block)( )?)?light( )?level|(location|position)|line|lore|max(imum)? health|stack(( )?size )?|max(imum )?stack(( )?size)?|me my(self)?|(chat|join|log( )?(in|out)?|quit|leave|kick|death|)( |-)message|money|balance|account|(the )?(player|tab)( )?list name(s )?|(display|nick|chat)( )?name(s )?|name(s)?|(named|with name(s)?)|(integers) (between|from)|parsed as|(last )?(parse )?error|passenger(s)?|(prefix|suffix)|random|out|random (integer|number) (from|between)|owner(s )?|region(s )?|remaining air|(floor|round)|ceil(ing)?|script(('s )?name)?|line|skull|spawn(s )?((point|location)(s)?)?|(walk(ing)?|fl(y(ing)?|ight))(( |-)?)speed|(part|sub( )?(text|string))|(between|from)|ind(ex|ices)|character(s)?|uuid|time|tool|held item|weapon|type|vehicle|yaw|pitch)\\b"
+        match: "\\b(?i)(((craft)?bukkit|minecraft|skript)( |-)version|altitude(s)?|command|(doesn't have|has) permission|amount|number|size|arg(ument)?(s)?|(boot|shoe|leg(ging)?|chestplate|helm(et)?)(s)? (slot)?|bed(s)? (location(s)?)?|biome|(the )?(event-)?block|blocks (in radius|around)?|in radius|blocks|between|chunk(s)?|clicked|(non( |-)?|un( |-))??colo(u)?r(s|ed)?|(full|complete|whole) command|label|compass target|(x|y|z)(-| )(coord(inate)?|pos(ition)?|loc(ation)?)(s)?|damage( cause| type)?|((data|damage)(s)? (value(s)?)?|durabilit(y|ies))|difference( between)?|distance between|drops|random element( out)?|level|enchant(ment)?|ender( )?chest(s)?|(within|(with)?in radius)|around|entities of type(s)?|((spawned|dropped) )?(e)?xp(erience )?(orb(s)?)?|(horizontal )?facing|(food|hunger)(( )?(level|met(er|re)|bar) )?|(former|past|old|future|to-be|new) (state )?|before (the event)?|(ore|fuel|result)(s )?(slot(s)?)?|game( )?mode|md5( |-)hash(ed|(( |-))?code )?|(head|eye(s)?) (location(s)?)?|health|id(s)?|index|inventor(y|ies)|IP(s)?(( |-)address(es)?)?|item|block(s|( )?types)|item(s|( )?types)|(blocks|items) of type(s )?|(inventor(y|ies))|concat(enate)?|join|(with|by|using|at) delimiter|split|(last(ly)? )?(spawned|shot)|length|level( progress)?|((sky|sun|block)( )?)?light( )?level|(location|position)|line|lore|max(imum)? health|stack(( )?size )?|max(imum )?stack(( )?size)?|me my(self)?|(chat|join|log( )?(in|out)?|quit|leave|kick|death|)( |-)message|money|balance|account|(the )?(player|tab)( )?list name(s )?|(display|nick|chat)( )?name(s )?|name(s)?|(named|with name(s)?)|(integers) (between|from)|parsed as|(last )?(parse )?error|passenger(s)?|(prefix|suffix)|random|out|random (integer|number) (from|between)|owner(s )?|region(s )?|remaining air|(floor|round)|ceil(ing)?|script(('s )?name)?|line|skull|spawn(s )?((point|location)(s)?)?|(walk(ing)?|fl(y(ing)?|ight))(( |-)?)speed|(part|sub( )?(text|string))|(between|from)|ind(ex|ices)|character(s)?|uuid|time|tool|held item|weapon|type|vehicle|yaw|pitch)\\b"
         name: "keyword.addon.expression.main.skript"
       }
       {
