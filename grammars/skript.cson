@@ -305,12 +305,16 @@ repository:
         name: "keyword.addon.event.extrassk.skript"
       }
       {
-        match: "\\b(?i)(on ((villager )?gui trade|item break|fishing state|item (despawn|despawning)|(named )?sound (trigger|play)|player hear sound|statistics (increment|increase)|vehicle (steer|button press)))\\b"
+        match: "\\b(?i)(on ((villager )?gui trade|item break|fishing state|item despawn(ing)?|(named )?sound (trigger|play)|player hear sound|statistics (increment|increase)|vehicle (steer|button press)))\\b"
         name: "keyword.addon.event.randomsk.skript"
       }
       {
         match: "\\b(?i)(on plot (enter|leave|rate))\\b"
         name: "keyword.addon.event.skaction.skript"
+      }
+      {
+        match: "\\b(?i)(on dragontravel (dis|pre |post )mount)\\b"
+        name: "keyword.addon.event.skdragon.skript"
       }
       {
         match: "\\b(?i)(on (sheep dye|tab complet(er|ion)|vehicle (entity collide|collide with entity)|horse jump|inventory cl(ick|ose)|any move|block land|(book )?edit|enchant( item)?|(player )?toggl(e|ing) (flight|fly)|(player )?(flight|fly) toggl(e|ing)))\\b"
@@ -338,7 +342,7 @@ repository:
       }
 #TYPES
       {
-        match: "\\b(?i)(survival|adventure|creative|spectator|biome(s)?|block(s)?|boolean(s)?|chunk(s)?|colo(u)?r(s)?|(command(s)?)?( )?(sender|executor)(s)?|damage cause(s)?|date(s)?|direction(s)?|enchantment(s)?|enchant(ing|ment) type(s)?|entit(y|ies)|entity( )?type(s)?|game( )?mode(s)?|inventor(y|ies)|item material|item( )?type(s)?|items materials|meter(s)?|living( )?entit(y|ies)|location(s)?|num(ber)?(s)?|integer(s)?|offline( )?player(s)?|potion(( )?effect)?(( )?type)?(s)?|projectile(s)?|(inventory )?slot(s)?|sound(s)?|(text|string)(s)?|time(s)?|time( )?period(s)?|duration(s)?|time( )?span(s)?|tree(( )?type)?(s)?|type(s)?|(visual|particle) effect(s)?|weather( )?type(s)?|weather( condition)?(s)?|world(s)?)\\b"
+        match: "\\b(?i)(material|survival|adventure|creative|spectator|biome(s)?|block(s)?|boolean(s)?|chunk(s)?|colo(u)?r(s)?|(command(s)?)?( )?(sender|executor)(s)?|damage cause(s)?|date(s)?|direction(s)?|enchantment(s)?|enchant(ing|ment) type(s)?|entit(y|ies)|entity( )?type(s)?|game( )?mode(s)?|inventor(y|ies)|item material|item( )?type(s)?|items materials|meter(s)?|living( )?entit(y|ies)|location(s)?|num(ber)?(s)?|integer(s)?|offline( )?player(s)?|potion(( )?effect)?(( )?type)?(s)?|projectile(s)?|(inventory )?slot(s)?|sound(s)?|(text|string)(s)?|time(s)?|time( )?period(s)?|duration(s)?|time( )?span(s)?|tree(( )?type)?(s)?|type(s)?|(visual|particle) effect(s)?|weather( )?type(s)?|weather( condition)?(s)?|world(s)?)\\b"
         name: "keyword.addon.type.main.skript"
       }
       {
@@ -436,6 +440,10 @@ repository:
         name: "keyword.addon.effect.skaction.skript"
       }
       {
+        match: "\\b(?i)(take|flight|random flight|(their )?dragon home|(stop|dismount from) dragon travel|(dragon )?station|stat(ionary)? dragon|remove riderless dragons|stopEffect( id)?|draw(((simple)?halo|spiral|complexcircle|band) particle|wings1|nyancat|atom)|particle(1|2)|((offset(1|2)?)?xyz|rgb(1,2,3))|speed2|issingle|r(ainbow)?m(ode)?|visiblerange|start|dis(placement)?(x|y|z)|randomrotation|density|(x|y|z)r(otation)?|(inn|out)erpcount|innerradius|orbitcount)\\b"
+        name: "keyword.addon.effect.skdragon.skript"
+      }
+      {
         match: "\\b(?i)(branch|crafting recipes|row(s)?|see( lines)?|($ )?(developer mode|access|init (.+)|use permissions|db (password|url|username) (.+))|do|draw buffered( )?image|draw|map|starting|normally|(erase|wipe)( map)?|escape|l(ine|evel)(s)?|evaluate|run|(un)?format slot|(be|act) unstealable|access|invoke|launch|deploy|timed|leash|(manage|share|over(rid|writ)e) map( id)?|pathfind|play midi|play raw sound|pop|register new shape(d|less) recipe|send map|permanently restore updates|restore all updates|move display|make score|(score)?board|display credits|(soft )?return|spawn( damaging( undroppable)?| undroppable( damaging)?)? falling block|update|shutdown|tame|send (resource|texture) pack|trail|reveal|hide)\\b"
         name: "keyword.addon.effect.skquery.skript"
       }
@@ -469,12 +477,20 @@ repository:
 #      }
 #EXPRESSIONS
       {
-        match: "\\b(?i)(((craft)?bukkit|minecraft|skript)( |-)version|altitude(s)?|command|(doesn't have|has) permission|amount|number|size|arg(ument)?(s)?|(boot|shoe|leg(ging)?|chestplate|helm(et)?)(s)? (slot)?|bed(s)? (location(s)?)?|biome|(the )?(event-)?block|blocks (in radius|around)?|in radius|blocks|between|chunk(s)?|clicked|(non( |-)?|un( |-))??colo(u)?r(s|ed)?|(full|complete|whole) command|label|compass target|(x|y|z)(-| )(coord(inate)?|pos(ition)?|loc(ation)?)(s)?|damage( cause| type)?|((data|damage)(s)? (value(s)?)?|durabilit(y|ies))|difference( between)?|distance between|drops|random element( out)?|level|enchant(ment)?|ender( )?chest(s)?|(within|(with)?in radius)|around|entities of type(s)?|((spawned|dropped) )?(e)?xp(erience )?(orb(s)?)?|(horizontal )?facing|(food|hunger)(( )?(level|met(er|re)|bar) )?|(former|past|old|future|to-be|new) (state )?|before (the event)?|(ore|fuel|result)(s )?(slot(s)?)?|game( )?mode|md5( |-)hash(ed|(( |-))?code )?|(head|eye(s)?) (location(s)?)?|health|id(s)?|index|inventor(y|ies)|IP(s)?(( |-)address(es)?)?|item|block(s|( )?types)|item(s|( )?types)|(blocks|items) of type(s )?|(inventor(y|ies))|concat(enate)?|join|(with|by|using|at) delimiter|split|(last(ly)? )?(spawned|shot)|length|level( progress)?|((sky|sun|block)( )?)?light( )?level|(location|position)|line|lore|max(imum)? health|stack(( )?size )?|max(imum )?stack(( )?size)?|me my(self)?|(chat|join|log( )?(in|out)?|quit|leave|kick|death|)( |-)message|money|balance|account|(the )?(player|tab)( )?list name(s )?|(display|nick|chat)( )?name(s )?|name(s)?|(named|with name(s)?)|(integers) (between|from)|parsed as|(last )?(parse )?error|passenger(s)?|(prefix|suffix)|random|out|random (integer|number) (from|between)|owner(s )?|region(s )?|remaining air|(floor|round)|ceil(ing)?|script(('s )?name)?|line|skull|spawn(s )?((point|location)(s)?)?|(walk(ing)?|fl(y(ing)?|ight))(( |-)?)speed|(part|sub( )?(text|string))|(between|from)|ind(ex|ices)|character(s)?|uuid|time|tool|held item|weapon|type|vehicle|yaw|pitch)\\b"
+        match: "\\b(?i)(((craft)?bukkit|minecraft|skript)( |-)version|altitude(s)?|command|(doesn't have|has) permission|amount|number|size|arg(ument)?(s)?|(boot|shoe|leg(ging)?|chestplate|helm(et)?)(s)? (slot)?|bed(s)? (location(s)?)?|biome|(the )?(event-)?block|blocks (in radius|around)?|in radius|blocks|between|chunk(s)?|clicked|(non( |-)?|un( |-))??colo(u)?r(s|ed)?|(full|complete|whole) command|label|compass target|((x|y|z)(-| ))?(coord(inate)?|pos(ition)?|loc(ation)?)(s)?|damage( cause| type)?|((data|damage)(s)? (value(s)?)?|durabilit(y|ies))|difference( between)?|distance between|drops|random element( out)?|level|enchant(ment)?|ender( )?chest(s)?|(within|((with)?in|with)? radius)|around|entities of type(s)?|((spawned|dropped) )?(e)?xp(erience )?(orb(s)?)?|(horizontal )?facing|(food|hunger)(( )?(level|met(er|re)|bar) )?|(former|past|old|future|to-be|new) (state )?|before (the event)?|(ore|fuel|result)(s )?(slot(s)?)?|game( )?mode|md5( |-)hash(ed|(( |-))?code )?|(head|eye(s)?) (location(s)?)?|health|id(s)?|index|inventor(y|ies)|IP(s)?(( |-)address(es)?)?|item|block(s|( )?types)|item(s|( )?types)|(blocks|items) of type(s )?|(inventor(y|ies))|concat(enate)?|join|(with|by|using|at) delimiter|split|(last(ly)? )?(spawned|shot)|length|level( progress)?|((sky|sun|block)( )?)?light( )?level|(location|position)|line|lore|max(imum)? health|stack(( )?size )?|max(imum )?stack(( )?size)?|me my(self)?|(chat|join|log( )?(in|out)?|quit|leave|kick|death|)( |-)message|money|balance|account|(the )?(player|tab)( )?list name(s )?|(display|nick|chat)( )?name(s )?|name(s)?|(named|with name(s)?)|(integers) (between|from)|parsed as|(last )?(parse )?error|passenger(s)?|(prefix|suffix)|random|out|random (integer|number) (from|between)|owner(s )?|region(s )?|remaining air|(floor|round)|ceil(ing)?|script(('s )?name)?|line|skull|spawn(s )?((point|location)(s)?)?|(walk(ing)?|fl(y(ing)?|ight))(( |-)?)speed|(part|sub( )?(text|string))|(between|from)|ind(ex|ices)|character(s)?|uuid|time|tool|held item|weapon|type|vehicle|yaw|pitch)\\b"
         name: "keyword.addon.expression.main.skript"
+      }
+      {
+        match: "\\b(?i)((in)? rad(ian)?(s)?|(in)? deg(ree)?(s)?|midpoint|linear coord(inate)?(s)?|(linked|connected)( with)? density|polygon(s)?|(vertex|vertices|vertexes)(,| and) radius|cube(s)?|circle(s)?|heli(x|xes|ces)|height|(,| and) step (height|size)|cylinder coord(inate)?(s)?|spheric(al)? coord(inate)?(s)?|(with )?coordinates|(random )?sphere(s)?|and density|with angle|rotated around( (x|y|z)(-| )axis)?|mirrored|(scaled )?(with)? center|move|shift)\\b"
+        name: "keyword.addon.expression.biosphere.skript"
       }
       {
         match: "\\b(?i)(active potion effect(s)?auto(matic)? despawn state|(wolf )?collar (color)?|(letters|characters)|(changed|converted)|((upp|low)ercase|(un)?caps)|(shown|displayed) item|(event(-| ))?enchant(ed|ing) item (e)?xp(erience)? cost|(e)?xp(erience)? cost of enchant(ing|ment)|(restore(d)?|heal(ed)?|regenerat(ed)?) (amount|number|health)|(invulnerability (time)?|no damage (time)?)|(shown|displayed) rotation|pickup state|saturation (level)?|(number (of times)? (that)?|count of)( case(-| )sensitive)?)\\b"
         name: "keyword.addon.expression.extrassk.skript"
+      }
+      {
+        match: "\\b(?i)(gamebuster's )?(fixed )?(yaw|pitch)\\b"
+        name: "keyword.addon.expression.gamebusk.skript"
       }
       {
         match: "\\b(?i)(pos(it(ion)?)?( )?(1|2)|wg region)\\b"

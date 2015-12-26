@@ -1,3 +1,15 @@
+# 1.3.0
+* Bug Fixes
+* Added BioSphere
+* Added skdragon
+* Added GameBuSk
+
+# 1.2.2 - 1.2.4
+* Dummy Fixes
+
+# 1.2.1
+* Bug Fixes
+
 # 1.2.0
 * Added skQuery's Effects
 * Fixed Bugs
