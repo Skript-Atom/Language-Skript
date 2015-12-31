@@ -346,6 +346,10 @@ repository:
         name: "keyword.addon.type.main.skript"
       }
       {
+        match: "\\b(?i)(browser|browsertype|searchtype|gwebdriver|keytype)\\b"
+        name: "keyword.addon.type.gamebusk.skript"
+      }
+      {
         match: "\\b(?i)(statistic)\\b"
         name: "keyword.addon.type.randomsk.skript"
       }
@@ -428,6 +432,10 @@ repository:
         name: "keyword.addon.effect.extrassk.skript"
       }
       {
+        match: "\\b(?i)((go to|open)( url)?|url|open new tab|click|send( key(s)?)?)\\b"
+        name: "keyword.addon.effect.gamebusk.skript"
+      }
+      {
         match: "\\b(?i)((add|remove) (member|owner)|(crea|dele)te wg region|paste schematic|save)\\b"
         name: "keyword.addon.effect.piratesk.skript"
       }
@@ -440,7 +448,7 @@ repository:
         name: "keyword.addon.effect.skaction.skript"
       }
       {
-        match: "\\b(?i)(take|flight|random flight|(their )?dragon home|(stop|dismount from) dragon travel|(dragon )?station|stat(ionary)? dragon|remove riderless dragons|stopEffect( id)?|draw(((simple)?halo|spiral|complexcircle|band) particle|wings1|nyancat|atom)|particle(1|2)|((offset(1|2)?)?xyz|rgb(1,2,3))|speed2|issingle|r(ainbow)?m(ode)?|visiblerange|start|dis(placement)?(x|y|z)|randomrotation|density|(x|y|z)r(otation)?|(inn|out)erpcount|innerradius|orbitcount)\\b"
+        match: "\\b(?i)(take|flight|random flight|(their )?dragon home|(stop|dismount from) dragon travel|(dragon )?station|stat(ionary)? dragon|remove riderless dragons|stopEffect( id)?|draw(((simple)?halo|spiral|complexcircle|band) particle|wings1|nyancat|atom)|particle(1|2|3)|(offset)?xyz(1|2)?|rgb(2|3)?|speed(2|3)|issingle|r(ainbow)?m(ode)?|visiblerange|start|dis(placement)?(x|y|z)|randomrotation|density|(x|y|z)r(otation)?|(inn|out)erpcount|innerradius|orbitcount|angle)\\b"
         name: "keyword.addon.effect.skdragon.skript"
       }
       {
@@ -489,7 +497,7 @@ repository:
         name: "keyword.addon.expression.extrassk.skript"
       }
       {
-        match: "\\b(?i)(gamebuster's )?(fixed )?(yaw|pitch)\\b"
+        match: "\\b(?i)((gamebuster's )?(fixed )?(yaw|pitch)|all browsers|element found (by|using)|with parameter)\\b"
         name: "keyword.addon.expression.gamebusk.skript"
       }
       {

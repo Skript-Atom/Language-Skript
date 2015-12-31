@@ -1,3 +1,7 @@
+# 1.3.1
+* Bug Fixes
+* Added Updated Syntax from GameBuSk & skdragon
+
 # 1.3.0
 * Bug Fixes
 * Added BioSphere
