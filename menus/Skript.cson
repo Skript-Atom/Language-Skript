@@ -5,6 +5,68 @@
       'label': 'Skript'
       'submenu': [
         {
+          'label': 'Addon Versions (19)'
+          'submenu': [
+            {
+              'label': 'Skript: v2.2'
+            }
+            {
+              'label': 'skQuery: v3.21.4'
+            }
+            {
+              'label': 'AuthMe SkAddon: v1.1'
+            }
+            {
+              'label': 'BioSphere: v1.0.2'
+            }
+            {
+              'label': 'ExtrasSk: v1.5'
+            }
+            {
+              'label': 'GameBuSk: v0.1.171'
+            }
+            {
+              'label': 'skKeelan: v0.2'
+            }
+            {
+              'label': 'PirateSk: v0.4.1'
+            }
+            {
+              'label': 'RandomSk: v2.7.1'
+            }
+            {
+              'label': 'skAction: v1.2'
+            }
+            {
+              'label': 'skDragon: v0.04.24'
+            }
+            {
+              'label': 'skRambled: v1.9'
+            }
+            {
+              'label': 'skRayFall: v1.7.3'
+            }
+            {
+              'label': 'SkriptEvolved: v0.2.1'
+            }
+            {
+              'label': 'skRPG: v1.0.0'
+            }
+            {
+              'label': 'skStuff: v1.4'
+            }
+            {
+              'label': 'SpectateHook: v1.1'
+            }
+            {
+              'label': 'Umbaska: v2.0.0 (Not Fully Added)'
+            }
+            {
+              'label': 'WildSkript: v1.8'
+            }
+          ]
+        }
+        {
           'label': 'Code Suggestions'
           'command': 'Skript:code-suggestions'
           'type': 'checkbox'
