@@ -1,3 +1,7 @@
+# 1.4.0
+* Bug Fixes
+* Addon Versions in "Packages/Skript/Addon Versions"
+
 # 1.3.1
 * Bug Fixes
 * Added Updated Syntax from GameBuSk & skdragon
