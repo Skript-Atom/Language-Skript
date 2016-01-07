@@ -1,3 +1,7 @@
+# 1.5.0
+* Bug Fixes
+* Fully Added SkQuery
+
 # 1.4.0
 * Bug Fixes
 * Addon Versions in "Packages/Skript/Addon Versions"

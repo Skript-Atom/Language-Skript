@@ -8,6 +8,9 @@
           'label': 'Addon Versions (19)'
           'submenu': [
             {
+              'label': 'Aliases: Coming soon'
+            }
+            {
               'label': 'Skript: v2.2'
             }
             {
@@ -67,43 +70,13 @@
           ]
         }
         {
-          'label': 'Code Suggestions'
-          'command': 'Skript:code-suggestions'
+          'label': 'Show Suggestions'
+          'command': 'Skript:suggestions'
           'type': 'checkbox'
         }
         {
           'label': 'Show Errors'
-          'command': 'Skript:show-errors'
-          'type': 'checkbox'
-        }
-        {
-          'label': 'Color Types'
-          'command': 'Skript:color-types'
-          'type': 'checkbox'
-        }
-        {
-          'label': 'Color Temp Variables'
-          'command': 'Skript:color-temp-variables'
-          'type': 'checkbox'
-        }
-        {
-          'label': 'Color Variables'
-          'command': 'Skript:color-variables'
-          'type': 'checkbox'
-        }
-        {
-          'label': 'Color Brackets'
-          'command': 'Skript:color-brackets'
-          'type': 'checkbox'
-        }
-        {
-          'label': 'Color Options'
-          'command': 'Skript:color-options'
-          'type': 'checkbox'
-        }
-        {
-          'label': 'Color Numbers'
-          'command': 'Skript:color-numbers'
+          'command': 'Skript:errors'
           'type': 'checkbox'
         }
       ]
