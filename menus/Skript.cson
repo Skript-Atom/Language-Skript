@@ -2,7 +2,7 @@
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'Skript'
+      'label': 'Language-Skript: v1.6.0'
       'submenu': [
         {
           'label': 'Addon Versions (19)'
@@ -29,13 +29,13 @@
               'label': 'GameBuSk: v0.1.171'
             }
             {
-              'label': 'skKeelan: v0.2'
-            }
-            {
               'label': 'PirateSk: v0.4.1'
             }
             {
               'label': 'RandomSk: v2.7.1'
+            }
+            {
+              'label': 'skKeelan: v0.2'
             }
             {
               'label': 'skAction: v1.2'
@@ -57,6 +57,9 @@
             }
             {
               'label': 'skStuff: v1.4'
+            }
+            {
+              'label': 'skWorldBorder: v1.0'
             }
             {
               'label': 'SpectateHook: v1.1'

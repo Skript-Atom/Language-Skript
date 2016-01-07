@@ -1,3 +1,8 @@
+# 1.6.0
+* Bug Fixes
+* Fully Added Skript
+* Added skWorldBorder
+
 # 1.5.0
 * Bug Fixes
 * Fully Added SkQuery
@@ -8,12 +13,12 @@
 
 # 1.3.1
 * Bug Fixes
-* Added Updated Syntax from GameBuSk & skdragon
+* Added Updated Syntax from GameBuSk & skDragon
 
 # 1.3.0
 * Bug Fixes
 * Added BioSphere
-* Added skdragon
+* Added skDragon
 * Added GameBuSk
 
 # 1.2.2 - 1.2.4
