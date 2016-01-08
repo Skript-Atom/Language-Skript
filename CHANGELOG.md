@@ -1,3 +1,6 @@
+# 1.6.1
+* Major Bug Fix
+
 # 1.6.0
 * Bug Fixes
 * Fully Added Skript
