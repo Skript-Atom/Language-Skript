@@ -1,3 +1,9 @@
+# 1.6.5
+* Fixed WildSk's Effects
+* Fixed RandomSk's Expressions
+* Bug Fixes
+* Converted to faster loader
+
 # 1.6.1
 * Major Bug Fix
 
