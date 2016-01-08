@@ -2,7 +2,7 @@
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'Language-Skript: v1.6.0'
+      'label': 'Language-Skript: v1.6.6'
       'submenu': [
         {
           'label': 'Addon Versions (19)'
