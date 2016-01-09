@@ -1,3 +1,11 @@
+# 1.6.7
+* Bug Fixes
+* Added "permission message:" & "executable by:"
+* Changed location of Drop Down Menu
+
+# 1.6.6
+* Fixed Versioning Bug
+
 # 1.6.5
 * Fixed WildSk's Effects
 * Fixed RandomSk's Expressions
