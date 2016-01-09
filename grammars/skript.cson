@@ -493,7 +493,7 @@ repository:
         name: "keyword.addon.effect.skstuff.skript"
       }
       {
-        match: "\\b(?i)(set border (size|center))\\b"
+        match: "\\b(?i)(set (border )?(size|center))\\b"
         name: "keyword.addon.effect.skworldborder.skript"
       }
       {
@@ -564,7 +564,7 @@ repository:
         name: "keyword.addon.expression.skstuff.skript"
       }
       {
-        match: "\\b(?i)(border length)\\b"
+        match: "\\b(?i)(border (size )?of)\\b"
         name: "keyword.addon.expressions.skworldborder.skript"
       }
       {

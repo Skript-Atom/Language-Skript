@@ -2,6 +2,7 @@
 * Bug Fixes
 * Added "permission message:" & "executable by:"
 * Changed location of Drop Down Menu
+* added v1.1 of skWorldBorder
 
 # 1.6.6
 * Fixed Versioning Bug
