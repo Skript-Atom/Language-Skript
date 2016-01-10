@@ -2,7 +2,8 @@
 * Bug Fixes
 * Added "permission message:" & "executable by:"
 * Changed location of Drop Down Menu
-* added v1.1 of skWorldBorder
+* added v1.1.5 of skWorldBorder
+* added teamspeakskaddon
 
 # 1.6.6
 * Fixed Versioning Bug
