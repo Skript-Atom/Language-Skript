@@ -1,4 +1,4 @@
-# 1.6.7
+# 1.7.0
 * Bug Fixes
 * Added "permission message:" & "executable by:"
 * Changed location of Drop Down Menu

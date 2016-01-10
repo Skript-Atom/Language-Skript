@@ -375,6 +375,10 @@ repository:
         name: "keyword.addon.type.skquery.skript"
       }
       {
+        match: "\\b(?i)(town|nation|resident)(s|'s)?\\b"
+        name: "keyword.addon.type.skeeland.skript"
+      }
+      {
         match: "\\b(?i)(faction|party|rel|skill)\\b"
         name: "keyword.addon.type.skrambled.skript"
       }
@@ -389,6 +393,10 @@ repository:
       {
         match: "\\b(?i)(compound|editsession)\\b"
         name: "keyword.addon.type.skstuff.skript"
+      }
+      {
+        match: "\\b(?i)(client)\\b"
+        name: "keyword.addon.type.teamspeakskaddon.skript"
       }
     ]
   conditions:
@@ -434,6 +442,10 @@ repository:
         name: "keyword.addon.condition.spectatehook.skript"
       }
       {
+        match: "\\b(?i)((teamspeak|ts) ((connection|ban|online) state))\\b"
+        name: "keyword.addon.condition.teamspeakskaddon.skript"
+      }
+      {
         match: "\\b(?i)(is(n't| not)? (enem|all)y with|is(n't| not)? neutral)\\b"
         name: "keyword.addon.condition.umbaska.skript"
       }
@@ -473,6 +485,10 @@ repository:
         name: "keyword.addon.effect.skdragon.skript"
       }
       {
+        match: "\\b(?i)(run garbage collector|open brewing|send (resource|texture)( )?pack|set fake max|end war(( )?event)?|backup towny( data)?|new|rename|rem(ove)?|set pvp state|set fire state|save towny( data)?|bonus blocks|board)\\b"
+        name: "keyword.addon.effect.skeeland.skript"
+      }
+      {
         match: "\\b(?i)(branch|target|crafting recipes|row(s)?|see( lines)?|($ )?(developer mode|access|init (.+)|use permissions|db (password|url|username) (.+))|do|draw buffered( )?image|draw|map|starting|normally|(erase|wipe)( map)?|escape|l(ine|evel)(s)?|evaluate|run|(un)?format slot|(be|act) unstealable|access|invoke|launch|deploy|timed|leash|(manage|share|over(rid|writ)e) map( id)?|pathfind|play midi|play raw sound|pop|register new shape(d|less) recipe|send map|permanently restore updates|restore all updates|move display|make score|(score)?board|display credits|(soft )?return|spawn( damaging( undroppable)?| undroppable( damaging)?)? falling block|update|shutdown|tame|send (resource|texture) pack|trail|reveal|hide)\\b"
         name: "keyword.addon.effect.skquery.skript"
       }
@@ -493,12 +509,16 @@ repository:
         name: "keyword.addon.effect.skstuff.skript"
       }
       {
-        match: "\\b(?i)(set (border )?(size|center))\\b"
+        match: "\\b(?i)(set (border )?(size|center|damage (amount|buffer)|warning distance))\\b"
         name: "keyword.addon.effect.skworldborder.skript"
       }
       {
         match: "\\b(?i)(spectate|stop spectating|change spectate angle)\\b"
         name: "keyword.addon.effect.spectatehook.skript"
+      }
+      {
+        match: "\\b(?i)((teamspeak|ts) (server )?((dis)?connect|send (channel|broadcast) message|send private|poke|tempban|(change|remove) description|delete all ban entries)|user|login|credentials|on query port| flood level)\\b"
+        name: "keyword.addon.effect.teamspeakskaddon.skript"
       }
     #  {
     #    match: "\\b(?i)\\b"
@@ -540,6 +560,10 @@ repository:
         name: "keyword.addon.expression.skaction.skript"
       }
       {
+        match: "\\b(?i)((available( )?)?processors|cpu(( )?byte)?|(os|operating system)|os arch(itecture)?|(os( )?)?username|(running( )?)?threads|allow (end|nether|flight)|cpu usage|default gamemode|idle timeout|(skeeland|bukit) version|loaded|online mode|ip|port|uptime|per (animal|monster) spawn(s)?|view distance|((water )?a(nimal|mbient)|monster) spawn(s)? limit|(total|max|free) memory( in)? mb|claim|(fire|pvp|public) state|mayor|taxes|without a|war( )?time)\\b"
+        name: "keyword.addon.expression.skeeland.skript"
+      }
+      {
         match: "\\b(?i)(arabic num(ber|eral)|critical arrow (state|ability|mode)|(displayed )?art|(blast|explosion) (radius|size|yield)|book from|check(ed)?|(sin(e)?|cos(ine)?|tan(gent)?|arc (sin(e)?|cos(ine)?|tan(gent)?)|hyperbolic (sin(e)?cos(ine)?|tan(gent)?)|((natural )?|base(-| )10 )log(arithm)?|signum|sq(rt|uare root))|factorial|enum values|(destroyed|exploded|boom boomed)|(max )?player count|(flickering (trailing )?|trailing (flickering )?)|firework (effect )?colored|fad(e|ing)|fl(y|ight) (state|ability|mode)|glowing|(new )?(guid|uuid)|scaled health( state| ability| mode)?|holo particle|(current|selected) hotbar slot( id)?|(buffered )?image stored|(buffered )?image from|(blast|explosion) fire (state|ability|mode)|serialized contents|global max stack size|json|then|(styled |colored )?tooltip|suggest|(char|long|length) string from( charset)?|land boat (state|mode|ability)|loaded chunks|(maximum )?minecart speed|message format|mod|(current )?moon phase|(motd|message of the day)|(nl|new( )?line)|(st|nd|rd|th) prime|null|(current|open) inventory|parameter(-)?|permissions|version|(primer|fuse lighting piece of shit)|value|pulled|radix|(regen|heal) (cause|reason)|matched (to|with|against)|roman num(ber|eral)|server icon|result of query|objects in column|(tab )?(completions|suggestions)|(tamer|(pet )?owner)|transient( object)?|villager (profession|job)|where|yaml (value|nodes|nodes with keys|list))\\b"
         name: "keyword.addon.expression.skquery.skript"
       }
@@ -564,12 +588,16 @@ repository:
         name: "keyword.addon.expression.skstuff.skript"
       }
       {
-        match: "\\b(?i)(border (size )?of)\\b"
+        match: "\\b(?i)(border (size |center |damage (amount|buffer) |warning distance )?of)\\b"
         name: "keyword.addon.expressions.skworldborder.skript"
       }
       {
         match: "\\b(?i)(spectate (angle|target))\\b"
         name: "keyword.addon.expression.spectatehook.skript"
+      }
+      {
+        match: "\\b(?i)(teamspeak|ts) (ip|address|description)\\b"
+        name: "keyword.addon.expression.teamspeakskaddon.skript"
       }
     #  {
     #    match: "\\b(?i)\\b"
