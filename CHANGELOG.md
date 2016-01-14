@@ -1,3 +1,8 @@
+# 1.7.1
+* Bug Fixes
+* skWorldBorder update
+* skDragon Update
+
 # 1.7.0
 * Bug Fixes
 * Added "permission message:" & "executable by:"

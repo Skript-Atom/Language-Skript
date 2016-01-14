@@ -1,6 +1,6 @@
 'menu': [
   {
-    'label': 'Lang-Skript: v1.7.0'
+    'label': 'Lang-Skript: v1.7.1'
     'submenu': [
       {
         'label': 'Addon Versions (21)'
@@ -57,7 +57,7 @@
             'label': 'skStuff: v1.4'
           }
           {
-            'label': 'skWorldBorder: v1.1.5'
+            'label': 'skWorldBorder: v1.1.8'
           }
           {
             'label': 'SpectateHook: v1.1'

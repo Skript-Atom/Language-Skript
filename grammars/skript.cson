@@ -70,13 +70,13 @@ repository:
         name: "variable.exprwrap.skript"
       }
       {
-        begin: '\{_'
-        end: '(\}|\\n)'
+        begin: '{_'
+        end: '(}|\\n)'
         name: "variable.temp.skript"
       }
       {
-        begin: '\{'
-        end: '(\}|\\n)'
+        begin: '{'
+        end: '(})'#|\\n)'
         name: "variable.normal.skript"
       }
     ]
@@ -312,10 +312,6 @@ repository:
   events:
     patterns: [
       {
-        match: "\\b(?i)(on (place|mine|break|(trip|(step(ping)?))|projectile hit|(quit(ting)?|disconnect(ing)?|log( )?out|logging out)|redstone( current)?( chang(e|ing))|region( leave| exit| enter)|(player )?respawn(ing)?|(script )?(load|init|enable|unload|disable)|(projectile )?shoot|sign( chang(e|ing)| edit)(ing)?|(player )?(chang(e)?|edit)(ing)?|(server|skript) (start|load|enable|stop|unload|disable)|(ore)? smelt(ing)?|(smelt|spawn)(ing )?|(world )?spawn change|spread(ing)?|(player )?toggl(e|ing) (sprint|sneak)|(player )?(sprint|sneak) toggl(e|ing)|(entity )?tam(e|ing)|(entity )?(un(-)?)?target|(player )?teleport(ing)?|throw(ing )?|(player )?egg throw|(player(''s)? )?(tool|item held|held item) chang(e|ing)|vehicle (create|damage|destory|enter|exit)|(creat(e|ing|ion)|damag(e|ing)|destr(oy(ing)?|uction)|(enter|exit)(ing)?) (a )?vehicle|weather change|world( (un)?load(ing)?| sav(e|ing)| init)|zombie break(ing)?|(block )?fad(e|ing)|first (join|login)|(player )?fish(ing)?|(block )?flow(ing)?|block mov(e|ing)|(block )?form(ing)?|fuel burn(ing)?|game( )?mode change|grow (of (oak|spruce|birch|jungle|dark oak|acacia))?|heal(ing)?|(food|hunger) (level|met(er|re)|bar) chang(e|ing)|(block )?ignit(e|ion)|(player )?tool break(ing)?|(player )?break(ing)? ((a|the) )?tool|item spawn(ing)?|(player )?(login|logging in|join(ing)?|kick|being kicked)|leaves decay(ing)?|(player )?level( change)?|lightning( strike)?|(step|walk)(ing)? (on|over)|(block )?physics|(player )?(pick( )?up|picking up)|pig( )?zap|piston( extend| retract)(ing)?|(block )?(plac(e|ing)|build(ing)?)|(player )?portal|portal (create|enter)|entering( a)? portal|bucket (empty|fill)(ing)?|(player )?(empty|fill)(ing)?( a)? bucket|bucket fill(ing)?|(block )?burn(ing)?|(block )?can build check|chat|chunk (generat|populat)(e|ing)|chunk (un)?load(ing)?|((right|left)(( |-))?)?(mouse(( |-))?)?click(ing)?|combust(ing)?|(player )?connect(ing)?|(player )?((eat|drink)(ing)?|consum(e|ing))|(player )?craft(ing)?|creeper power|damag(e|ing)|death|dispens(e|ing)|(player )?drop(ing)?|enderman (place|pickup)|sheep eat|(e)?xp(erience)? (orb)? spawn|spawn of (a(n)?)? (e)?xp(erience)? (orb)?|explo(d(e|ing)|sion)( prime)?|bed (enter(ing)?|leav(e|ing))|(player)? (enter(ing)?|leav(e|ing)) (a)? bed|block damage|command|(block)? (min(e|ing))))\\b"
-        name: "keyword.addon.event.main.skript"
-      }
-      {
         match: "\\b(?i)(on crop (trampl(e|ing)|break(ing)?|stomp(ing)?|step(ping)? on|destroy(ing)?|grow))\\b"
         name: "keyword.addon.event.extrassk.skript"
       }
@@ -330,10 +326,6 @@ repository:
       {
         match: "\\b(?i)(on dragontravel (dis|pre |post )mount)\\b"
         name: "keyword.addon.event.skdragon.skript"
-      }
-      {
-        match: "\\b(?i)(on (sheep dye|tab complet(er|ion)|vehicle (entity collide|collide with entity)|horse jump|inventory cl(ick|ose)|any move|block land|(book )?edit|enchant( item)?|(player )?toggl(e|ing) (flight|fly)|(player )?(flight|fly) toggl(e|ing)))\\b"
-        name: "keyword.addon.event.skquery.skript"
       }
       {
         match: "\\b(?i)(on faction ((create|disband)|(name|description) change))\\b"
@@ -355,13 +347,17 @@ repository:
         match: "\\b(?i)(on (download|(player )?edit book|jump(ing)?|prepare item craft|(server )?(list )?ping))\\b"
         name: "keyword.addon.event.wildsk.skript"
       }
+      {
+        match: "\\b(?i)(on (place|mine|break|(trip|(step(ping)?))|projectile hit|(quit(ting)?|disconnect(ing)?|log( )?out|logging out)|redstone( current)?( chang(e|ing))|region( leave| exit| enter)|(player )?respawn(ing)?|(script )?(load|init|enable|unload|disable)|(projectile )?shoot|sign( chang(e|ing)| edit)(ing)?|(player )?(chang(e)?|edit)(ing)?|(server|skript) (start|load|enable|stop|unload|disable)|(ore)? smelt(ing)?|(smelt|spawn)(ing )?|(world )?spawn change|spread(ing)?|(player )?toggl(e|ing) (sprint|sneak)|(player )?(sprint|sneak) toggl(e|ing)|(entity )?tam(e|ing)|(entity )?(un(-)?)?target|(player )?teleport(ing)?|throw(ing )?|(player )?egg throw|(player(''s)? )?(tool|item held|held item) chang(e|ing)|vehicle (create|damage|destory|enter|exit)|(creat(e|ing|ion)|damag(e|ing)|destr(oy(ing)?|uction)|(enter|exit)(ing)?) (a )?vehicle|weather change|world( (un)?load(ing)?| sav(e|ing)| init)|zombie break(ing)?|(block )?fad(e|ing)|first (join|login)|(player )?fish(ing)?|(block )?flow(ing)?|block mov(e|ing)|(block )?form(ing)?|fuel burn(ing)?|game( )?mode change|grow (of (oak|spruce|birch|jungle|dark oak|acacia))?|heal(ing)?|(food|hunger) (level|met(er|re)|bar) chang(e|ing)|(block )?ignit(e|ion)|(player )?tool break(ing)?|(player )?break(ing)? ((a|the) )?tool|item spawn(ing)?|(player )?(login|logging in|join(ing)?|kick|being kicked)|leaves decay(ing)?|(player )?level( change)?|lightning( strike)?|(step|walk)(ing)? (on|over)|(block )?physics|(player )?(pick( )?up|picking up)|pig( )?zap|piston( extend| retract)(ing)?|(block )?(plac(e|ing)|build(ing)?)|(player )?portal|portal (create|enter)|entering( a)? portal|bucket (empty|fill)(ing)?|(player )?(empty|fill)(ing)?( a)? bucket|bucket fill(ing)?|(block )?burn(ing)?|(block )?can build check|chat|chunk (generat|populat)(e|ing)|chunk (un)?load(ing)?|((right|left)(( |-))?)?(mouse(( |-))?)?click(ing)?|combust(ing)?|(player )?connect(ing)?|(player )?((eat|drink)(ing)?|consum(e|ing))|(player )?craft(ing)?|creeper power|damag(e|ing)|death|dispens(e|ing)|(player )?drop(ing)?|enderman (place|pickup)|sheep eat|(e)?xp(erience)? (orb)? spawn|spawn of (a(n)?)? (e)?xp(erience)? (orb)?|explo(d(e|ing)|sion)( prime)?|bed (enter(ing)?|leav(e|ing))|(player)? (enter(ing)?|leav(e|ing)) (a)? bed|block damage|command|(block)? (min(e|ing))))\\b"
+        name: "keyword.addon.event.main.skript"
+      }
+      {
+        match: "\\b(?i)(on (sheep dye|tab complet(er|ion)|vehicle (entity collide|collide with entity)|horse jump|inventory cl(ick|ose)|any move|block land|(book )?edit|enchant( item)?|(player )?toggl(e|ing) (flight|fly)|(player )?(flight|fly) toggl(e|ing)))\\b"
+        name: "keyword.addon.event.skquery.skript"
+      }
     ]
   types:
     patterns: [
-      {
-        match: "\\b(?i)(material|survival|adventure|creative|spectator|biome(s)?|block(s)?|boolean(s)?|chunk(s)?|colo(u)?r(s)?|(command(s)?)?( )?(sender|executor)(s)?|damage cause(s)?|date(s)?|direction(s)?|enchantment(s)?|enchant(ing|ment) type(s)?|(tile )?entit(y|ies)|entity( )?type(s)?|game( )?mode(s)?|inventor(y|ies)|item( material)?|item( )?type(s)?|items( materials)?|meter(s)?|living( )?entit(y|ies)|location(s)?|num(ber)?(s)?|integer(s)?|offline( )?player(s)?|potion(( )?effect)?(( )?type)?(s)?|projectile(s)?|(inventory )?slot(s)?|sound(s)?|(text|string)(s)?|(relative )?time(s)?|time( )?period(s)?|duration(s)?|time( )?span(s)?|tree(( )?type)?(s)?|type(s)?|(visual|particle) effect(s)?|weather( )?type(s)?|weather( condition)?(s)?|world(s)?)\\b"
-        name: "keyword.addon.type.main.skript"
-      }
       {
         match: "\\b(?i)(browser|browsertype|searchtype|gwebdriver|keytype)\\b"
         name: "keyword.addon.type.gamebusk.skript"
@@ -369,10 +365,6 @@ repository:
       {
         match: "\\b(?i)(statistic)\\b"
         name: "keyword.addon.type.randomsk.skript"
-      }
-      {
-        match: "\\b(?i)(displayslot(s)?|fireworktype(s)?|lambda|markup|particletypes(s)?)\\b"
-        name: "keyword.addon.type.skquery.skript"
       }
       {
         match: "\\b(?i)(town|nation|resident)(s|'s)?\\b"
@@ -398,13 +390,17 @@ repository:
         match: "\\b(?i)(client)\\b"
         name: "keyword.addon.type.teamspeakskaddon.skript"
       }
+      {
+        match: "\\b(?i)(material|distance|survival|adventure|creative|spectator|biome(s)?|block(s)?|boolean(s)?|chunk(s)?|colo(u)?r(s)?|(command(s)?)?( )?(sender|executor)(s)?|damage cause(s)?|date(s)?|direction(s)?|enchantment(s)?|enchant(ing|ment) type(s)?|(tile )?entit(y|ies)|entity( )?type(s)?|game( )?mode(s)?|inventor(y|ies)|item( material)?|item( )?type(s)?|items( materials)?|meter(s)?|living( )?entit(y|ies)|location(s)?|num(ber)?(s)?|integer(s)?|offline( )?player(s)?|potion(( )?effect)?(( )?type)?(s)?|projectile(s)?|(inventory )?slot(s)?|sound(s)?|(text|string)(s)?|(relative )?time(s)?|time( )?period(s)?|duration(s)?|time( )?span(s)?|tree(( )?type)?(s)?|type(s)?|(visual|particle) effect(s)?|weather( )?type(s)?|weather( condition)?(s)?|world(s)?)\\b"
+        name: "keyword.addon.type.main.skript"
+      }
+      {
+        match: "\\b(?i)(displayslot(s)?|fireworktype(s)?|lambda|markup|particletypes(s)?)\\b"
+        name: "keyword.addon.type.skquery.skript"
+      }
     ]
   conditions:
     patterns: [
-      {
-        match: "\\b(?i)(true|false|(dis|en)able(d)?|(is|are)(n't| not)? set|can(not )?build|can(no|')t hold|ha(s|ve) not|ha(s|ve)n't|do(es)?n't have|can hold|ha(s|ve) (enough )?space (for|to hold)|chance|(is|are)(n't| not)?|equal|same as|between|(greater|more|higher|bigger|larger|less|smaller) than|above|below|(ha(s|ve)|do(es)?(n't| not) have)|((the(ir)?|his|her|its) )?inventory|do(es)?(n't| not) contain|contain(s)?|damage (been )?(caused|done|made)|do(es)?(n't| not) exist|exist(s)?|(ha(s|ve)|(do(es)?n't|don't|do(es )?not) have)|permission(s)?|((has not|hasn't|did not|didn't|has|did) )?((already|yet) )?play(ed )?(on (this|the) server )?(before|already|yet)|alive|dead|(is|are)(n't| not) ((IP(-| ))?)?banned|blocking|defending|holding|burning|ignited|on fire|empty|enchanted|flying|of type(s)?|poisoned|riding|(sleeping|sneaking|sprinting)|wearing|(the )?owner(s)?|member(s)?|(is|are) flying|(ha(s|ve) not|do(es)?n't have)|((is|are) o(n|ff)line|(is not|isn't|are not|aren't) o(ff|n)line)|(is pvp|pvp is)|(is|are) in (the )?region|region contains|(was|were)( more|(n't| not) (less|more)| less) than)\\b"
-        name: "keyword.addon.condition.main.skript"
-      }
       {
         match: "\\b(?i)(is( not)? (logged|registered))\\b"
         name: "keyword.addon.condition.authmeskaddon.skript"
@@ -416,10 +412,6 @@ repository:
       {
         match: "\\b(?i)(motd equals)\\b"
         name: "keyword.addon.condition.skaction.skript"
-      }
-      {
-        match: "\\b(?i)(is( not)?( a)? block|is( not)? divisible by|is( not)? prime|is (not )?within)\\b"
-        name: "keyword.addon.condition.skquery.skript"
       }
       {
         match: "\\b(?i)(not )?using (party|admin)(chat| chat)\\b"
@@ -453,13 +445,17 @@ repository:
         match: "\\b(?i)((file|folder)( in)?|(is not|isn't|is) tamed)\\b"
         name: "keyword.addon.condition.wildsk.skript"
       }
+      {
+        match: "\\b(?i)(true|false|(dis|en)able(d)?|(is|are)(n't| not)? set|can(not )?build|can(no|')t hold|ha(s|ve) not|ha(s|ve)n't|do(es)?n't have|can hold|ha(s|ve) (enough )?space (for|to hold)|chance|(is|are)(n't| not)?|equal|same as|between|(greater|more|higher|bigger|larger|less|smaller) than|above|below|(ha(s|ve)|do(es)?(n't| not) have)|((the(ir)?|his|her|its) )?inventory|do(es)?(n't| not) contain|contain(s)?|damage (been )?(caused|done|made)|do(es)?(n't| not) exist|exist(s)?|(ha(s|ve)|(do(es)?n't|don't|do(es )?not) have)|permission(s)?|((has not|hasn't|did not|didn't|has|did) )?((already|yet) )?play(ed )?(on (this|the) server )?(before|already|yet)|alive|dead|(is|are)(n't| not) ((IP(-| ))?)?banned|blocking|defending|holding|burning|ignited|on fire|empty|enchanted|flying|of type(s)?|poisoned|riding|(sleeping|sneaking|sprinting)|wearing|(the )?owner(s)?|member(s)?|(is|are) flying|(ha(s|ve) not|do(es)?n't have)|((is|are) o(n|ff)line|(is not|isn't|are not|aren't) o(ff|n)line)|(is pvp|pvp is)|(is|are) in (the )?region|region contains|(was|were)( more|(n't| not) (less|more)| less) than)\\b"
+        name: "keyword.addon.condition.main.skript"
+      }
+      {
+        match: "\\b(?i)(is( not)?( a)? block|is( not)? divisible by|is( not)? prime|is (not )?within)\\b"
+        name: "keyword.addon.condition.skquery.skript"
+      }
     ]
   effects:
     patterns: [
-      {
-        match: "\\b(?i)((un)?ban|(by reason|because|on account|due)|ip|IP(-| )ban|(IP(-| )unban|un(-)?IP(-)?ban)|broadcast|(un)?cancel( the)? event|add|give|increase|remove(all| every)?|subtract|reduce|delete|clear|(re)?set|(dye|colo(u)?r|paint)|(let|make)|execute|damage|heal|heart(s)?|repair|(wait|halt)|drop|(dis)?enchant|equip|make|wear|(exit|stop)( trigger| (section|loop|conditional)(s)?)?|(create |make )?(a(n)? )?(safe |fake )?explosion|(create |make )?(an )?explosion( )?effect|(ignite|set fire to)|light|on fire|extinguish|kick|kill|strike lightning( effect)?|log|(message|send( message)?)|(de(-)?)op|(open|show) (crafting (table)?|workbench)( view|window|inventory)?|op|close( the)? inventory( view)?|close|inventory|(view)?(play|show)|(poison|cure|unpoison)|apply( potion)?|push|thrust|(enable|disable) pvp|replace(all| every)?|(un(-)?)?shear|shoot|(make|let)|spawn|teleport|(close|turn off|de(-)?activate)|(toggle|switch) (the)? state|(open|turn on|activate)|(grow|create|generate) (oak|spruce|birch|jungle|dark oak|acacia) (tree)?|(make|let|force)|(ride|mount)|(dismount|(dismount|leave) (from|of))? ((any|the(ir)?|his|her))? vehicle(s)?|((eject|dismount)( any| the))? passenger(s)?)\\b"
-        name: "keyword.addon.effect.main.skript"
-      }
       {
         match: "\\b(?i)(play (the )?(sound)?|spawn (a(n)? )?((unique|special))?|(styled|marked|with pattern(s)?))\\b"
         name: "keyword.addon.effect.extrassk.skript"
@@ -481,16 +477,12 @@ repository:
         name: "keyword.addon.effect.skaction.skript"
       }
       {
-        match: "\\b(?i)(take|flight|random flight|(their )?dragon home|(stop|dismount from) dragon travel|(dragon )?station|stat(ionary)? dragon|remove riderless dragons|stopEffect( id)?|draw(((simple)?halo|spiral|complexcircle|band) particle|wings1|nyancat|atom)|particle(1|2|3)|(offset)?xyz(1|2)?|rgb(2|3)?|speed(2|3)|issingle|r(ainbow)?m(ode)?|visiblerange|start|dis(placement)?(x|y|z)|randomrotation|density|(x|y|z)r(otation)?|(inn|out)erpcount|innerradius|orbitcount|angle)\\b"
+        match: "\\b(?i)(take|flight|random flight|(their )?dragon home|(stop|dismount from) dragon travel|(dragon )?station|stat(ionary)? dragon|remove riderless dragons|stopEffect( id)?|draw(((simple)?halo|spiral|complexcircle|band) particle| style|nyancat|atom)|particle(1|2|3)|(offset)?xyz(1|2)?|rgb(2|3)?|speed(2|3)|issingle|r(ainbow)?m(ode)?|visiblerange|start|dis(placement)?(x|y|z)|randomrotation|density|(x|y|z)r(otation)?|(inn|out)erpcount|innerradius|orbitcount|angle|space)\\b"
         name: "keyword.addon.effect.skdragon.skript"
       }
       {
         match: "\\b(?i)(run garbage collector|open brewing|send (resource|texture)( )?pack|set fake max|end war(( )?event)?|backup towny( data)?|new|rename|rem(ove)?|set pvp state|set fire state|save towny( data)?|bonus blocks|board)\\b"
         name: "keyword.addon.effect.skeeland.skript"
-      }
-      {
-        match: "\\b(?i)(branch|target|crafting recipes|row(s)?|see( lines)?|($ )?(developer mode|access|init (.+)|use permissions|db (password|url|username) (.+))|do|draw buffered( )?image|draw|map|starting|normally|(erase|wipe)( map)?|escape|l(ine|evel)(s)?|evaluate|run|(un)?format slot|(be|act) unstealable|access|invoke|launch|deploy|timed|leash|(manage|share|over(rid|writ)e) map( id)?|pathfind|play midi|play raw sound|pop|register new shape(d|less) recipe|send map|permanently restore updates|restore all updates|move display|make score|(score)?board|display credits|(soft )?return|spawn( damaging( undroppable)?| undroppable( damaging)?)? falling block|update|shutdown|tame|send (resource|texture) pack|trail|reveal|hide)\\b"
-        name: "keyword.addon.effect.skquery.skript"
       }
       {
         match: "\\b(?i)((un)?claim land|create a faction|with leader|disband|invite|(admin(chat| chat)?|party))\\b"
@@ -505,11 +497,11 @@ repository:
         name: "keyword.addon.effect.skrpg.skript"
       }
       {
-        match: "\\b(?i)((create|draw|make) (a)?((no(n|t)(-| )hollow|filled)|hollow) line|thick(ness)?|(undo|redo)(last)? (change|edit)(s)?)\\b"
+        match: "\\b(?i)((create|draw|make) (a)?((no(n|t)(-| )hollow|filled)|hollow) line|thick(ness)?|(un|re)do(last)? (change|edit)(s)?)\\b"
         name: "keyword.addon.effect.skstuff.skript"
       }
       {
-        match: "\\b(?i)(set (border )?(size|center|damage (amount|buffer)|warning distance))\\b"
+        match: "\\b(?i)(set (border )?(size|center|damage (amount|buffer)|warning))\\b"
         name: "keyword.addon.effect.skworldborder.skript"
       }
       {
@@ -528,13 +520,17 @@ repository:
         match: "\\b(?i)(as op|remove bossbar|bungeecord connect|create (file|folder)|d(elete|f) (file|folder)|download|open (virtual |fake )?(furnace|anvil) (to|for) (the)?|(set|change) slot|hand( bar)?|display hologram|change server icon to image from (file|url)|(prefix|suffix) as|enable metrics|set motd|(en|dis)able plugin|replace last|load script(s)? from( file| url|folder)?|(yaml|yml) (file)?|(set|edit) tag|g(enerate)? l(ine)?|w(rite )?f(ile)?)\\b"
         name: "keyword.addon.effect.wildsk.skript"
       }
+      {
+        match: "\\b(?i)((un)?ban|(by reason|because|on account|due)|ip|IP(-| )ban|(IP(-| )unban|un(-)?IP(-)?ban)|broadcast|(un)?cancel( the)? event|add|give|increase|remove(all| every)?|subtract|reduce|delete|clear|(re)?set|(dye|colo(u)?r|paint)|(let|make)|execute|damage|heal|heart(s)?|repair|(wait|halt)|drop|(dis)?enchant|equip|make|wear|(exit|stop)( trigger| (section|loop|conditional)(s)?)?|(create |make )?(a(n)? )?(safe |fake )?explosion|(create |make )?(an )?explosion( )?effect|(ignite|set fire to)|light|on fire|extinguish|kick|kill|strike lightning( effect)?|log|(message|send( message)?)|(de(-)?)op|(open|show) (crafting (table)?|workbench)( view|window|inventory)?|op|close( the)? inventory( view)?|close|inventory|(view)?(play|show)|(poison|cure|unpoison)|apply( potion)?|push|thrust|(enable|disable) pvp|replace(all| every)?|(un(-)?)?shear|shoot|(make|let)|spawn|teleport|(close|turn off|de(-)?activate)|(toggle|switch) (the)? state|(open|turn on|activate)|(grow|create|generate) (oak|spruce|birch|jungle|dark oak|acacia) (tree)?|(make|let|force)|(ride|mount)|(dismount|(dismount|leave) (from|of))? ((any|the(ir)?|his|her))? vehicle(s)?|((eject|dismount)( any| the))? passenger(s)?)\\b"
+        name: "keyword.addon.effect.main.skript"
+      }
+      {
+        match: "\\b(?i)(branch|target|crafting recipes|row(s)?|see( lines)?|($ )?(developer mode|access|init (.+)|use permissions|db (password|url|username) (.+))|do|draw buffered( )?image|draw|map|starting|normally|(erase|wipe)( map)?|escape|l(ine|evel)(s)?|evaluate|run|(un)?format slot|(be|act) unstealable|access|invoke|launch|deploy|timed|leash|(manage|share|over(rid|writ)e) map( id)?|pathfind|play midi|play raw sound|pop|register new shape(d|less) recipe|send map|permanently restore updates|restore all updates|move display|make score|(score)?board|display credits|(soft )?return|spawn( damaging( undroppable)?| undroppable( damaging)?)? falling block|update|shutdown|tame|send (resource|texture) pack|trail|reveal|hide)\\b"
+        name: "keyword.addon.effect.skquery.skript"
+      }
     ]
   expressions:
     patterns: [
-      {
-        match: "\\b(?i)(((craft)?bukkit|minecraft|skript)( |-)version|altitude(s)?|command|(doesn't have|has) permission|amount|number|size|arg(ument)?(s)?|(boot|shoe|leg(ging)?|chestplate|helm(et)?)(s)? (slot)?|bed(s)? (location(s)?)?|biome|(the )?(event-)?block|blocks (in radius|around)?|in radius|blocks|between|chunk(s)?|clicked|(non( |-)?|un( |-))??colo(u)?r(s|ed)?|(full|complete|whole) command|label|compass target|((x|y|z)(-| ))?(coord(inate)?|pos(ition)?|loc(ation)?)(s)?|damage( cause| type)?|((data|damage)(s)? (value(s)?)?|durabilit(y|ies))|difference( between)?|distance between|drops|random element( out)?|level|enchant(ment)?|ender( )?chest(s)?|(within|((with)?in|with)? radius)|around|entities of type(s)?|((spawned|dropped) )?(e)?xp(erience )?(orb(s)?)?|(horizontal )?facing|(food|hunger)(( )?(level|met(er|re)|bar) )?|(former|past|old|future|to-be|new) (state )?|before (the event)?|(ore|fuel|result)(s )?(slot(s)?)?|game( )?mode|md5( |-)hash(ed|(( |-))?code )?|(head|eye(s)?) (location(s)?)?|health|id(s)?|index|inventor(y|ies)|IP(s)?(( |-)address(es)?)?|concat(enate)?|join|(with|by|using|at) delimiter|split|(last(ly)? )?(spawned|shot)|length|level( progress)?|((sky|sun|block)( )?)?light( )?level|(location|position)|line|(with )?lore|max(imum)? health|stack(( )?size )?|max(imum )?stack(( )?size)?|me my(self)?|(chat|join|log( )?(in|out)?|quit|leave|kick|death|)( |-)message|money|balance|account|(the )?(player|tab)( )?list name(s )?|(display|nick|chat)( )?name(s )?|name(s)?|(named|with name(s)?)|(integers) (between|from)|parsed as|(last )?(parse )?error|passenger(s)?|(prefix|suffix)|random|out|random (integer|number) (from|between)|owner(s )?|region(s )?|remaining air|(floor|round)|ceil(ing)?|script(('s )?name)?|line|skull|spawn(s )?((point|location)(s)?)?|(walk(ing)?|fl(y(ing)?|ight))(( |-)?)speed|(part|sub( )?(text|string))|(between|from)|ind(ex|ices)|character(s)?|uuid|time|tool|held item|weapon|type|vehicle|yaw|pitch|force|speed|volume|strength|power|velocity)\\b"
-        name: "keyword.addon.expression.main.skript"
-      }
       {
         match: "\\b(?i)((in)? rad(ian)?(s)?|(in)? deg(ree)?(s)?|midpoint|linear coord(inate)?(s)?|(linked|connected)( with)? density|polygon(s)?|(vertex|vertices|vertexes)(,| and) radius|cube(s)?|circle(s)?|heli(x|xes|ces)|height|(,| and) step (height|size)|cylinder coord(inate)?(s)?|spheric(al)? coord(inate)?(s)?|(with )?coordinates|(random )?sphere(s)?|and density|with angle|rotated around( (x|y|z)(-| )axis)?|mirrored|(scaled )?(with)? center|move|shift)\\b"
         name: "keyword.addon.expression.biosphere.skript"
@@ -562,10 +558,6 @@ repository:
       {
         match: "\\b(?i)((available( )?)?processors|cpu(( )?byte)?|(os|operating system)|os arch(itecture)?|(os( )?)?username|(running( )?)?threads|allow (end|nether|flight)|cpu usage|default gamemode|idle timeout|(skeeland|bukit) version|loaded|online mode|ip|port|uptime|per (animal|monster) spawn(s)?|view distance|((water )?a(nimal|mbient)|monster) spawn(s)? limit|(total|max|free) memory( in)? mb|claim|(fire|pvp|public) state|mayor|taxes|without a|war( )?time)\\b"
         name: "keyword.addon.expression.skeeland.skript"
-      }
-      {
-        match: "\\b(?i)(arabic num(ber|eral)|critical arrow (state|ability|mode)|(displayed )?art|(blast|explosion) (radius|size|yield)|book from|check(ed)?|(sin(e)?|cos(ine)?|tan(gent)?|arc (sin(e)?|cos(ine)?|tan(gent)?)|hyperbolic (sin(e)?cos(ine)?|tan(gent)?)|((natural )?|base(-| )10 )log(arithm)?|signum|sq(rt|uare root))|factorial|enum values|(destroyed|exploded|boom boomed)|(max )?player count|(flickering (trailing )?|trailing (flickering )?)|firework (effect )?colored|fad(e|ing)|fl(y|ight) (state|ability|mode)|glowing|(new )?(guid|uuid)|scaled health( state| ability| mode)?|holo particle|(current|selected) hotbar slot( id)?|(buffered )?image stored|(buffered )?image from|(blast|explosion) fire (state|ability|mode)|serialized contents|global max stack size|json|then|(styled |colored )?tooltip|suggest|(char|long|length) string from( charset)?|land boat (state|mode|ability)|loaded chunks|(maximum )?minecart speed|message format|mod|(current )?moon phase|(motd|message of the day)|(nl|new( )?line)|(st|nd|rd|th) prime|null|(current|open) inventory|parameter(-)?|permissions|version|(primer|fuse lighting piece of shit)|value|pulled|radix|(regen|heal) (cause|reason)|matched (to|with|against)|roman num(ber|eral)|server icon|result of query|objects in column|(tab )?(completions|suggestions)|(tamer|(pet )?owner)|transient( object)?|villager (profession|job)|where|yaml (value|nodes|nodes with keys|list))\\b"
-        name: "keyword.addon.expression.skquery.skript"
       }
       {
         match: "\\b(?i)(description of|home|list of (all )?(factions|players|allies|enemies)|(all )?players list|(all )?faction (all|enem)ies list|factions list|all factions|list of (all )?truces|(all )?faction truces list|motd|power(level| level)|power(boost)?|faction's power(boost)?|relation(ship )?(status )?between (the faction)?|with the faction|role of|mcmmo)\\b"
@@ -606,5 +598,13 @@ repository:
       {
         match: "\\b(?i)(bossbar|ping|(configuration )?section(s)?|result of connect|content of file|(allow|access to) end|(all )?file(s)?|ip|max players|(allow|access to) nether|online mode|random (char|color)|server('s)? (ip|name|port)|(clicked )?slot|(single )?value list|view distance|wildskript version|version of wildskript)\\b"
         name: "keyword.addon.expression.wildsk.skript"
+      }
+      {
+        match: "\\b(?i)(((craft)?bukkit|minecraft|skript)( |-)version|altitude(s)?|command|(doesn't have|has) permission|amount|number|size|arg(ument)?(s)?|(boot|shoe|leg(ging)?|chestplate|helm(et)?)(s)? (slot)?|bed(s)? (location(s)?)?|biome|(the )?(event-)?block|blocks (in radius|around)?|in radius|blocks|between|chunk(s)?|clicked|(non( |-)?|un( |-))??colo(u)?r(s|ed)?|(full|complete|whole) command|label|compass target|((x|y|z)(-| ))?(coord(inate)?|pos(ition)?|loc(ation)?)(s)?|damage( cause| type)?|((data|damage)(s)? (value(s)?)?|durabilit(y|ies))|difference( between)?|distance between|drops|random element( out)?|level|enchant(ment)?|ender( )?chest(s)?|(within|((with)?in|with)? radius)|around|entities of type(s)?|((spawned|dropped) )?(e)?xp(erience )?(orb(s)?)?|(horizontal )?facing|(food|hunger)(( )?(level|met(er|re)|bar) )?|(former|past|old|future|to-be|new) (state )?|before (the event)?|(ore|fuel|result)(s )?(slot(s)?)?|game( )?mode|md5( |-)hash(ed|(( |-))?code )?|(head|eye(s)?) (location(s)?)?|health|id(s)?|index|inventor(y|ies)|IP(s)?(( |-)address(es)?)?|concat(enate)?|join|(with|by|using|at) delimiter|split|(last(ly)? )?(spawned|shot)|length|level( progress)?|((sky|sun|block)( )?)?light( )?level|(location|position)|line|(with )?lore|max(imum)? health|stack(( )?size )?|max(imum )?stack(( )?size)?|me my(self)?|(chat|join|log( )?(in|out)?|quit|leave|kick|death|)( |-)message|money|balance|account|(the )?(player|tab)( )?list name(s )?|(display|nick|chat)( )?name(s )?|name(s)?|(named|with name(s)?)|(integers) (between|from)|parsed as|(last )?(parse )?error|passenger(s)?|(prefix|suffix)|random|out|random (integer|number) (from|between)|owner(s )?|region(s )?|remaining air|(floor|round(ed)?)|ceil(ing)?|script(('s )?name)?|line|skull|spawn(s )?((point|location)(s)?)?|(walk(ing)?|fl(y(ing)?|ight))(( |-)?)speed|(part|sub( )?(text|string))|(between|from)|ind(ex|ices)|character(s)?|uuid|time|tool|held item|weapon|type|vehicle|yaw|pitch|force|speed|volume|strength|power|velocity)\\b"
+        name: "keyword.addon.expression.main.skript"
+      }
+      {
+        match: "\\b(?i)(arabic num(ber|eral)|critical arrow (state|ability|mode)|(displayed )?art|(blast|explosion) (radius|size|yield)|book from|check(ed)?|(sin(e)?|cos(ine)?|tan(gent)?|arc (sin(e)?|cos(ine)?|tan(gent)?)|hyperbolic (sin(e)?cos(ine)?|tan(gent)?)|((natural )?|base(-| )10 )log(arithm)?|signum|sq(rt|uare root))|factorial|enum values|(destroyed|exploded|boom boomed)|(max )?player count|(flickering (trailing )?|trailing (flickering )?)|firework (effect )?colored|fad(e|ing)|fl(y|ight) (state|ability|mode)|glowing|(new )?(guid|uuid)|scaled health( state| ability| mode)?|holo particle|(current|selected) hotbar slot( id)?|(buffered )?image stored|(buffered )?image from|(blast|explosion) fire (state|ability|mode)|serialized contents|global max stack size|json|then|(styled |colored )?tooltip|suggest|(char|long|length) string from( charset)?|land boat (state|mode|ability)|loaded chunks|(maximum )?minecart speed|message format|mod|(current )?moon phase|(motd|message of the day)|(nl|new( )?line)|(st|nd|rd|th) prime|null|(current|open) inventory|parameter(-)?|permissions|version|(primer|fuse lighting piece of shit)|value|pulled|radix|(regen|heal) (cause|reason)|matched (to|with|against)|roman num(ber|eral)|server icon|result of query|objects in column|(tab )?(completions|suggestions)|(tamer|(pet )?owner)|transient( object)?|villager (profession|job)|where|yaml (value|nodes|nodes with keys|list))\\b"
+        name: "keyword.addon.expression.skquery.skript"
       }
     ]
