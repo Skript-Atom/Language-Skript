@@ -1,3 +1,6 @@
+# 1.7.2
+* Added skConvert
+
 # 1.7.1
 * Bug Fixes
 * skWorldBorder update

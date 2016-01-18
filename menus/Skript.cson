@@ -1,9 +1,9 @@
 'menu': [
   {
-    'label': 'Lang-Skript: v1.7.1'
+    'label': 'Lang-Skript: v1.7.2'
     'submenu': [
       {
-        'label': 'Addon Versions (21)'
+        'label': 'Addon Versions (22)'
         'submenu': [
           {
             'label': 'Aliases: Coming soon'
@@ -33,13 +33,16 @@
             'label': 'RandomSk: v2.7.1'
           }
           {
-            'label': 'sKeeland: v0.3'
-          }
-          {
             'label': 'skAction: v1.2'
           }
           {
+            'label': 'skConvert: v0.1.0'
+          }
+          {
             'label': 'skDragon: v0.04.24'
+          }
+          {
+            'label': 'sKeeland: v0.3'
           }
           {
             'label': 'skRambled: v1.9'
@@ -63,7 +66,7 @@
             'label': 'SpectateHook: v1.1'
           }
           {
-            'label': 'TeamspeakSkAddon: v1.0.0'
+            'label': 'skVoice: v1.0.0'
           }
           {
             'label': 'Umbaska: v2.0.0 (Not Fully Added)'

@@ -367,6 +367,10 @@ repository:
         name: "keyword.addon.type.randomsk.skript"
       }
       {
+        match: "\\b(?i)(bin(ary)?|ascii|octal|hex(a)?|decimal|hex|rgb|unix)\\b"
+        name: "keyword.addon.type.skconvert.skript"
+      }
+      {
         match: "\\b(?i)(town|nation|resident)(s|'s)?\\b"
         name: "keyword.addon.type.skeeland.skript"
       }
@@ -388,7 +392,7 @@ repository:
       }
       {
         match: "\\b(?i)(client)\\b"
-        name: "keyword.addon.type.teamspeakskaddon.skript"
+        name: "keyword.addon.type.skvoice.skript"
       }
       {
         match: "\\b(?i)(material|distance|survival|adventure|creative|spectator|biome(s)?|block(s)?|boolean(s)?|chunk(s)?|colo(u)?r(s)?|(command(s)?)?( )?(sender|executor)(s)?|damage cause(s)?|date(s)?|direction(s)?|enchantment(s)?|enchant(ing|ment) type(s)?|(tile )?entit(y|ies)|entity( )?type(s)?|game( )?mode(s)?|inventor(y|ies)|item( material)?|item( )?type(s)?|items( materials)?|meter(s)?|living( )?entit(y|ies)|location(s)?|num(ber)?(s)?|integer(s)?|offline( )?player(s)?|potion(( )?effect)?(( )?type)?(s)?|projectile(s)?|(inventory )?slot(s)?|sound(s)?|(text|string)(s)?|(relative )?time(s)?|time( )?period(s)?|duration(s)?|time( )?span(s)?|tree(( )?type)?(s)?|type(s)?|(visual|particle) effect(s)?|weather( )?type(s)?|weather( condition)?(s)?|world(s)?)\\b"
@@ -435,7 +439,7 @@ repository:
       }
       {
         match: "\\b(?i)((teamspeak|ts) ((connection|ban|online) state))\\b"
-        name: "keyword.addon.condition.teamspeakskaddon.skript"
+        name: "keyword.addon.condition.skvoice.skript"
       }
       {
         match: "\\b(?i)(is(n't| not)? (enem|all)y with|is(n't| not)? neutral)\\b"
@@ -510,7 +514,7 @@ repository:
       }
       {
         match: "\\b(?i)((teamspeak|ts) (server )?((dis)?connect|send (channel|broadcast) message|send private|poke|tempban|(change|remove) description|delete all ban entries)|user|login|credentials|on query port| flood level)\\b"
-        name: "keyword.addon.effect.teamspeakskaddon.skript"
+        name: "keyword.addon.effect.skvoice.skript"
       }
     #  {
     #    match: "\\b(?i)\\b"
@@ -556,6 +560,10 @@ repository:
         name: "keyword.addon.expression.skaction.skript"
       }
       {
+        match: "\\b(?i)(convert)\\b"
+        name: "keyword.addon.expression.skconvert.skript"
+      }
+      {
         match: "\\b(?i)((available( )?)?processors|cpu(( )?byte)?|(os|operating system)|os arch(itecture)?|(os( )?)?username|(running( )?)?threads|allow (end|nether|flight)|cpu usage|default gamemode|idle timeout|(skeeland|bukit) version|loaded|online mode|ip|port|uptime|per (animal|monster) spawn(s)?|view distance|((water )?a(nimal|mbient)|monster) spawn(s)? limit|(total|max|free) memory( in)? mb|claim|(fire|pvp|public) state|mayor|taxes|without a|war( )?time)\\b"
         name: "keyword.addon.expression.skeeland.skript"
       }
@@ -589,7 +597,7 @@ repository:
       }
       {
         match: "\\b(?i)(teamspeak|ts) (ip|address|description)\\b"
-        name: "keyword.addon.expression.teamspeakskaddon.skript"
+        name: "keyword.addon.expression.skvoice.skript"
       }
     #  {
     #    match: "\\b(?i)\\b"
