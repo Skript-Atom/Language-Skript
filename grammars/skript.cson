@@ -422,7 +422,7 @@ repository:
         name: "keyword.addon.condition.skaction.skript"
       }
       {
-        match: "\\b(?i)(password|logged|authorized|registered)\\b)"
+        match: "\\b(?i)(password|logged|authorized|registered)\\b"
         name: "keyword.addon.condition.skmorkaz.skript"
       }
       {
@@ -497,7 +497,7 @@ repository:
         name: "keyword.addon.effect.skeeland.skript"
       }
       {
-        match: "\\b(?i)(set (mor.)?amount|play(noteblock)? music|(mor.)?send email (with )?subject|set mor.maxhp|stop (noteblock )?music)\\b)"
+        match: "\\b(?i)(set (mor.)?amount|play(noteblock)? music|(mor.)?send email (with )?subject|set mor.maxhp|stop (noteblock )?music)\\b"
         name: "keyword.addon.effect.skmorkaz.skript"
       }
       {
@@ -580,7 +580,7 @@ repository:
         name: "keyword.addon.expression.skeeland.skript"
       }
       {
-        match: "\\b(?i)(window)\\b)"
+        match: "\\b(?i)(window)\\b"
         name: "keyword.addon.expression.skmorkaz.skript"
       }
       {

@@ -1,3 +1,6 @@
+# 1.8.1
+* Fixed a Major bug
+
 # 1.8.0
 * Updated skVoice
 * Updated skConvert
