@@ -1,3 +1,11 @@
+# 1.8.0
+* Updated skVoice
+* Updated skConvert
+* Updated skStuff
+* Updated skWorldBorder
+* Added skMorkaz
+* Bug Fixes
+
 # 1.7.2
 * Added skConvert
 

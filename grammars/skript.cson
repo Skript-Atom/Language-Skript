@@ -328,6 +328,10 @@ repository:
         name: "keyword.addon.event.skdragon.skript"
       }
       {
+        match: "\\b(?i)(on (block (fall(ing)?|piston push)|(mor.)?jump|mor(.| )inventory click|dragon('s)? portal creat(e|ion)))\\b"
+        name: "keyword.addon.event.skmorkaz.skript"
+      }
+      {
         match: "\\b(?i)(on faction ((create|disband)|(name|description) change))\\b"
         name: "keyword.addon.event.skrambled.skript"
       }
@@ -395,7 +399,7 @@ repository:
         name: "keyword.addon.type.skvoice.skript"
       }
       {
-        match: "\\b(?i)(material|distance|survival|adventure|creative|spectator|biome(s)?|block(s)?|boolean(s)?|chunk(s)?|colo(u)?r(s)?|(command(s)?)?( )?(sender|executor)(s)?|damage cause(s)?|date(s)?|direction(s)?|enchantment(s)?|enchant(ing|ment) type(s)?|(tile )?entit(y|ies)|entity( )?type(s)?|game( )?mode(s)?|inventor(y|ies)|item( material)?|item( )?type(s)?|items( materials)?|meter(s)?|living( )?entit(y|ies)|location(s)?|num(ber)?(s)?|integer(s)?|offline( )?player(s)?|potion(( )?effect)?(( )?type)?(s)?|projectile(s)?|(inventory )?slot(s)?|sound(s)?|(text|string)(s)?|(relative )?time(s)?|time( )?period(s)?|duration(s)?|time( )?span(s)?|tree(( )?type)?(s)?|type(s)?|(visual|particle) effect(s)?|weather( )?type(s)?|weather( condition)?(s)?|world(s)?)\\b"
+        match: "\\b(?i)(material|cursor item(s)?|potion tier|distance|survival|adventure|creative|spectator|biome(s)?|block(s)?|boolean(s)?|chunk(s)?|colo(u)?r(s)?|(command(s)?)?( )?(sender|executor)(s)?|damage cause(s)?|date(s)?|direction(s)?|enchantment(s)?|enchant(ing|ment) type(s)?|(tile )?entit(y|ies)|entity( )?type(s)?|game( )?mode(s)?|inventor(y|ies)|item( material)?|item( )?type(s)?|items( materials)?|meter(s)?|living( )?entit(y|ies)|location(s)?|num(ber)?(s)?|integer(s)?|offline( )?player(s)?|potion(( )?effect)?(( )?type)?(s)?|projectile(s)?|(inventory )?slot(s)?|sound(s)?|(text|string)(s)?|(relative )?time(s)?|time( )?period(s)?|duration(s)?|time( )?span(s)?|tree(( )?type)?(s)?|type(s)?|(visual|particle) effect(s)?|weather( )?type(s)?|weather( condition)?(s)?|world(s)?)\\b"
         name: "keyword.addon.type.main.skript"
       }
       {
@@ -416,6 +420,10 @@ repository:
       {
         match: "\\b(?i)(motd equals)\\b"
         name: "keyword.addon.condition.skaction.skript"
+      }
+      {
+        match: "\\b(?i)(password|logged|authorized|registered)\\b)"
+        name: "keyword.addon.condition.skmorkaz.skript"
       }
       {
         match: "\\b(?i)(not )?using (party|admin)(chat| chat)\\b"
@@ -485,8 +493,12 @@ repository:
         name: "keyword.addon.effect.skdragon.skript"
       }
       {
-        match: "\\b(?i)(run garbage collector|open brewing|send (resource|texture)( )?pack|set fake max|end war(( )?event)?|backup towny( data)?|new|rename|rem(ove)?|set pvp state|set fire state|save towny( data)?|bonus blocks|board)\\b"
+        match: "\\b(?i)(run garbage collector|reload|open brewing|send (resource|texture)( )?pack|save towny( data)?|open brewing|send (resource|texture)( )?pack|set fake max|end war(( )?event)?|backup towny( data)?|new|rename|rem(ove)?|set pvp state|set fire state|save towny( data)?|bonus blocks|board)\\b"
         name: "keyword.addon.effect.skeeland.skript"
+      }
+      {
+        match: "\\b(?i)(set (mor.)?amount|play(noteblock)? music|(mor.)?send email (with )?subject|set mor.maxhp|stop (noteblock )?music)\\b)"
+        name: "keyword.addon.effect.skmorkaz.skript"
       }
       {
         match: "\\b(?i)((un)?claim land|create a faction|with leader|disband|invite|(admin(chat| chat)?|party))\\b"
@@ -513,7 +525,7 @@ repository:
         name: "keyword.addon.effect.spectatehook.skript"
       }
       {
-        match: "\\b(?i)((teamspeak|ts) (server )?((dis)?connect|send (channel|broadcast) message|send private|poke|tempban|(change|remove) description|delete all ban entries)|user|login|credentials|on query port| flood level)\\b"
+        match: "\\b(?i)((teamspeak|ts) (server )?(privilege key by group id|(dis)?connect|send (channel|broadcast) message|send private|poke|tempban|(change|remove) description|delete all ban entries)|user|login|credentials|on query port| flood level)\\b"
         name: "keyword.addon.effect.skvoice.skript"
       }
     #  {
@@ -564,8 +576,12 @@ repository:
         name: "keyword.addon.expression.skconvert.skript"
       }
       {
-        match: "\\b(?i)((available( )?)?processors|cpu(( )?byte)?|(os|operating system)|os arch(itecture)?|(os( )?)?username|(running( )?)?threads|allow (end|nether|flight)|cpu usage|default gamemode|idle timeout|(skeeland|bukit) version|loaded|online mode|ip|port|uptime|per (animal|monster) spawn(s)?|view distance|((water )?a(nimal|mbient)|monster) spawn(s)? limit|(total|max|free) memory( in)? mb|claim|(fire|pvp|public) state|mayor|taxes|without a|war( )?time)\\b"
+        match: "\\b(?i)((available( )?)?processors|border( warning| damage (buffer|amount))?|cpu(( )?byte)?|(os|operating system)|os arch(itecture)?|(os( )?)?username|(running( )?)?threads|allow (end|nether|flight)|cpu usage|default gamemode|idle timeout|(skeeland|bukit) version|loaded|online mode|ip|port|uptime|per (animal|monster) spawn(s)?|view distance|((water )?(animal|ambient)|monster) spawn(s)? limit|(total|max|free) memory( in)? mb|claim|(fire|pvp|public) state|mayor|taxes|without a|war( )?time)\\b"
         name: "keyword.addon.expression.skeeland.skript"
+      }
+      {
+        match: "\\b(?i)(window)\\b)"
+        name: "keyword.addon.expression.skmorkaz.skript"
       }
       {
         match: "\\b(?i)(description of|home|list of (all )?(factions|players|allies|enemies)|(all )?players list|(all )?faction (all|enem)ies list|factions list|all factions|list of (all )?truces|(all )?faction truces list|motd|power(level| level)|power(boost)?|faction's power(boost)?|relation(ship )?(status )?between (the faction)?|with the faction|role of|mcmmo)\\b"
@@ -584,7 +600,7 @@ repository:
         name: "keyword.addon.expression.skevolved.skript"
       }
       {
-        match: "\\b(?i)(area of (schem(atic)?|(world( )?edit |we )?selection)|((x|y|z)( |-)size|height) of schem(atic)?|(y( |-)size|height) of (world( )?edit |we )?selection|((world( )?edit|we) )?selection (y( |-)size|height)|(custom )?nbt(( )?tag(s)?)?|(block )?limit( change)? of( edit( )?session)?|nbt(( )?tag(s)?)?|new edit( )?session|(max(imum)?)?( block)? limit( change)?|number of (all )?changed blocks (in|of)( edit( )?session)?|(world( )?edit |we )?po(s|int)|nbt (compound)?|volume of schem(atic)?|volume of (world( )?edit |we )?selection|(world( )?edit |we )?selection (volume|area)|(x( |-)size|width)(of schem(atic)?)?|(world( )?edit |we )? selection( x( |-)size| width)?)\\b"
+        match: "\\b(?i)((no(( |-))?clip|fire( )?proof|vanish) (state|mode)|silently|quietly|(area of (schem(atic)?|(world( )?edit |we )?selection)|((x|y|z)( |-)size|height) of schem(atic)?|(y( |-)size|height) of (world( )?edit |we )?selection|((world( )?edit|we) )?selection (y( |-)size|height)|(custom )?nbt(( )?tag(s)?)?|(block )?limit( change)? of( edit( )?session)?|nbt(( )?tag(s)?)?|new edit( )?session|(max(imum)?)?( block)? limit( change)?|number of (all )?changed blocks (in|of)( edit( )?session)?|(world( )?edit |we )?po(s|int)|nbt (compound)?|volume of schem(atic)?|volume of (world( )?edit |we )?selection|(world( )?edit |we )?selection (volume|area)|(x( |-)size|width)(of schem(atic)?)?|(world( )?edit |we )? selection( x( |-)size| width)?))\\b"
         name: "keyword.addon.expression.skstuff.skript"
       }
       {
@@ -596,7 +612,7 @@ repository:
         name: "keyword.addon.expression.spectatehook.skript"
       }
       {
-        match: "\\b(?i)(teamspeak|ts) (ip|address|description)\\b"
+        match: "\\b(?i)((teamspeak|ts) get client(s)? by (ip|address|description)|online clients)\\b"
         name: "keyword.addon.expression.skvoice.skript"
       }
     #  {
