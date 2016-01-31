@@ -1,16 +1,20 @@
+# 1.8.2
+* Updated skUtilities
+* Updated MundoSK
+
 # 1.8.1
 * Fixed a Major bug
 
 # 1.8.0
 * Updated skVoice
-* Updated skConvert
+* Updated skUtilities
 * Updated skStuff
 * Updated skWorldBorder
 * Added skMorkaz
 * Bug Fixes
 
 # 1.7.2
-* Added skConvert
+* Added skUtilities
 
 # 1.7.1
 * Bug Fixes

@@ -1,6 +1,6 @@
 'menu': [
   {
-    'label': 'Lang-Skript: v1.8.1'
+    'label': 'Lang-Skript: v1.8.2'
     'submenu': [
       {
         'label': 'Addon Versions (23)'
@@ -13,6 +13,9 @@
           }
           {
             'label': 'skQuery: v3.21.4'
+          }
+          {
+            'label': 'skUtilities: v0.3.0'
           }
           {
             'label': 'AuthMe SkAddon: v1.1'
@@ -34,9 +37,6 @@
           }
           {
             'label': 'skAction: v1.2'
-          }
-          {
-            'label': 'skConvert: v0.2.0'
           }
           {
             'label': 'skDragon: v0.04.24'
@@ -63,7 +63,7 @@
             'label': 'skStuff: v1.4.1.1'
           }
           {
-            'label': 'skWorldBorder: v1.1.9'
+            'label': 'MundoSK: v1.3.2'
           }
           {
             'label': 'SpectateHook: v1.1'

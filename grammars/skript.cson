@@ -371,8 +371,8 @@ repository:
         name: "keyword.addon.type.randomsk.skript"
       }
       {
-        match: "\\b(?i)(bin(ary)?|ascii|octal|hex(a)?|decimal|hex|rgb|unix)\\b"
-        name: "keyword.addon.type.skconvert.skript"
+        match: "\\b(?i)(bin(ary)?|ascii|octal|hex(a)?|decimal|hex|rgb|unix|base( )?64)\\b"
+        name: "keyword.addon.type.skutilities.skript"
       }
       {
         match: "\\b(?i)(town|nation|resident)(s|'s)?\\b"
@@ -517,8 +517,8 @@ repository:
         name: "keyword.addon.effect.skstuff.skript"
       }
       {
-        match: "\\b(?i)(set (border )?(size|center|damage (amount|buffer)|warning))\\b"
-        name: "keyword.addon.effect.skworldborder.skript"
+        match: "\\b(?i)(set (border )?(size|center|damage (amount|buffer)|warning)|duplicate)\\b"
+        name: "keyword.addon.effect.mundosk.skript"
       }
       {
         match: "\\b(?i)(spectate|stop spectating|change spectate angle)\\b"
@@ -572,8 +572,8 @@ repository:
         name: "keyword.addon.expression.skaction.skript"
       }
       {
-        match: "\\b(?i)(convert)\\b"
-        name: "keyword.addon.expression.skconvert.skript"
+        match: "\\b(?i)(convert|(en|de)code)\\b"
+        name: "keyword.addon.expression.skutilities.skript"
       }
       {
         match: "\\b(?i)((available( )?)?processors|border( warning| damage (buffer|amount))?|cpu(( )?byte)?|(os|operating system)|os arch(itecture)?|(os( )?)?username|(running( )?)?threads|allow (end|nether|flight)|cpu usage|default gamemode|idle timeout|(skeeland|bukit) version|loaded|online mode|ip|port|uptime|per (animal|monster) spawn(s)?|view distance|((water )?(animal|ambient)|monster) spawn(s)? limit|(total|max|free) memory( in)? mb|claim|(fire|pvp|public) state|mayor|taxes|without a|war( )?time)\\b"
@@ -604,8 +604,8 @@ repository:
         name: "keyword.addon.expression.skstuff.skript"
       }
       {
-        match: "\\b(?i)(border (size |center |damage (amount|buffer) |warning distance )?of)\\b"
-        name: "keyword.addon.expressions.skworldborder.skript"
+        match: "\\b(?i)(border (size |center |damage (amount|buffer) |warning distance )?of|(game)?rule|using name|env(ironment)?|seed|type|gen(erator)?|struct(ures)?|modifed|(tc|terrain control) (biome|spawn)|highest( (solid|non-air))?|titled|written|pages from|pgs from|page|pg|set to|through|deleted|title|author|page count)\\b"
+        name: "keyword.addon.expressions.mundosk.skript"
       }
       {
         match: "\\b(?i)(spectate (angle|target))\\b"
