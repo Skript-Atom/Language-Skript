@@ -1,3 +1,6 @@
+# 1.8.3
+* Updated skUtilities
+
 # 1.8.2
 * Updated skUtilities
 * Updated MundoSK

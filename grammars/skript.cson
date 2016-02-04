@@ -371,7 +371,7 @@ repository:
         name: "keyword.addon.type.randomsk.skript"
       }
       {
-        match: "\\b(?i)(bin(ary)?|ascii|octal|hex(a)?|decimal|hex|rgb|unix|base( )?64)\\b"
+        match: "\\b(?i)(bin(ary)?|ascii|octal|hex(a)?|decimal|hex|rgb|unix|base( )?64|functions|triggers|statements|commands|cmds|s(k|c)ripts|variables|addons|plugins|effects|expressions|events|conditions|aliases)\\b"
         name: "keyword.addon.type.skutilities.skript"
       }
       {
@@ -487,6 +487,10 @@ repository:
       {
         match: "\\b(?i)(send bossbar|with percent|(un)?deny|open (a )?dispenser( named)?|group of|member|trusted)\\b"
         name: "keyword.addon.effect.skaction.skript"
+      }
+      {
+        match: "\\bsend (fake )?trial ended packet\\b"
+        name: "keyword.addon.effect.skutilities.skript"
       }
       {
         match: "\\b(?i)(take|flight|random flight|(their )?dragon home|(stop|dismount from) dragon travel|(dragon )?station|stat(ionary)? dragon|remove riderless dragons|stopEffect( id)?|draw(((simple)?halo|spiral|complexcircle|band) particle| style|nyancat|atom)|particle(1|2|3)|(offset)?xyz(1|2)?|rgb(2|3)?|speed(2|3)|issingle|r(ainbow)?m(ode)?|visiblerange|start|dis(placement)?(x|y|z)|randomrotation|density|(x|y|z)r(otation)?|(inn|out)erpcount|innerradius|orbitcount|angle|space)\\b"
