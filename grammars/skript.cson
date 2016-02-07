@@ -489,7 +489,7 @@ repository:
         name: "keyword.addon.effect.skaction.skript"
       }
       {
-        match: "\\bsend (fake )?trial ended packet\\b"
+        match: "\\b((fake )?trial packet|run script)\\b"
         name: "keyword.addon.effect.skutilities.skript"
       }
       {
