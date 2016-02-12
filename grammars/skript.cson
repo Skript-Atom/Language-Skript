@@ -269,7 +269,7 @@ repository:
         name: "keyword.type.mccolor.blue.skript"
       }
       {
-        match: "((&|§)(a|A)|\\b(?i)green\\b)"
+        match: "((&|§)(a|A)|\\b(?i)green\\b|online)"
         name: "keyword.type.mccolor.green.skript"
       }
       {
@@ -277,7 +277,7 @@ repository:
         name: "keyword.type.mccolor.aqua.skript"
       }
       {
-        match: "((&|§)(c|C)|\\b(?i)red\\b)"
+        match: "((&|§)(c|C)|\\b(?i)red\\b|offline)"
         name: "keyword.type.mccolor.red.skript"
       }
       {
