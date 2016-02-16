@@ -1,3 +1,8 @@
+# 1.8.5
+* Bug fixes
+* Updated sKeeland to v0.5
+* Updated skUtilities
+
 # 1.8.4
 * Bug fixes
 

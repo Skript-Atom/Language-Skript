@@ -328,6 +328,10 @@ repository:
         name: "keyword.addon.event.skdragon.skript"
       }
       {
+        match: "\\b([uskyblock ]score chang[(e|ing|ed)][ event]|[askyblock ](challenge [level ]complete|island (enter[(ed|ing)]|exit[(ed|ing)]|join|leave|level|reset|create) [event]))\\b"
+        name: "keyword.addon.event.skeeland.skript"
+      }
+      {
         match: "\\b(?i)(on (block (fall(ing)?|piston push)|(mor.)?jump|mor(.| )inventory click|dragon('s)? portal creat(e|ion)))\\b"
         name: "keyword.addon.event.skmorkaz.skript"
       }
@@ -371,11 +375,11 @@ repository:
         name: "keyword.addon.type.randomsk.skript"
       }
       {
-        match: "\\b(?i)(bin(ary)?|ascii|octal|hex(a)?|decimal|hex|rgb|unix|base( )?64|functions|triggers|statements|commands|cmds|s(k|c)ripts|variables|addons|plugins|effects|expressions|events|conditions|aliases)\\b"
+        match: "\\b(?i)(bin(ary)?|ascii|octal|hex(a)?|decimal|hex|rgb|unix|base( )?64|morse[ code]|functions|triggers|statements|commands|cmds|s(k|c)ripts|variables|addons|plugins|effects|expressions|events|conditions|aliases|utf-8|ISO-8859-1)\\b"
         name: "keyword.addon.type.skutilities.skript"
       }
       {
-        match: "\\b(?i)(town|nation|resident)(s|'s)?\\b"
+        match: "\\b(?i)(town|nation|resident|island)(s|'s)?\\b"
         name: "keyword.addon.type.skeeland.skript"
       }
       {
@@ -576,11 +580,11 @@ repository:
         name: "keyword.addon.expression.skaction.skript"
       }
       {
-        match: "\\b(?i)(convert|(en|de)code)\\b"
+        match: "\\b(?i)(convert|(en|de)code|mirror(ed)?|formatted as|generate( random)?)\\b"
         name: "keyword.addon.expression.skutilities.skript"
       }
       {
-        match: "\\b(?i)((available( )?)?processors|border( warning| damage (buffer|amount))?|cpu(( )?byte)?|(os|operating system)|os arch(itecture)?|(os( )?)?username|(running( )?)?threads|allow (end|nether|flight)|cpu usage|default gamemode|idle timeout|(skeeland|bukit) version|loaded|online mode|ip|port|uptime|per (animal|monster) spawn(s)?|view distance|((water )?(animal|ambient)|monster) spawn(s)? limit|(total|max|free) memory( in)? mb|claim|(fire|pvp|public) state|mayor|taxes|without a|war( )?time)\\b"
+        match: "\\b(?i)([uskyblock ]island (level|rank)|[(get|askyblock) ](spawn (location|range)|top ten)|[askyblock ](island (level|world)|nether world|owner of island|team leader[[']s]|team member[[']s])|(available( )?)?processors|border( warning| damage (buffer|amount))?|cpu(( )?byte)?|(os|operating system)|os arch(itecture)?|(os( )?)?username|(running( )?)?threads|allow (end|nether|flight)|cpu usage|default gamemode|idle timeout|(skeeland|bukit) version|loaded|online mode|ip|port|uptime|per (animal|monster) spawn(s)?|view distance|((water )?(animal|ambient)|monster) spawn(s)? limit|(total|max|free) memory( in)? mb|claim|(fire|pvp|public) state|mayor|taxes|without a|war( )?time)\\b"
         name: "keyword.addon.expression.skeeland.skript"
       }
       {
