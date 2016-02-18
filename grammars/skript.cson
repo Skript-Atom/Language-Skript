@@ -375,7 +375,7 @@ repository:
         name: "keyword.addon.type.randomsk.skript"
       }
       {
-        match: "\\b(?i)(bin(ary)?|ascii|octal|hex(a)?|decimal|hex|rgb|unix|base( )?64|morse[ code]|functions|triggers|statements|commands|cmds|s(k|c)ripts|variables|addons|plugins|effects|expressions|events|conditions|aliases|utf-8|ISO-8859-1)\\b"
+        match: "\\b(?i)(bin(ary)?|ascii|octal|hex(a)?|decimal|hex|rgb|unix|base( )?64|morse[ code]|functions|triggers|statements|commands|cmds|s(k|c)ripts|variables|addons|plugins|effects|expressions|events|conditions|aliases|utf-8|ISO-8859-1|farmer|librarian|priest|blacksmith|butcher|profession)\\b"
         name: "keyword.addon.type.skutilities.skript"
       }
       {
