@@ -1,16 +1,23 @@
+# 1.8.6
+* Bug Fixes
+* Updated skUtilities to v0.3.3
+* Updated MundoSK to v1.4.2
+* Updated skStuff to v1.4.2
+* Updated BioSphere to V1.0.4
+
 # 1.8.5
-* Bug fixes
+* Bug Fixes
 * Updated sKeeland to v0.5
-* Updated skUtilities
+* Updated skUtilities to v0.3.2
 
 # 1.8.4
-* Bug fixes
+* Bug Fixes
 
 # 1.8.3
-* Updated skUtilities
+* Updated skUtilities to v0.3.1
 
 # 1.8.2
-* Updated skUtilities
+* Updated skUtilities to v0.3.0
 * Updated MundoSK
 
 # 1.8.1

@@ -375,8 +375,12 @@ repository:
         name: "keyword.addon.type.randomsk.skript"
       }
       {
-        match: "\\b(?i)(bin(ary)?|ascii|octal|hex(a)?|decimal|hex|rgb|unix|base( )?64|morse[ code]|functions|triggers|statements|commands|cmds|s(k|c)ripts|variables|addons|plugins|effects|expressions|events|conditions|aliases|utf-8|ISO-8859-1|farmer|librarian|priest|blacksmith|butcher|profession)\\b"
+        match: "\\b(?i)(bin(ary)?|ascii|octal|hex(a)?|decimal|hex|rgb|unix|base( )?64|morse[ code]|functions|triggers|statements|commands|cmds|s(k|c)ripts|variables|addons|plugins|effects|expressions|events|conditions|aliases|utf-8|ISO-8859-1|profession (farmer|librarian|priest|blacksmith|butcher))\\b"
         name: "keyword.addon.type.skutilities.skript"
+      }
+      {
+        match: "\\b(socket|host|achievement)(s|'s)?\\b"
+        name: "keyword.addon.type.mundosk.skript"
       }
       {
         match: "\\b(?i)(town|nation|resident|island)(s|'s)?\\b"
@@ -414,10 +418,6 @@ repository:
   conditions:
     patterns: [
       {
-        match: "\\b(?i)(is( not)? (logged|registered))\\b"
-        name: "keyword.addon.condition.authmeskaddon.skript"
-      }
-      {
         match: "\\b(?i)((is|are)(n't| not) occupied|(has|(doesn't )?have) (fixed )?metadata( value)?|(has|have|doesn't have) (offers|trades)|(has|have|doesn't have) second item|(has|have|doesn't have) (offer|trade)( number)?|is( not)? in sleep(ing )?animation|is not on ground)\\b"
         name: "keyword.addon.condition.randomsk.skript"
       }
@@ -444,10 +444,6 @@ repository:
       {
         match: "\\b(?i)((world( )?edit|we)? selection|does(n't| not) (contain|have))\\b"
         name: "keyword.addon.condition.skstuff.skript"
-      }
-      {
-        match: "\\b(?i)((is|is(n't| not)?) (spectating|being spectated))\\b"
-        name: "keyword.addon.condition.spectatehook.skript"
       }
       {
         match: "\\b(?i)((teamspeak|ts) ((connection|ban|online) state))\\b"
@@ -493,7 +489,7 @@ repository:
         name: "keyword.addon.effect.skaction.skript"
       }
       {
-        match: "\\b((fake )?trial packet|run script)\\b"
+        match: "\\b((fake )?trial packet|run script|generate( random)?)\\b"
         name: "keyword.addon.effect.skutilities.skript"
       }
       {
@@ -525,12 +521,8 @@ repository:
         name: "keyword.addon.effect.skstuff.skript"
       }
       {
-        match: "\\b(?i)(set (border )?(size|center|damage (amount|buffer)|warning)|duplicate)\\b"
+        match: "\\b(?i)((set (border )?(size|center|damage (amount|buffer)|warning)|duplicate)|(within|beyond) border|(award|remove) achievement|write|(open|close) function|through function)\\b"
         name: "keyword.addon.effect.mundosk.skript"
-      }
-      {
-        match: "\\b(?i)(spectate|stop spectating|change spectate angle)\\b"
-        name: "keyword.addon.effect.spectatehook.skript"
       }
       {
         match: "\\b(?i)((teamspeak|ts) (server )?(privilege key by group id|(dis)?connect|send (channel|broadcast) message|send private|poke|tempban|(change|remove) description|delete all ban entries)|user|login|credentials|on query port| flood level)\\b"
@@ -556,7 +548,7 @@ repository:
   expressions:
     patterns: [
       {
-        match: "\\b(?i)((in)? rad(ian)?(s)?|(in)? deg(ree)?(s)?|midpoint|linear coord(inate)?(s)?|(linked|connected)( with)? density|polygon(s)?|(vertex|vertices|vertexes)(,| and) radius|cube(s)?|circle(s)?|heli(x|xes|ces)|height|(,| and) step (height|size)|cylinder coord(inate)?(s)?|spheric(al)? coord(inate)?(s)?|(with )?coordinates|(random )?sphere(s)?|and density|with angle|rotated around( (x|y|z)(-| )axis)?|mirrored|(scaled )?(with)? center|move|shift)\\b"
+        match: "\\b(?i)((in)? rad(ian)?(s)?|(in)? deg(ree)?(s)?|midpoint|linear coord(inate)?(s)?|(linked|connected)( with)? density|polygon(s)?|(vertex|vertices|vertexes)(,| and) radius|cube(s)?|circle(s)?|heli(x|xes|ces)|height|(,| and) step (height|size)|cylinder coord(inate)?(s)?|spheric(al)? coord(inate)?(s)?|(with )?coordinates|(random )?sphere(s)?|and density|with angle|rotated around( (x|y|z)(-| )axis)?|mirrored|(scaled )?(with)? center|move|shift|center|(as|in) square around)\\b"
         name: "keyword.addon.expression.biosphere.skript"
       }
       {
@@ -580,7 +572,7 @@ repository:
         name: "keyword.addon.expression.skaction.skript"
       }
       {
-        match: "\\b(?i)(convert|(en|de)code|mirror(ed)?|formatted as|generate( random)?)\\b"
+        match: "\\b(?i)(convert|(en|de)code|mirror(ed)?|formatted as)\\b"
         name: "keyword.addon.expression.skutilities.skript"
       }
       {
@@ -608,16 +600,12 @@ repository:
         name: "keyword.addon.expression.skevolved.skript"
       }
       {
-        match: "\\b(?i)((no(( |-))?clip|fire( )?proof|vanish) (state|mode)|silently|quietly|(area of (schem(atic)?|(world( )?edit |we )?selection)|((x|y|z)( |-)size|height) of schem(atic)?|(y( |-)size|height) of (world( )?edit |we )?selection|((world( )?edit|we) )?selection (y( |-)size|height)|(custom )?nbt(( )?tag(s)?)?|(block )?limit( change)? of( edit( )?session)?|nbt(( )?tag(s)?)?|new edit( )?session|(max(imum)?)?( block)? limit( change)?|number of (all )?changed blocks (in|of)( edit( )?session)?|(world( )?edit |we )?po(s|int)|nbt (compound)?|volume of schem(atic)?|volume of (world( )?edit |we )?selection|(world( )?edit |we )?selection (volume|area)|(x( |-)size|width)(of schem(atic)?)?|(world( )?edit |we )? selection( x( |-)size| width)?))\\b"
+        match: "\\b(?i)((no(( |-))?clip|fire( )?proof|vanish) (state|mode)|silently|quietly|(area of (schem(atic)?|(world( )?edit |we )?selection)|((x|y|z)( |-)size|height) of schem(atic)?|(y( |-)size|height) of (world( )?edit |we )?selection|((world( )?edit|we) )?selection (y( |-)size|height)|(custom )?nbt(( )?tag(s)?)?|(block )?limit( change)? of( edit( )?session)?|nbt(( )?tag(s)?)?|new edit( )?session|(max(imum)?)?( block)? limit( change)?|number of (all )?changed blocks (in|of)( edit( )?session)?|(world( )?edit |we )?po(s|int)|nbt (compound)?|volume of schem(atic)?|volume of (world( )?edit |we )?selection|(world( )?edit |we )?selection (volume|area)|(x( |-)size|width)(of schem(atic)?)?|(world( )?edit |we )? selection( x( |-)size| width)?)|(convert |capitalize )?(first|1st) (letter|char(acter)?) (of|in) (each word|(all)? words)|((converted )?to (cap(ital)?s|upper( )?case))? (ignoring (other)? upper( )?case ((char(acter)?s|letters))?)?|(converted )?to( all)? (cap(ital)?s|(low|upp)er( )case)|(un(( |-))?)?capitalize( all)? (char(acter)?s (of|in))?)\\b"
         name: "keyword.addon.expression.skstuff.skript"
       }
       {
-        match: "\\b(?i)(border (size |center |damage (amount|buffer) |warning distance )?of|(game)?rule|using name|env(ironment)?|seed|type|gen(erator)?|struct(ures)?|modifed|(tc|terrain control) (biome|spawn)|highest( (solid|non-air))?|titled|written|pages from|pgs from|page|pg|set to|through|deleted|title|author|page count)\\b"
+        match: "\\b(?i)(border (size |center |damage (amount|buffer) |warning distance )?of|(game)?rule|using name|env(ironment)?|seed|type|gen(erator)?|struct(ures)?|modifed|(tc|terrain control) (biome|spawn)|highest( (solid|non-air))?|titled|written|pages from|pgs from|page|pg|set to|through|deleted|title|author|page count|parent|difficulty|pass(word)? of function socket)\\b"
         name: "keyword.addon.expressions.mundosk.skript"
-      }
-      {
-        match: "\\b(?i)(spectate (angle|target))\\b"
-        name: "keyword.addon.expression.spectatehook.skript"
       }
       {
         match: "\\b(?i)((teamspeak|ts) get client(s)? by (ip|address|description)|online clients)\\b"

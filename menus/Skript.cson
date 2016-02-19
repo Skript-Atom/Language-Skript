@@ -1,9 +1,9 @@
 'menu': [
   {
-    'label': 'Lang-Skript: v1.8.5'
+    'label': 'Lang-Skript: v1.8.6'
     'submenu': [
       {
-        'label': 'Addon Versions (23)'
+        'label': 'Addon Versions (21)'
         'submenu': [
           {
             'label': 'Aliases: Coming soon'
@@ -18,10 +18,7 @@
             'label': 'skUtilities: v0.3.3'
           }
           {
-            'label': 'AuthMe SkAddon: v1.1'
-          }
-          {
-            'label': 'BioSphere: v1.0.2'
+            'label': 'BioSphere: v1.0.4'
           }
           {
             'label': 'ExtrasSk: v1.5'
@@ -60,13 +57,10 @@
             'label': 'skRPG: v1.0.0'
           }
           {
-            'label': 'skStuff: v1.4.1.1'
+            'label': 'skStuff: v1.4.2'
           }
           {
-            'label': 'MundoSK: v1.3.2'
-          }
-          {
-            'label': 'SpectateHook: v1.1'
+            'label': 'MundoSK: v1.4.2'
           }
           {
             'label': 'skVoice: v1.1.0'
