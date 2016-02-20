@@ -312,6 +312,10 @@ repository:
   events:
     patterns: [
       {
+        match: "\\b(on cauldron( water)? level change)\\b"
+        name: "keyword.addon.event.skutilities.skript"
+      }
+      {
         match: "\\b(?i)(on crop (trampl(e|ing)|break(ing)?|stomp(ing)?|step(ping)? on|destroy(ing)?|grow))\\b"
         name: "keyword.addon.event.extrassk.skript"
       }
