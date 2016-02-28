@@ -1,3 +1,8 @@
+# 1.8.7
+* Bug Fixes
+* Updated skUtilities
+* Added skSharp
+
 # 1.8.6
 * Bug Fixes
 * Updated skUtilities to v0.3.3

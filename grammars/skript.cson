@@ -352,6 +352,10 @@ repository:
         name: "keyword.addon.event.skrpg.skript"
       }
       {
+        match: "\\b(?i)(On (authme (log(in|out)|teleport|inventory restore)|mythicmob (death|spawn)|light (create|remove)|job (join|leave|payment|levelup)|world change|extract|firework explode))\\b"
+        name: "keyword.addon.event.sksharp.skript"
+      }
+      {
         match: "\\b(?i)(on (achievement( get)?|brew|enchant prepare|health regen|inventory open|leash|note play|potion splash|sheep wool regrow|slime split|unleash))\\b"
         name: "keyword.addon.event.umbaska.skript"
       }
@@ -379,7 +383,7 @@ repository:
         name: "keyword.addon.type.randomsk.skript"
       }
       {
-        match: "\\b(?i)(bin(ary)?|ascii|octal|hex(a)?|decimal|hex|rgb|unix|base( )?64|morse[ code]|functions|triggers|statements|commands|cmds|s(k|c)ripts|variables|addons|plugins|effects|expressions|events|conditions|aliases|utf-8|ISO-8859-1|profession (farmer|librarian|priest|blacksmith|butcher))\\b"
+        match: "\\b(?i)(bin(ary)?|ascii|octal|hex(a)?|decimal|hex|rgb|unix|base( )?64|morse( code)?|functions|triggers|statements|commands|cmds|s(k|c)ripts|variables|addons|plugins|effects|expressions|events|conditions|aliases|utf-8|ISO-8859-1|profession (farmer|librarian|priest|blacksmith|butcher)|key|dimension|environment)\\b"
         name: "keyword.addon.type.skutilities.skript"
       }
       {
@@ -401,6 +405,10 @@ repository:
       {
         match: "\\b(?i)(mob|block_(break|place)|craft|special|exp_bottle|smelt|quest)\\b"
         name: "keyword.addon.type.skrpg.skript"
+      }
+      {
+        match: "\\b(?i)(difficulty|job(s)?)\\b"
+        name: "keyword.addon.type.sksharp.skript"
       }
       {
         match: "\\b(?i)(compound|editsession)\\b"
@@ -521,6 +529,10 @@ repository:
         name: "keyword.addon.effect.skrpg.skript"
       }
       {
+        match: "\\b((join|leave)( all)?|(create|delete) light)\\b"
+        name: "keyword.addon.effect.sksharp.skript"
+      }
+      {
         match: "\\b(?i)((create|draw|make) (a)?((no(n|t)(-| )hollow|filled)|hollow) line|thick(ness)?|(un|re)do(last)? (change|edit)(s)?)\\b"
         name: "keyword.addon.effect.skstuff.skript"
       }
@@ -576,7 +588,7 @@ repository:
         name: "keyword.addon.expression.skaction.skript"
       }
       {
-        match: "\\b(?i)(convert|(en|de)code|mirror(ed)?|formatted as)\\b"
+        match: "\\b(?i)(convert|(en|de)c(ode|rypt)|mirror(ed)?|formatted as)\\b"
         name: "keyword.addon.expression.skutilities.skript"
       }
       {
