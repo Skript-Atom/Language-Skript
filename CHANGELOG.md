@@ -1,3 +1,8 @@
+# 1.8.8
+* Updated skUtilities to v0.3.6
+* Updated skSharp v1.2
+* Added MineLua v1.0
+
 # 1.8.7
 * Bug Fixes
 * Updated skUtilities

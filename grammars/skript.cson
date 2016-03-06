@@ -320,6 +320,10 @@ repository:
         name: "keyword.addon.event.extrassk.skript"
       }
       {
+        match: "\\b(on lua script (dis|en)able)\\b"
+        name: "keyword.addon.event.minelua.skript"
+      }
+      {
         match: "\\b(?i)(on ((villager )?gui trade|item break|fishing state|item despawn(ing)?|(named )?sound (trigger|play)|player hear sound|statistics (increment|increase)|vehicle (steer|button press)))\\b"
         name: "keyword.addon.event.randomsk.skript"
       }
@@ -352,7 +356,7 @@ repository:
         name: "keyword.addon.event.skrpg.skript"
       }
       {
-        match: "\\b(?i)(On (authme (log(in|out)|teleport|inventory restore)|mythicmob (death|spawn)|light (create|remove)|job (join|leave|payment|levelup)|world change|extract|firework explode))\\b"
+        match: "\\b(?i)(On (authme (log(in|out)|teleport|inventory restore)|mythicmob (death|spawn)|light (create|remove)|job (join|leave|payment|levelup)|world change|extract|firework explode|anvil prepare))\\b"
         name: "keyword.addon.event.sksharp.skript"
       }
       {
@@ -383,6 +387,10 @@ repository:
         name: "keyword.addon.type.randomsk.skript"
       }
       {
+        match: "\\b(luascript)\\b"
+        name: "keyword.addon.type.minelua.skript"
+      }
+      {
         match: "\\b(?i)(bin(ary)?|ascii|octal|hex(a)?|decimal|hex|rgb|unix|base( )?64|morse( code)?|functions|triggers|statements|commands|cmds|s(k|c)ripts|variables|addons|plugins|effects|expressions|events|conditions|aliases|utf-8|ISO-8859-1|profession (farmer|librarian|priest|blacksmith|butcher)|key|dimension|environment)\\b"
         name: "keyword.addon.type.skutilities.skript"
       }
@@ -407,7 +415,7 @@ repository:
         name: "keyword.addon.type.skrpg.skript"
       }
       {
-        match: "\\b(?i)(difficulty|job(s)?)\\b"
+        match: "\\b(?i)(difficulty|job(s)?|offhand)\\b"
         name: "keyword.addon.type.sksharp.skript"
       }
       {
@@ -458,6 +466,10 @@ repository:
         name: "keyword.addon.condition.skstuff.skript"
       }
       {
+        match: "\\b(is a mythicmob)\\b"
+        name: "keyword.adddon.condition.sksharp.skript"
+      }
+      {
         match: "\\b(?i)((teamspeak|ts) ((connection|ban|online) state))\\b"
         name: "keyword.addon.condition.skvoice.skript"
       }
@@ -493,6 +505,10 @@ repository:
         name: "keyword.addon.effect.piratesk.skript"
       }
       {
+        match: "\\b(call function|(dis|en)able script|run lua)\\b"
+        name: "keyword.addon.effect.minelua.skript"
+      }
+      {
         match: "\\b(?i)((animation )?(on|to)show (stacking )?block break (animation )?stage|change (yaw|pitch)|(appear|look) (open|closed)|play chest (open|closed) animation (at|on)|change (sky|environment)|force respawn|force (the)?|to respawn|register furnace recipe with (result)?|source|reset (all )?recipes|sleep at|open (villager )?trade (gui )?named|wake up)\\b"
         name: "keyword.addon.effect.randomsk.skript"
       }
@@ -501,7 +517,7 @@ repository:
         name: "keyword.addon.effect.skaction.skript"
       }
       {
-        match: "\\b((fake )?trial packet|run script|generate( random)?)\\b"
+        match: "\\b((fake )?trial packet|run script|generate( random)?|print (info|warning|error))\\b"
         name: "keyword.addon.effect.skutilities.skript"
       }
       {
@@ -529,7 +545,7 @@ repository:
         name: "keyword.addon.effect.skrpg.skript"
       }
       {
-        match: "\\b((join|leave)( all)?|(create|delete) light)\\b"
+        match: "\\b((join|leave)( all)?|(create|delete) light|pex (remove|add( timed)?) (permission|group))\\b"
         name: "keyword.addon.effect.sksharp.skript"
       }
       {
@@ -610,6 +626,10 @@ repository:
       {
         match: "\\b(?i)(skillapi (max (mana|health|level)|main class|attribute points|class group|total experience|mana|required exp(erience)?|(mana|health) scale|(chat colo(u)?r|chatcolo(u)?r)|mana regen|(attacker|victim)|expsource|exp(erience )?(gained|Lost)|mana (gained|Lost)|skill casted|levels gained|class (group|base)?|unlocked skill))\\b"
         name: "keyword.addon.expression.skrpg.skript"
+      }
+      {
+        match: "\\b(glowing state)\\b"
+        name: "keyword.addon.expression.sksharp.skript"
       }
       {
         match: "\\b(?i)((java|lua)( file)?)\\b"

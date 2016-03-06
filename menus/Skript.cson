@@ -1,6 +1,6 @@
 'menu': [
   {
-    'label': 'Lang-Skript: v1.8.7'
+    'label': 'Lang-Skript: v1.8.8'
     'submenu': [
       {
         'label': 'Addon Versions (22)'
@@ -15,7 +15,7 @@
             'label': 'skQuery: v3.21.4'
           }
           {
-            'label': 'skUtilities: v0.3.4'
+            'label': 'skUtilities: v0.3.6'
           }
           {
             'label': 'BioSphere: v1.0.4'
@@ -28,6 +28,9 @@
           }
           {
             'label': 'PirateSk: v0.4.1'
+          }
+          {
+            'label': 'MineLua: v1.0'
           }
           {
             'label': 'RandomSk: v2.7.1'
@@ -57,7 +60,7 @@
             'label': 'skRPG: v1.0.0'
           }
           {
-            'label': 'skSharp: v1.0'
+            'label': 'skSharp: v1.2'
           }
           {
             'label': 'skStuff: v1.4.2'
