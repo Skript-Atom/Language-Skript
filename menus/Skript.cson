@@ -1,6 +1,6 @@
 'menu': [
   {
-    'label': 'Lang-Skript: v1.8.8'
+    'label': 'Lang-Skript: v1.8.9'
     'submenu': [
       {
         'label': 'Addon Versions (22)'
@@ -15,13 +15,16 @@
             'label': 'skQuery: v3.21.4'
           }
           {
-            'label': 'skUtilities: v0.3.6'
+            'label': 'skUtilities: v0.3.7'
           }
           {
             'label': 'BioSphere: v1.0.4'
           }
           {
             'label': 'ExtrasSk: v1.5'
+          }
+          {
+            'label': 'ExterSk: v0.0.3'
           }
           {
             'label': 'GameBuSk: v0.1.171'

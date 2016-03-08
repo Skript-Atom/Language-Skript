@@ -320,6 +320,10 @@ repository:
         name: "keyword.addon.event.extrassk.skript"
       }
       {
+        match: "\\b(?i)(on (map init|(mcmmo )?(skill )?level up))\\b"
+        name: "keyword.addon.event.extersk.skript"
+      }
+      {
         match: "\\b(on lua script (dis|en)able)\\b"
         name: "keyword.addon.event.minelua.skript"
       }
@@ -391,7 +395,7 @@ repository:
         name: "keyword.addon.type.minelua.skript"
       }
       {
-        match: "\\b(?i)(bin(ary)?|ascii|octal|hex(a)?|decimal|hex|rgb|unix|base( )?64|morse( code)?|functions|triggers|statements|commands|cmds|s(k|c)ripts|variables|addons|plugins|effects|expressions|events|conditions|aliases|utf-8|ISO-8859-1|profession (farmer|librarian|priest|blacksmith|butcher)|key|dimension|environment)\\b"
+        match: "\\b(?i)(bin(ary)?|ascii|octal|hex(a)?|decimal|unicode|hex|rgb|unix|base( )?64|morse( code)?|functions|triggers|statements|commands|cmds|s(k|c)ripts|variables|addons|plugins|effects|expressions|events|conditions|aliases|utf-8|ISO-8859-1|profession (farmer|librarian|priest|blacksmith|butcher)|key|dimension|environment)\\b"
         name: "keyword.addon.type.skutilities.skript"
       }
       {
@@ -493,8 +497,16 @@ repository:
   effects:
     patterns: [
       {
+        match: "\\b((fake )?trial packet|run script|generate( random)?|print (info|warning|error))\\b"
+        name: "keyword.addon.effect.skutilities.skript"
+      }
+      {
         match: "\\b(?i)(play (the )?(sound)?|spawn (a(n)? )?((unique|special))?|(styled|marked|with pattern(s)?))\\b"
         name: "keyword.addon.effect.extrassk.skript"
+      }
+      {
+        match: "\\b(?i)(render (resized )?image|set pixel|draw rectangle)\\b"
+        name: "keyword.addon.effect.extersk.skript"
       }
       {
         match: "\\b(?i)((go to|open)( url)?|url|open new tab|click|send( key(s)?)?)\\b"
@@ -515,10 +527,6 @@ repository:
       {
         match: "\\b(?i)(send bossbar|with percent|(un)?deny|open (a )?dispenser( named)?|group of|member|trusted)\\b"
         name: "keyword.addon.effect.skaction.skript"
-      }
-      {
-        match: "\\b((fake )?trial packet|run script|generate( random)?|print (info|warning|error))\\b"
-        name: "keyword.addon.effect.skutilities.skript"
       }
       {
         match: "\\b(?i)(take|flight|random flight|(their )?dragon home|(stop|dismount from) dragon travel|(dragon )?station|stat(ionary)? dragon|remove riderless dragons|stopEffect( id)?|draw(((simple)?halo|spiral|complexcircle|band) particle| style|nyancat|atom)|particle(1|2|3)|(offset)?xyz(1|2)?|rgb(2|3)?|speed(2|3)|issingle|r(ainbow)?m(ode)?|visiblerange|start|dis(placement)?(x|y|z)|randomrotation|density|(x|y|z)r(otation)?|(inn|out)erpcount|innerradius|orbitcount|angle|space)\\b"
@@ -580,12 +588,20 @@ repository:
   expressions:
     patterns: [
       {
+        match: "\\b(?i)(convert|(en|de)c(ode|rypt)|mirror(ed)?|formatted as)\\b"
+        name: "keyword.addon.expression.skutilities.skript"
+      }
+      {
         match: "\\b(?i)((in)? rad(ian)?(s)?|(in)? deg(ree)?(s)?|midpoint|linear coord(inate)?(s)?|(linked|connected)( with)? density|polygon(s)?|(vertex|vertices|vertexes)(,| and) radius|cube(s)?|circle(s)?|heli(x|xes|ces)|height|(,| and) step (height|size)|cylinder coord(inate)?(s)?|spheric(al)? coord(inate)?(s)?|(with )?coordinates|(random )?sphere(s)?|and density|with angle|rotated around( (x|y|z)(-| )axis)?|mirrored|(scaled )?(with)? center|move|shift|center|(as|in) square around)\\b"
         name: "keyword.addon.expression.biosphere.skript"
       }
       {
         match: "\\b(?i)(active potion effect(s)?auto(matic)? despawn state|(wolf )?collar (color)?|(letters|characters)|(changed|converted)|((upp|low)ercase|(un)?caps)|(shown|displayed) item|(event(-| ))?enchant(ed|ing) item (e)?xp(erience)? cost|(e)?xp(erience)? cost of enchant(ing|ment)|(restore(d)?|heal(ed)?|regenerat(ed)?) (amount|number|health)|(invulnerability (time)?|no damage (time)?)|(shown|displayed) rotation|pickup state|saturation (level)?|(number (of times)? (that)?|count of)( case(-| )sensitive)?)\\b"
         name: "keyword.addon.expression.extrassk.skript"
+      }
+      {
+        match: "\\b(?i)(map id|(exter )?nametag(s)? (suffix|prefix)|last (exter )?(server command )?output)\\b"
+        name: "keyword.addon.expression.extersk.skript"
       }
       {
         match: "\\b(?i)((gamebuster's )?(fixed )?(yaw|pitch)|all browsers|element found (by|using)|with parameter)\\b"
@@ -602,10 +618,6 @@ repository:
       {
         match: "\\b(?i)(prefix|suffix|group|plots|rated|server motd)\\b"
         name: "keyword.addon.expression.skaction.skript"
-      }
-      {
-        match: "\\b(?i)(convert|(en|de)c(ode|rypt)|mirror(ed)?|formatted as)\\b"
-        name: "keyword.addon.expression.skutilities.skript"
       }
       {
         match: "\\b(?i)([uskyblock ]island (level|rank)|[(get|askyblock) ](spawn (location|range)|top ten)|[askyblock ](island (level|world)|nether world|owner of island|team leader[[']s]|team member[[']s])|(available( )?)?processors|border( warning| damage (buffer|amount))?|cpu(( )?byte)?|(os|operating system)|os arch(itecture)?|(os( )?)?username|(running( )?)?threads|allow (end|nether|flight)|cpu usage|default gamemode|idle timeout|(skeeland|bukit) version|loaded|online mode|ip|port|uptime|per (animal|monster) spawn(s)?|view distance|((water )?(animal|ambient)|monster) spawn(s)? limit|(total|max|free) memory( in)? mb|claim|(fire|pvp|public) state|mayor|taxes|without a|war( )?time)\\b"
