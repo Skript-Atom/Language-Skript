@@ -1,6 +1,8 @@
 # 1.9.0
 * Updated skUtilities to v0.3.8
 * Updated skSharp to v1.3
+* Bug Fixes
+* true, false, enable and disable have colors that match them now!
 
 
 # 1.8.9

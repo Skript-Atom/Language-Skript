@@ -269,7 +269,7 @@ repository:
         name: "keyword.type.mccolor.blue.skript"
       }
       {
-        match: "((&|§)(a|A)|\\b(?i)green\\b|online)"
+        match: "((&|§)(a|A)|\\b(?i)green\\b|online|true|enable)"
         name: "keyword.type.mccolor.green.skript"
       }
       {
@@ -277,7 +277,7 @@ repository:
         name: "keyword.type.mccolor.aqua.skript"
       }
       {
-        match: "((&|§)(c|C)|\\b(?i)red\\b|offline)"
+        match: "((&|§)(c|C)|\\b(?i)red\\b|offline|false|disable)"
         name: "keyword.type.mccolor.red.skript"
       }
       {
@@ -490,7 +490,7 @@ repository:
         name: "keyword.addon.condition.wildsk.skript"
       }
       {
-        match: "\\b(?i)(true|false|(dis|en)able(d)?|(is|are)(n't| not)? set|can(not )?build|can(no|')t hold|ha(s|ve) not|ha(s|ve)n't|do(es)?n't have|can hold|ha(s|ve) (enough )?space (for|to hold)|chance|(is|are)(n't| not)?|equal|same as|between|(greater|more|higher|bigger|larger|less|smaller)( than)?|above|below|(ha(s|ve)|do(es)?(n't| not) have)|((the(ir)?|his|her|its) )?inventory|do(es)?(n't| not) contain|contain(s)?|damage (been )?(caused|done|made)|do(es)?(n't| not) exist|exist(s)?|(ha(s|ve)|(do(es)?n't|don't|do(es )?not) have)|permission(s)?|((has not|hasn't|did not|didn't|has|did) )?((already|yet) )?play(ed )?(on (this|the) server )?(before|already|yet)|alive|dead|(is|are)(n't| not) ((IP(-| ))?)?banned|blocking|defending|holding|burning|ignited|on fire|empty|enchanted|flying|of type(s)?|poisoned|riding|(sleeping|sneaking|sprinting)|wearing|(the )?owner(s)?|member(s)?|(is|are) flying|(ha(s|ve) not|do(es)?n't have)|((is|are) o(n|ff)line|(is not|isn't|are not|aren't) o(ff|n)line)|(is pvp|pvp is)|(is|are) in (the )?region|region contains|(was|were)( more|(n't| not) (less|more)| less) than)\\b"
+        match: "\\b(?i)((is|are)(n't| not)? set|can(not )?build|can(no|')t hold|ha(s|ve) not|ha(s|ve)n't|do(es)?n't have|can hold|ha(s|ve) (enough )?space (for|to hold)|chance|(is|are)(n't| not)?|equal|same as|between|(greater|more|higher|bigger|larger|less|smaller)( than)?|above|below|(ha(s|ve)|do(es)?(n't| not) have)|((the(ir)?|his|her|its) )?inventory|do(es)?(n't| not) contain|contain(s)?|damage (been )?(caused|done|made)|do(es)?(n't| not) exist|exist(s)?|(ha(s|ve)|(do(es)?n't|don't|do(es )?not) have)|permission(s)?|((has not|hasn't|did not|didn't|has|did) )?((already|yet) )?play(ed )?(on (this|the) server )?(before|already|yet)|alive|dead|(is|are)(n't| not) ((IP(-| ))?)?banned|blocking|defending|holding|burning|ignited|on fire|empty|enchanted|flying|of type(s)?|poisoned|riding|(sleeping|sneaking|sprinting)|wearing|(the )?owner(s)?|member(s)?|(is|are) flying|(ha(s|ve) not|do(es)?n't have)|((is|are) o(n|ff)line|(is not|isn't|are not|aren't) o(ff|n)line)|(is pvp|pvp is)|(is|are) in (the )?region|region contains|(was|were)( more|(n't| not) (less|more)| less) than)\\b"
         name: "keyword.addon.condition.main.skript"
       }
       {
