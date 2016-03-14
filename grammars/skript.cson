@@ -187,7 +187,7 @@ repository:
   keywords:
     patterns: [
       {
-        match: "\\b(?i)(tick|(milli)?second|minute|hour|day|week|month|year|now)(s)?\\b"
+        match: "\\b(?i)(tick|(nano|milli)s(econds)?|second|minute|hour|day|week|month|year|now)(s)?\\b"
         name: "keyword.type.timespan.skript"
       }
       {
@@ -360,7 +360,7 @@ repository:
         name: "keyword.addon.event.skrpg.skript"
       }
       {
-        match: "\\b(?i)(On (authme (log(in|out)|teleport|inventory restore)|mythicmob (death|spawn)|light (create|remove)|job (join|leave|payment|levelup)|world change|extract|firework explode|anvil prepare))\\b"
+        match: "\\b(?i)(On (authme (log(in|out)|teleport|inventory restore)|mythicmob (death|spawn)|light (create|remove)|job (join|leave|payment|levelup)|world change|extract|firework explode|anvil prepare|enderman teleport|(ucars )?car (respawn|crash)))\\b"
         name: "keyword.addon.event.sksharp.skript"
       }
       {
@@ -442,6 +442,10 @@ repository:
   conditions:
     patterns: [
       {
+        match: "\\b(?i)(is gliding)\\b"
+        name: "keyword.addon.condition.skutilities.skript"
+      }
+      {
         match: "\\b(?i)((is|are)(n't| not) occupied|(has|(doesn't )?have) (fixed )?metadata( value)?|(has|have|doesn't have) (offers|trades)|(has|have|doesn't have) second item|(has|have|doesn't have) (offer|trade)( number)?|is( not)? in sleep(ing )?animation|is not on ground)\\b"
         name: "keyword.addon.condition.randomsk.skript"
       }
@@ -470,7 +474,7 @@ repository:
         name: "keyword.addon.condition.skstuff.skript"
       }
       {
-        match: "\\b(is a mythicmob)\\b"
+        match: "\\b(is a mythicmob|is in (a )?car)\\b"
         name: "keyword.adddon.condition.sksharp.skript"
       }
       {
@@ -497,7 +501,7 @@ repository:
   effects:
     patterns: [
       {
-        match: "\\b((fake )?trial packet|run script|generate( random)?|print (info|warning|error))\\b"
+        match: "\\b((fake )?trial packet|run script|generate( random)?|print (info|warning|error)|glide (state|ability|mode))\\b"
         name: "keyword.addon.effect.skutilities.skript"
       }
       {
@@ -553,7 +557,7 @@ repository:
         name: "keyword.addon.effect.skrpg.skript"
       }
       {
-        match: "\\b((join|leave)( all)?|(create|delete) light|pex (remove|add( timed)?) (permission|group))\\b"
+        match: "\\b((join|leave)( all)?|(create|delete) light|pex (remove|add( timed)?) (permission|group)|pex ((add|remove|delete) permission|create group))\\b"
         name: "keyword.addon.effect.sksharp.skript"
       }
       {
@@ -588,7 +592,7 @@ repository:
   expressions:
     patterns: [
       {
-        match: "\\b(?i)(convert|(en|de)c(ode|rypt)|mirror(ed)?|formatted as)\\b"
+        match: "\\b(?i)(convert|(en|de)c(ode|rypt)|mirror(ed)?|formatted as|(current )?system)\\b"
         name: "keyword.addon.expression.skutilities.skript"
       }
       {

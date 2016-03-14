@@ -1,3 +1,8 @@
+# 1.9.0
+* Updated skUtilities to v0.3.8
+* Updated skSharp to v1.3
+
+
 # 1.8.9
 * Updated skUtilities to v0.3.7
 * Added ExterSk v0.0.3
