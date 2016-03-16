@@ -1,3 +1,7 @@
+# 1.9.1
+* Fixed Issus:
+* vertical, color types
+
 # 1.9.0
 * Updated skUtilities to v0.3.8
 * Updated skSharp to v1.3
