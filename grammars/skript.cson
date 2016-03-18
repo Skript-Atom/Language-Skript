@@ -395,7 +395,7 @@ repository:
         name: "keyword.addon.type.minelua.skript"
       }
       {
-        match: "\\b(?i)(bin(ary)?|ascii|octal|hex(a)?|decimal|unicode|hex|rgb|unix|base( )?64|morse( code)?|functions|triggers|statements|commands|cmds|s(k|c)ripts|variables|addons|plugins|effects|expressions|events|conditions|aliases|utf-8|ISO-8859-1|profession (farmer|librarian|priest|blacksmith|butcher)|key|dimension|environment)\\b"
+        match: "\\b(?i)(bin(ary)?|ascii|octal|hex(a)?|decimal|unicode|hex|rgb|unix|base( )?64|morse( code)?|functions|triggers|statements|commands|cmds|s(k|c)ript(s)?|variables|addons|plugins|effects|expressions|events|conditions|aliases|utf-8|ISO-8859-1|profession (farmer|librarian|priest|blacksmith|butcher)|key|dimension|environment|program|app(lication)?|(zip )?file|dir(ectory)?)\\b"
         name: "keyword.addon.type.skutilities.skript"
       }
       {
@@ -501,7 +501,7 @@ repository:
   effects:
     patterns: [
       {
-        match: "\\b((fake )?trial packet|run script|generate( random)?|print (info|warning|error)|glide (state|ability|mode))\\b"
+        match: "\\b((fake )?trial packet|generate( random)?|print (info|warning|error)|glide (state|ability|mode)|create)\\b"
         name: "keyword.addon.effect.skutilities.skript"
       }
       {
@@ -592,7 +592,7 @@ repository:
   expressions:
     patterns: [
       {
-        match: "\\b(?i)(convert|(en|de)c(ode|rypt)|mirror(ed)?|formatted as|(current )?system)\\b"
+        match: "\\b(?i)(convert|(en|de)c(ode|rypt)|mirror(ed)?|formatted as|(current )?system|hash(ed)?|using|line count)\\b"
         name: "keyword.addon.expression.skutilities.skript"
       }
       {
