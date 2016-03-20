@@ -203,7 +203,7 @@ repository:
         name: "keyword.type.loop.skript"
       }
       {
-        match: "event-(block|item|index|value|num(ber)?|player|entity|integer|attacker|victim|shooter|world|chunk|projectile|button)('s|s)?"
+        match: "event-(string|block|item|index|value|num(ber)?|player|entity|integer|attacker|victim|shooter|world|chunk|projectile|button)('s|s)?"
         name: "keyword.type.event.skript"
       }
       {
@@ -324,6 +324,10 @@ repository:
         name: "keyword.addon.event.extersk.skript"
       }
       {
+        match: "\\b(?i)(on (hack|cheat|violat(e|ion)))\\b"
+        name: "keyword.addon.event.largesk.skript"
+      }
+      {
         match: "\\b(on lua script (dis|en)able)\\b"
         name: "keyword.addon.event.minelua.skript"
       }
@@ -387,6 +391,10 @@ repository:
         name: "keyword.addon.type.gamebusk.skript"
       }
       {
+        match: "\\b(?i)(acc|spam|combatimpossible|angle|criticals|fastbow|fightspeed|forcefield|knockback|reach|regen|fastuse|killaura|badpackets|glide|normalmovements|speed|phase|fly|nofall|climb|jesus|headroll|fastbreak|fastplace|nuker|noswing|impossibleinteract|playerradar)\\b"
+        name: "keyword.addon.type.largesk.skript"
+      }
+      {
         match: "\\b(?i)(statistic)\\b"
         name: "keyword.addon.type.randomsk.skript"
       }
@@ -395,7 +403,7 @@ repository:
         name: "keyword.addon.type.minelua.skript"
       }
       {
-        match: "\\b(?i)(bin(ary)?|ascii|octal|hex(a)?|decimal|unicode|hex|rgb|unix|base( )?64|morse( code)?|functions|triggers|statements|commands|cmds|s(k|c)ript(s)?|variables|addons|plugins|effects|expressions|events|conditions|aliases|utf-8|ISO-8859-1|profession (farmer|librarian|priest|blacksmith|butcher)|key|dimension|environment|program|app(lication)?|(zip )?file|dir(ectory)?)\\b"
+        match: "\\b(?i)(config|bin(ary)?|ascii|octal|hex(a)?|decimal|unicode|hex|rgb|unix|base( )?64|morse( code)?|functions|triggers|statements|commands|cmds|s(k|c)ript(s)?|variables|addons|plugins|effects|expressions|events|conditions|aliases|utf-8|ISO-8859-1|profession (farmer|librarian|priest|blacksmith|butcher)|key|dimension|environment|program|app(lication)?|zip|file|dir(ectory)?)\\b"
         name: "keyword.addon.type.skutilities.skript"
       }
       {
@@ -450,6 +458,10 @@ repository:
         name: "keyword.addon.condition.randomsk.skript"
       }
       {
+        match: "\\b(?i)(bypass(ed by|ing)|on ground|running)\\b"
+        name: "keyword.addon.condition.largesk.skript"
+      }
+      {
         match: "\\b(?i)(motd equals)\\b"
         name: "keyword.addon.condition.skaction.skript"
       }
@@ -501,7 +513,7 @@ repository:
   effects:
     patterns: [
       {
-        match: "\\b((fake )?trial packet|generate( random)?|print (info|warning|error)|glide (state|ability|mode)|create)\\b"
+        match: "\\b((fake )?trial packet|generate( random)?|print (info|warning|error)|glide (state|ability|mode)|create|unzip|extract)\\b"
         name: "keyword.addon.effect.skutilities.skript"
       }
       {
@@ -515,6 +527,10 @@ repository:
       {
         match: "\\b(?i)((go to|open)( url)?|url|open new tab|click|send( key(s)?)?)\\b"
         name: "keyword.addon.effect.gamebusk.skript"
+      }
+      {
+        match: "\\b(?i)(reload permission(s|(s )?cache)|reload permission(s|(s )?cache) of aac|reload aac('s)? permission(s|(s )?cache)|lag( spike)?)\\b"
+        name: "keyword.addon.effect.largesk.skript"
       }
       {
         match: "\\b(?i)((add|remove) (member|owner)|(crea|dele)te wg region|paste schematic|save)\\b"
@@ -610,6 +626,10 @@ repository:
       {
         match: "\\b(?i)((gamebuster's )?(fixed )?(yaw|pitch)|all browsers|element found (by|using)|with parameter)\\b"
         name: "keyword.addon.expression.gamebusk.skript"
+      }
+      {
+        match: "\\b(?i)(tps|(hack|violation|cheat)(s)?( level)?|vl|(full|total))\\b"
+        name: "keyword.addon.expression.largesk.skript"
       }
       {
         match: "\\b(?i)(pos(it(ion)?)?( )?(1|2)|wg region)\\b"

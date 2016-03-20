@@ -1,3 +1,7 @@
+# 1.9.3
+* Updated skUtilities to v0.4.0
+* Added LargeSk v0.9.3
+
 # 1.9.2
 * Updated skUtilities to v0.3.9
 

@@ -1,9 +1,9 @@
 'menu': [
   {
-    'label': 'Lang-Skript: v1.9.2'
+    'label': 'Lang-Skript: v1.9.3'
     'submenu': [
       {
-        'label': 'Addon Versions (22)'
+        'label': 'Addon Versions (23)'
         'submenu': [
           {
             'label': 'Aliases: Coming soon'
@@ -15,7 +15,7 @@
             'label': 'skQuery: v3.21.4'
           }
           {
-            'label': 'skUtilities: v0.3.9'
+            'label': 'skUtilities: v0.4.0'
           }
           {
             'label': 'BioSphere: v1.0.4'
@@ -28,6 +28,9 @@
           }
           {
             'label': 'GameBuSk: v0.1.171'
+          }
+          {
+            'label': 'LargeSk: v0.9.3'
           }
           {
             'label': 'PirateSk: v0.4.1'
