@@ -1,3 +1,8 @@
+# 1.9.5
+* Updated skUtilities to v0.4.2
+* Updated ExterSk to v0.1.1
+* Updated MundoSk to v1.4.9
+
 # 1.9.4
 * Updated skUtilities to v0.4.1
 

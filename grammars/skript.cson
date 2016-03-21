@@ -269,7 +269,7 @@ repository:
         name: "keyword.type.mccolor.blue.skript"
       }
       {
-        match: "((&|§)(a|A)|\\b(?i)(light )?green\\b|online|true|enable)"
+        match: "((&|§)(a|A)|\\b(?i)(light )?green\\b|(\\b(?i)online|true|enable(d)?\\b))"
         name: "keyword.type.mccolor.green.skript"
       }
       {
@@ -277,7 +277,7 @@ repository:
         name: "keyword.type.mccolor.aqua.skript"
       }
       {
-        match: "((&|§)(c|C)|\\b(?i)red\\b|offline|false|disable)"
+        match: "((&|§)(c|C)|\\b(?i)red\\b|(\\b(?i)offline|false|disable(d)?\\b))"
         name: "keyword.type.mccolor.red.skript"
       }
       {
@@ -328,8 +328,12 @@ repository:
         name: "keyword.addon.event.largesk.skript"
       }
       {
-        match: "\\b(on lua script (dis|en)able)\\b"
+        match: "\\b(?i)(on lua script (dis|en)able)\\b"
         name: "keyword.addon.event.minelua.skript"
+      }
+      {
+        match: "\\b(?i)(on border stabilize)\\b"
+        name: "keyword.addon.event.mundosk.skript"
       }
       {
         match: "\\b(?i)(on ((villager )?gui trade|item break|fishing state|item despawn(ing)?|(named )?sound (trigger|play)|player hear sound|statistics (increment|increase)|vehicle (steer|button press)))\\b"
@@ -403,11 +407,11 @@ repository:
         name: "keyword.addon.type.minelua.skript"
       }
       {
-        match: "\\b(?i)(config|bin(ary)?|ascii|octal|hex(a)?|decimal|unicode|hex|rgb|unix|base( )?64|morse( code)?|functions|triggers|statements|commands|cmds|s(k|c)ript(s)?|variables|addons|plugins|effects|expressions|events|conditions|aliases|utf-8|ISO-8859-1|profession (farmer|librarian|priest|blacksmith|butcher)|key|dimension|environment|program|app(lication)?|zip|file|dir(ectory)?)\\b"
+        match: "\\b(?i)(config|bin(ary)?|ascii|octal|hex(a)?|decimal|unicode|hex|rgb|unix|base( )?64|morse( code)?|functions|triggers|statements|commands|cmds|s(k|c)ript(s)?|variables|addons|plugins|effects|expressions|events|conditions|aliases|utf-8|ISO-8859-1|profession (farmer|librarian|priest|blacksmith|butcher)|key|dimension|env(ironment)?|program|app(lication)?|zip|file|dir(ectory)?|font(s)?)\\b"
         name: "keyword.addon.type.skutilities.skript"
       }
       {
-        match: "\\b(socket|host|achievement)(s|'s)?\\b"
+        match: "\\b(socket|host|achievement|creator|gen(erator)?|settings|worldname|struct(ures)?)(s|'s)?\\b"
         name: "keyword.addon.type.mundosk.skript"
       }
       {
@@ -439,7 +443,7 @@ repository:
         name: "keyword.addon.type.skvoice.skript"
       }
       {
-        match: "\\b(?i)(material|cursor item(s)?|potion tier|distance|survival|adventure|creative|spectator|biome(s)?|block(s)?|boolean(s)?|chunk(s)?|colo(u)?r(s)?|(command(s)?)?( )?(sender|executor)(s)?|damage cause(s)?|date(s)?|direction(s)?|enchantment(s)?|enchant(ing|ment) type(s)?|(tile )?entit(y|ies)|entity( )?type(s)?|game( )?mode(s)?|inventor(y|ies)|item( material)?|item( )?type(s)?|items( materials)?|meter(s)?|living( )?entit(y|ies)|location(s)?|num(ber)?(s)?|integer(s)?|offline( )?player(s)?|potion(( )?effect)?(( )?type)?(s)?|projectile(s)?|(inventory )?slot(s)?|sound(s)?|(text|string)(s)?|(relative )?time(s)?|time( )?period(s)?|duration(s)?|time( )?span(s)?|tree(( )?type)?(s)?|type(s)?|(visual|particle) effect(s)?|weather( )?type(s)?|weather( condition)?(s)?|world(s)?)\\b"
+        match: "\\b(?i)((game)?rule|material|cursor item(s)?|potion tier|distance|survival|adventure|creative|spectator|biome(s)?|block(s)?|boolean(s)?|chunk(s)?|colo(u)?r(s)?|(command(s)?)?( )?(sender|executor)(s)?|damage cause(s)?|date(s)?|direction(s)?|enchantment(s)?|enchant(ing|ment) type(s)?|(tile )?entit(y|ies)|entity( )?type(s)?|game( )?mode(s)?|inventor(y|ies)|item( material)?|item( )?type(s)?|items( materials)?|meter(s)?|living( )?entit(y|ies)|location(s)?|num(ber)?(s)?|integer(s)?|offline( )?player(s)?|potion(( )?effect)?(( )?type)?(s)?|projectile(s)?|(inventory )?slot(s)?|sound(s)?|(text|string)(s)?|(relative )?time(s)?|time( )?period(s)?|duration(s)?|time( )?span(s)?|tree(( )?type)?(s)?|type(s)?|(visual|particle) effect(s)?|weather( )?type(s)?|weather( condition)?(s)?|world(s)?)\\b"
         name: "keyword.addon.type.main.skript"
       }
       {
@@ -513,7 +517,7 @@ repository:
   effects:
     patterns: [
       {
-        match: "\\b((fake )?trial packet|generate( random)?|print (info|warning|error)|glide (state|ability|mode)|create|unzip|extract)\\b"
+        match: "\\b((fake )?trial packet|generate( random)?|print (info|warning|error)|glide (state|ability|mode)|create|unzip|extract|move)\\b"
         name: "keyword.addon.effect.skutilities.skript"
       }
       {
@@ -521,7 +525,7 @@ repository:
         name: "keyword.addon.effect.extrassk.skript"
       }
       {
-        match: "\\b(?i)(render (resized )?image|set pixel|draw rectangle)\\b"
+        match: "\\b(?i)(render (resized )?image|set pixel|draw rectangle|lead|render|set background|spectate)\\b"
         name: "keyword.addon.effect.extersk.skript"
       }
       {
@@ -543,6 +547,10 @@ repository:
       {
         match: "\\b(?i)((animation )?(on|to)show (stacking )?block break (animation )?stage|change (yaw|pitch)|(appear|look) (open|closed)|play chest (open|closed) animation (at|on)|change (sky|environment)|force respawn|force (the)?|to respawn|register furnace recipe with (result)?|source|reset (all )?recipes|sleep at|open (villager )?trade (gui )?named|wake up)\\b"
         name: "keyword.addon.effect.randomsk.skript"
+      }
+      {
+        match: "\\b(?i)(((border )?(size|center|damage (amount|buffer)|warning)|duplicate)|(within|beyond) border|(award|remove) achievement|write|(open|close) function|(handle response )?through function|unload|t(errain )?c(control)? spawn)\\b"
+        name: "keyword.addon.effect.mundosk.skript"
       }
       {
         match: "\\b(?i)(send bossbar|with percent|(un)?deny|open (a )?dispenser( named)?|group of|member|trusted)\\b"
@@ -581,10 +589,6 @@ repository:
         name: "keyword.addon.effect.skstuff.skript"
       }
       {
-        match: "\\b(?i)((set (border )?(size|center|damage (amount|buffer)|warning)|duplicate)|(within|beyond) border|(award|remove) achievement|write|(open|close) function|through function)\\b"
-        name: "keyword.addon.effect.mundosk.skript"
-      }
-      {
         match: "\\b(?i)((teamspeak|ts) (server )?(privilege key by group id|(dis)?connect|send (channel|broadcast) message|send private|poke|tempban|(change|remove) description|delete all ban entries)|user|login|credentials|on query port| flood level)\\b"
         name: "keyword.addon.effect.skvoice.skript"
       }
@@ -608,7 +612,7 @@ repository:
   expressions:
     patterns: [
       {
-        match: "\\b(?i)(convert|(en|de)c(ode|rypt)|mirror(ed)?|formatted as|(current )?system|hash(ed)?|using|line count|(readable|writable|hidden) attribute)\\b"
+        match: "\\b(?i)(convert|(en|de)c(ode|rypt)|mirror(ed)?|formatted as|(current )?system|hash(ed)?|using|line count|(readable|writable|hidden) attribute|(last (modified|access)|creation) value)\\b"
         name: "keyword.addon.expression.skutilities.skript"
       }
       {
@@ -620,7 +624,7 @@ repository:
         name: "keyword.addon.expression.extrassk.skript"
       }
       {
-        match: "\\b(?i)(map id|(exter )?nametag(s)? (suffix|prefix)|last (exter )?(server command )?output)\\b"
+        match: "\\b(?i)((last )?exter|command output|map id|(exter )?nametag(s)? (suffix|prefix)|last (exter )?(server command )?output|(new )?hastebin (key|identifier|url)|book (title|author)|pages)\\b"
         name: "keyword.addon.expression.extersk.skript"
       }
       {
@@ -638,6 +642,10 @@ repository:
       {
         match: "\\b(?i)(age|enchantment level|(catch|caught entity)|(chat )?recipients|direction of|(monster|animal|water(-| )?animals|ambient) spawn limit(s)?|final damage|fishing state|(fishing )?(hook|lure)|(first|second|third) item|(item|items) (within|inside)|vector|max uses|(maximum )?damage delay|(fixed )?metadata( value)?|name visibility|(new )?vector|highest to lowest|lowest to highest|pick up delay|value of|slime size|(match(es|ing)|compared to)|case(-| )sensitive|(current )?system (millis|nanos)|time lived|unix time|version|viewers|observers)\\b"
         name: "keyword.addon.expression.randomsk.skript"
+      }
+      {
+        match: "\\b(?i)((border (size|center|damage (amount|buffer)|warning distance)?)|using name|modified|t(errain )?c(ontrol)? (spawn)?|highest( (solid|non-air))?|titled|written|page(s from|count)?|pg(s from)?|through|deleted|title|author|parent|difficulty|pass(word)? of function socket|enchants within|handler function|remaining until border stabilize)\\b"
+        name: "keyword.addon.expression.mundosk.skript"
       }
       {
         match: "\\b(?i)(prefix|suffix|group|plots|rated|server motd)\\b"
@@ -674,10 +682,6 @@ repository:
       {
         match: "\\b(?i)((no(( |-))?clip|fire( )?proof|vanish) (state|mode)|silently|quietly|(area of (schem(atic)?|(world( )?edit |we )?selection)|((x|y|z)( |-)size|height) of schem(atic)?|(y( |-)size|height) of (world( )?edit |we )?selection|((world( )?edit|we) )?selection (y( |-)size|height)|(custom )?nbt(( )?tag(s)?)?|(block )?limit( change)? of( edit( )?session)?|nbt(( )?tag(s)?)?|new edit( )?session|(max(imum)?)?( block)? limit( change)?|number of (all )?changed blocks (in|of)( edit( )?session)?|(world( )?edit |we )?po(s|int)|nbt (compound)?|volume of schem(atic)?|volume of (world( )?edit |we )?selection|(world( )?edit |we )?selection (volume|area)|(x( |-)size|width)(of schem(atic)?)?|(world( )?edit |we )? selection( x( |-)size| width)?)|(convert |capitalize )?(first|1st) (letter|char(acter)?) (of|in) (each word|(all)? words)|((converted )?to (cap(ital)?s|upper( )?case))? (ignoring (other)? upper( )?case ((char(acter)?s|letters))?)?|(converted )?to( all)? (cap(ital)?s|(low|upp)er( )case)|(un(( |-))?)?capitalize( all)? (char(acter)?s (of|in))?)\\b"
         name: "keyword.addon.expression.skstuff.skript"
-      }
-      {
-        match: "\\b(?i)(border (size |center |damage (amount|buffer) |warning distance )?of|(game)?rule|using name|env(ironment)?|seed|type|gen(erator)?|struct(ures)?|modifed|(tc|terrain control) (biome|spawn)|highest( (solid|non-air))?|titled|written|pages from|pgs from|page|pg|set to|through|deleted|title|author|page count|parent|difficulty|pass(word)? of function socket)\\b"
-        name: "keyword.addon.expressions.mundosk.skript"
       }
       {
         match: "\\b(?i)((teamspeak|ts) get client(s)? by (ip|address|description)|online clients)\\b"
