@@ -458,6 +458,10 @@ repository:
         name: "keyword.addon.condition.skutilities.skript"
       }
       {
+        match: "\\b(?i)(web status|(online|working|not offline|good|not bad|not 404|not down))\\b"
+        name: "keyword.addon.condition.extersk.skript"
+      }
+      {
         match: "\\b(?i)((is|are)(n't| not) occupied|(has|(doesn't )?have) (fixed )?metadata( value)?|(has|have|doesn't have) (offers|trades)|(has|have|doesn't have) second item|(has|have|doesn't have) (offer|trade)( number)?|is( not)? in sleep(ing )?animation|is not on ground)\\b"
         name: "keyword.addon.condition.randomsk.skript"
       }
@@ -624,7 +628,7 @@ repository:
         name: "keyword.addon.expression.extrassk.skript"
       }
       {
-        match: "\\b(?i)((last )?exter|command output|map id|(exter )?nametag(s)? (suffix|prefix)|last (exter )?(server command )?output|(new )?hastebin (key|identifier|url)|book (title|author)|pages)\\b"
+        match: "\\b(?i)((last )?exter|command output|map id|(exter )?nametag(s)? (suffix|prefix)|last (exter )?(server command )?output|(new )?hastebin (key|identifier|url)|book (title|author)|pages|minigame (deplete )?(hunger|health|(always )?(day|night)))\\b"
         name: "keyword.addon.expression.extersk.skript"
       }
       {
