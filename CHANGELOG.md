@@ -1,3 +1,8 @@
+# 1.9.8
+* Commands now color
+* Updated skUtilities to v0.5.1
+* Updated MundoSk to v1.5.1
+
 # 1.9.7
 * Updated skUtilities to v0.5.0
 * Updated ExterSk to v0.1.3b

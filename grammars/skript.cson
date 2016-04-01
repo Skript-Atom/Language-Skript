@@ -191,7 +191,7 @@ repository:
         name: "keyword.type.timespan.skript"
       }
       {
-        match: "\\b(?i)(trigger|(permission( message)?|description|usage|aliases|executable by): .+|function |command \/|(s(k|c)ript )?options|aliases)\\b"
+        match: "\\b(?i)(trigger|(permission( message)?|description|usage|aliases|executable by): .+|function |command \/[a-zA-Z0-9._-]+|(s(k|c)ript )?options|aliases)\\b"
         name: "keyword.type.cmd.skript"
       }
       {
@@ -411,7 +411,7 @@ repository:
         name: "keyword.addon.type.skutilities.skript"
       }
       {
-        match: "\\b(?i)(worldtype|normal|flat|superflat|large(_| )biomes|amplified|version( 1.1|_1_1)|customized|normal|nether|(the_)?end|acquire_iron|bake_cake|bookcase|breed_cow|brew_potion|build_better_pickaxe|build_furnace|build_hoe|build_pickaxe|build_sword|build_workbench|cook_fish|diamonds_to_you|enchantments|end_portal|explore_all_biomes|fly_pig|full_beacon|get_blaze_rod|get_diamonds|ghast_return|kill_cow|kill_enemy|kill_wither|make_bread|mine_wood|nether_portal|on_a_rail|open_inventory|overkill|overpowered|snipe_skeleton|spawn_wither|the_end|(socket|host|achievement|creator|gen(erator)?|settings|worldname|dim(ension)?|rotation|timeout|env(ironment)?|struct(ures)?)(s|'s)?)\\b"
+        match: "\\b(?i)(worldtype|normal|flat|superflat|large(_| )biomes|amplified|version( 1.1|_1_1)|customized|normal|nether|(the_)?end|acquire_iron|bake_cake|bookcase|breed_cow|brew_potion|build_better_pickaxe|build_furnace|build_hoe|build_pickaxe|build_sword|build_workbench|cook_fish|diamonds_to_you|enchantments|end_portal|explore_all_biomes|fly_pig|full_beacon|get_blaze_rod|get_diamonds|ghast_return|kill_cow|kill_enemy|kill_wither|make_bread|mine_wood|nether_portal|on_a_rail|open_inventory|overkill|overpowered|snipe_skeleton|spawn_wither|the_end|(socket|host|achievement|creator|gen(erator)?|settings|worldname|dim(ension)?|rotation|timeout|env(ironment)?|struct(ures)?|peaceful|easy|normal|hard|throwable|stacktraceelement)(s|'s)?)\\b"
         name: "keyword.addon.type.mundosk.skript"
       }
       {
@@ -476,6 +476,10 @@ repository:
       {
         match: "\\b(?i)(password|logged|authorized|registered)\\b"
         name: "keyword.addon.condition.skmorkaz.skript"
+      }
+      {
+        match: "\\b(?i)(try)\\b"
+        name: "keyword.addon.condition.mundosk.skript"
       }
       {
         match: "\\b(?i)(not )?using (party|admin)(chat| chat)\\b"
@@ -553,7 +557,7 @@ repository:
         name: "keyword.addon.effect.randomsk.skript"
       }
       {
-        match: "\\b(?i)(((border )?(size|center|damage (amount|buffer)|warning)|duplicate)|(within|beyond) border|(award|remove) achievement|write|(open|close) function|(handle response )?through function|unload|t(errain )?c(control)? spawn)\\b"
+        match: "\\b(?i)(((border )?(size|center|damage (amount|buffer)|warning)|duplicate)|(within|beyond) border|(award|remove) achievement|write|(open|close) function|(handle response )?through function|unload|t(errain )?c(control)? spawn|scope|print stack trace|insert)\\b"
         name: "keyword.addon.effect.mundosk.skript"
       }
       {
@@ -616,7 +620,7 @@ repository:
   expressions:
     patterns: [
       {
-        match: "\\b(?i)(convert|(en|de)c(ode|rypt)|mirror(ed)?|formatted as|(current )?system|hash(ed)?|using|line count|(readable|writable|hidden) attribute|(last (modified|access)|creation) value|contents)\\b"
+        match: "\\b(?i)(convert|(en|de)c(ode|rypt)|mirror(ed)?|flip(ped)?|reverse(d)?|formatted as|(current )?system|hash(ed)?|using|line count|(readable|writable|hidden) attribute|(last (modified|access)|creation) value|contents)\\b"
         name: "keyword.addon.expression.skutilities.skript"
       }
       {
@@ -648,7 +652,7 @@ repository:
         name: "keyword.addon.expression.randomsk.skript"
       }
       {
-        match: "\\b(?i)((border (size|center|damage (amount|buffer)|warning distance)?)|using name|modified|t(errain )?c(ontrol)? (spawn)?|highest( (solid|non-air))?|titled|written|page(s from|count)?|pg(s from)?|through|deleted|title|author|parent|difficulty|pass(word)? of function socket|enchants within|handler function|remaining until border stabilize|containing)\\b"
+        match: "\\b(?i)((border (size|center|damage (amount|buffer)|warning distance)?)|using name|modified|t(errain )?c(ontrol)? (spawn)?|highest( (solid|non-air))?|titled|written|page(s from|count)?|pg(s from)?|through|deleted|title|author|parent|difficulty|pass(word)? of function socket|enchants within|handler function|remaining until border stabilize|caught exception|throwable cause|details|stack trace|(class|file|method) name|containing)\\b"
         name: "keyword.addon.expression.mundosk.skript"
       }
       {
