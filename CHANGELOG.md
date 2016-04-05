@@ -1,3 +1,6 @@
+# 2.0.0
+* Updated skUtilities to v0.5.2
+
 # 1.9.9
 * Updated skUtilities to v0.5.1
 * Updated MundoSk to v1.5.3

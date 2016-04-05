@@ -269,7 +269,7 @@ repository:
         name: "keyword.type.mccolor.blue.skript"
       }
       {
-        match: "((&|§)(a|A)|\\b(?i)(light )?green\\b|(\\b(?i)online|true|enable(d)?\\b))"
+        match: "((&|§)(a|A)|\\b(?i)(light )?green\\b|(\\b(?i)online|true|enable(d)?|on\\b))"
         name: "keyword.type.mccolor.green.skript"
       }
       {
@@ -277,7 +277,7 @@ repository:
         name: "keyword.type.mccolor.aqua.skript"
       }
       {
-        match: "((&|§)(c|C)|\\b(?i)red\\b|(\\b(?i)offline|false|disable(d)?\\b))"
+        match: "((&|§)(c|C)|\\b(?i)red\\b|(\\b(?i)offline|false|disable(d)?|off\\b))"
         name: "keyword.type.mccolor.red.skript"
       }
       {
@@ -407,7 +407,7 @@ repository:
         name: "keyword.addon.type.minelua.skript"
       }
       {
-        match: "\\b(?i)(config|bin(ary)?|ascii|octal|hex(a)?|decimal|unicode|hex|rgb|unix|base( )?64|morse( code)?|functions|triggers|statements|commands|cmds|s(k|c)ript(s)?|variables|addons|plugins|effects|expressions|events|conditions|aliases|utf-8|ISO-8859-1|profession (farmer|librarian|priest|blacksmith|butcher)|key|program|app(lication)?|zip|file|dir(ectory)?|font(s)?|bytes|accented chars|disk)\\b"
+        match: "\\b(?i)(config|bin(ary)?|ascii|octal|hex(a)?|decimal|unicode|hex|rgb|unix|base( )?64|morse( code)?|functions|triggers|statements|commands|cmds|s(k|c)ript(s)?|variables|addons|plugins|effects|expressions|events|conditions|aliases|utf-8|ISO-8859-1|profession (farmer|librarian|priest|blacksmith|butcher)|key|program|app(lication)?|zip|file|dir(ectory)?|font(s)?|bytes|accented chars|disk|whitelist)\\b"
         name: "keyword.addon.type.skutilities.skript"
       }
       {
@@ -454,7 +454,7 @@ repository:
   conditions:
     patterns: [
       {
-        match: "\\b(?i)((start|end)s with)\\b"
+        match: "\\b(?i)((start|end)s with|whitelisted)\\b"
         name: "keyword.addon.condition.skutilities.skript"
       }
       {
@@ -525,7 +525,7 @@ repository:
   effects:
     patterns: [
       {
-        match: "\\b(?i)((fake )?trial packet|generate( random)?|print (info|warning|error)|glide (state|ability|mode)|create|unzip|extract|move|restart|null)\\b"
+        match: "\\b(?i)((fake )?trial packet|generate( random)?|print (info|warning|error)|glide (state|ability|mode)|create|unzip|extract|move|restart|null|turn)\\b"
         name: "keyword.addon.effect.skutilities.skript"
       }
       {
