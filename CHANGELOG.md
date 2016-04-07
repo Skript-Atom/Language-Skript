@@ -1,3 +1,7 @@
+# 2.0.1
+* Fixed bugs
+* Updated skUtilities to v0.5.3
+
 # 2.0.0
 * Updated skUtilities to v0.5.2
 

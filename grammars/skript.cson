@@ -269,7 +269,7 @@ repository:
         name: "keyword.type.mccolor.blue.skript"
       }
       {
-        match: "((&|§)(a|A)|\\b(?i)(light )?green\\b|(\\b(?i)online|true|enable(d)?|on\\b))"
+        match: "((&|§)(a|A)|\\b(?i)(light )?green\\b|(\\b(?i)online|true|enable(d)?\\b))"
         name: "keyword.type.mccolor.green.skript"
       }
       {
@@ -277,7 +277,7 @@ repository:
         name: "keyword.type.mccolor.aqua.skript"
       }
       {
-        match: "((&|§)(c|C)|\\b(?i)red\\b|(\\b(?i)offline|false|disable(d)?|off\\b))"
+        match: "((&|§)(c|C)|\\b(?i)red\\b|(\\b(?i)offline|false|disable(d)?\\b))"
         name: "keyword.type.mccolor.red.skript"
       }
       {
@@ -312,7 +312,7 @@ repository:
   events:
     patterns: [
       {
-        match: "\\b(on (cauldron( water)? level change|(elytra )?glide toggle|file download|(app|file) (run|execute)|file (creat|delet)(ion|e)|file (move|rename|wipe|reset|clear|zip|write)|unzip))\\b"
+        match: "\\b(on (cauldron( water)? level change|(elytra )?glide toggle|file download|(app|file) (run|execute)|file (creat|delet)(ion|e)|file (move|rename|wipe|reset|clear|zip|write|copy)|unzip))\\b"
         name: "keyword.addon.event.skutilities.skript"
       }
       {
@@ -525,7 +525,7 @@ repository:
   effects:
     patterns: [
       {
-        match: "\\b(?i)((fake )?trial packet|generate( random)?|print (info|warning|error)|glide (state|ability|mode)|create|unzip|extract|move|restart|null|turn)\\b"
+        match: "\\b(?i)((fake )?trial packet|generate( random)?|print (info|warning|error)|glide (state|ability|mode)|create|unzip|extract|move|restart|null|turn|copy)\\b"
         name: "keyword.addon.effect.skutilities.skript"
       }
       {

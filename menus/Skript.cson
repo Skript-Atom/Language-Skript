@@ -1,6 +1,6 @@
 'menu': [
   {
-    'label': 'Lang-Skript: v2.0.0'
+    'label': 'Lang-Skript: v2.0.1'
     'submenu': [
       {
         'label': 'Addon Versions (23)'
