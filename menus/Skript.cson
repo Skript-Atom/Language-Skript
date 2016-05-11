@@ -1,6 +1,6 @@
 'menu': [
   {
-    'label': 'Lang-Skript: v2.0.1'
+    'label': 'Lang-Skript: v2.0.2'
     'submenu': [
       {
         'label': 'Addon Versions (23)'
@@ -27,7 +27,7 @@
             'label': 'ExterSk: v0.1.3b'
           }
           {
-            'label': 'GameBuSk: v0.1.171'
+            'label': 'GameBuSk: v0.1.2.51b'
           }
           {
             'label': 'LargeSk: v1.0'
@@ -66,13 +66,13 @@
             'label': 'skRPG: v1.0.0'
           }
           {
-            'label': 'skSharp: v1.3'
+            'label': 'skSharp: v1.4.3'
           }
           {
             'label': 'skStuff: v1.4.2'
           }
           {
-            'label': 'MundoSK: v1.5.3'
+            'label': 'MundoSK: v1.5.7'
           }
           {
             'label': 'skVoice: v1.1.0'

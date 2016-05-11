@@ -1,3 +1,11 @@
+# 2.0.2
+* Fixed Bugs
+* Updated MundoSk to v1.6.3
+* Updated skUtilities to v0.5.5
+* Updated GameBuSk t0 0.1.2.51b
+* Updated skUtilities to v1.4.3
+* Updated skSharp to v1.5.0
+
 # 2.0.1
 * Fixed bugs
 * Updated skUtilities to v0.5.3

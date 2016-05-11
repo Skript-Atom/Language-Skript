@@ -203,7 +203,7 @@ repository:
         name: "keyword.type.loop.skript"
       }
       {
-        match: "event-(string|block|item|index|value|num(ber)?|player|entity|integer|attacker|victim|shooter|world|chunk|projectile|button)('s|s)?"
+        match: "event-(string|block|item|index|value|num(ber)?|player|entity|integer|attacker|victim|shooter|world|chunk|projectile|button|note|instrument)('s|s)?"
         name: "keyword.type.event.skript"
       }
       {
@@ -332,7 +332,7 @@ repository:
         name: "keyword.addon.event.minelua.skript"
       }
       {
-        match: "\\b(?i)(on (border stabilize|award of achievement))\\b"
+        match: "\\b(?i)(on (border stabilize|award of achievement|(custom)? (event|evt)|packet event))\\b"
         name: "keyword.addon.event.mundosk.skript"
       }
       {
@@ -368,7 +368,7 @@ repository:
         name: "keyword.addon.event.skrpg.skript"
       }
       {
-        match: "\\b(?i)(On (authme (log(in|out)|teleport|inventory restore)|mythicmob (death|spawn)|light (create|remove)|job (join|leave|payment|levelup)|world change|extract|firework explode|anvil prepare|enderman teleport|(ucars )?car (respawn|crash)))\\b"
+        match: "\\b(?i)(On ((ender)?dragon phase change|authme (log(in|out)|teleport|inventory restore)|mythicmob (death|spawn)|light (create|remove)|job (join|leave|payment|levelup)|world change|extract|firework explode|anvil prepare|enderman teleport|(ucars )?car (respawn|crash)|(server|console) command|hopper pickup|exp(erience)? change|shear))\\b"
         name: "keyword.addon.event.sksharp.skript"
       }
       {
@@ -391,7 +391,7 @@ repository:
   types:
     patterns: [
       {
-        match: "\\b(?i)(browser|browsertype|searchtype|gwebdriver|keytype)\\b"
+        match: "\\b(?i)(browser|browsertype|searchtype|gwebdriver|keytype|escape|f(1|2|3|4|5|6|7|8|9|1(0|1|2))|pause|tab|backspace|insert|home|page_up|end|page_down|enter|left_shift|shift|left_control|control|left_alt|alt|left|right)\\b"
         name: "keyword.addon.type.gamebusk.skript"
       }
       {
@@ -498,7 +498,7 @@ repository:
         name: "keyword.addon.condition.skstuff.skript"
       }
       {
-        match: "\\b(is a mythicmob|is in (a )?car)\\b"
+        match: "\\b(is a mythicmob|is in (a )?car|is leashed)\\b"
         name: "keyword.adddon.condition.sksharp.skript"
       }
       {
@@ -537,7 +537,7 @@ repository:
         name: "keyword.addon.effect.extersk.skript"
       }
       {
-        match: "\\b(?i)((go to|open)( url)?|url|open new tab|click|send( key(s)?)?)\\b"
+        match: "\\b(?i)((go to|open)( url)?|url|open new tab|click|send( key(s)?)?|save screenshot|submit to)\\b"
         name: "keyword.addon.effect.gamebusk.skript"
       }
       {
@@ -557,7 +557,7 @@ repository:
         name: "keyword.addon.effect.randomsk.skript"
       }
       {
-        match: "\\b(?i)(((border )?(size|center|damage (amount|buffer)|warning)|duplicate)|(within|beyond) border|(award|remove) achievement|write|(open|close) function|(handle response )?through function|unload|t(errain )?c(control)? spawn|scope|print stack trace|insert)\\b"
+        match: "\\b(?i)(((border )?(size|center|damage (amount|buffer)|warning)|duplicate)|(within|beyond) border|(award|remove) achievement|write|(open|close) function|(handle response )?through function|unload|t(errain )?c(control)? spawn|scope|print stack trace|insert|call custom event)\\b"
         name: "keyword.addon.effect.mundosk.skript"
       }
       {
@@ -589,7 +589,7 @@ repository:
         name: "keyword.addon.effect.skrpg.skript"
       }
       {
-        match: "\\b((join|leave)( all)?|(create|delete) light|pex (remove|add( timed)?) (permission|group)|pex ((add|remove|delete) permission|create group))\\b"
+        match: "\\b((join|leave)( all)?|(create|delete) light|pex (remove|add( timed)?) (permission|group)|pex ((add|remove|delete) permission|create group)|open (brewer|hopper)|rank of (the )?group|rank( )?ladder if (the )?group)\\b"
         name: "keyword.addon.effect.sksharp.skript"
       }
       {
@@ -652,7 +652,7 @@ repository:
         name: "keyword.addon.expression.randomsk.skript"
       }
       {
-        match: "\\b(?i)((border (size|center|damage (amount|buffer)|warning distance)?)|using name|modified|t(errain )?c(ontrol)? (spawn)?|highest( (solid|non-air))?|titled|written|page(s from|count)?|pg(s from)?|through|deleted|title|author|parent|difficulty|pass(word)? of function socket|enchants within|handler function|remaining until border stabilize|caught exception|throwable cause|details|stack trace|(class|file|method) name|containing|prob(ability)?)\\b"
+        match: "\\b(?i)((border (size|center|damage (amount|buffer)|warning distance)?)|using name|modified|t(errain )?c(ontrol)? (spawn)?|highest( (solid|non-air))?|titled|written|page(s from|count)?|pg(s from)?|through|deleted|title|author|parent|difficulty|pass(word)? of function socket|enchants within|handler function|remaining until border stabilize|caught exception|throwable cause|details|stack trace|(class|file|method) name|containing|prob(ability)?|id of custom event|custom event's id|args of custom event|custom event's args|return type of function|last page|(max )?breath|note)\\b"
         name: "keyword.addon.expression.mundosk.skript"
       }
       {
