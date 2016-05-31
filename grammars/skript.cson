@@ -344,7 +344,7 @@ repository:
         name: "keyword.addon.event.skaction.skript"
       }
       {
-        match: "\\b(?i)(on dragontravel (dis|pre |post )mount)\\b"
+        match: "\\b(?i)(on (dragon travel ((dis|post |pre )mount)))\\b"
         name: "keyword.addon.event.skdragon.skript"
       }
       {
@@ -443,7 +443,7 @@ repository:
         name: "keyword.addon.type.skvoice.skript"
       }
       {
-        match: "\\b(?i)((game)?rule|material|cursor item(s)?|potion tier|distance|survival|adventure|creative|spectator|biome(s)?|block(s)?|boolean(s)?|chunk(s)?|colo(u)?r(s)?|(command(s)?)?( )?(sender|executor)(s)?|damage cause(s)?|date(s)?|direction(s)?|enchantment(s)?|enchant(ing|ment) type(s)?|(tile )?entit(y|ies)|entity( )?type(s)?|game( )?mode(s)?|inventor(y|ies)|item( material)?|item( )?type(s)?|items( materials)?|meter(s)?|living( )?entit(y|ies)|location(s)?|num(ber)?(s)?|integer(s)?|offline( )?player(s)?|potion(( )?effect)?(( )?type)?(s)?|projectile(s)?|(inventory )?slot(s)?|sound(s)?|(text|string)(s)?|(relative )?time(s)?|time( )?period(s)?|duration(s)?|time( )?span(s)?|tree(( )?type)?(s)?|type(s)?|(visual|particle) effect(s)?|weather( )?type(s)?|weather( condition)?(s)?|world(s)?)\\b"
+        match: "\\b(?i)((game)?rule|material|particle|cursor item(s)?|potion tier|distance|survival|adventure|creative|spectator|biome(s)?|block(s)?|boolean(s)?|chunk(s)?|colo(u)?r(s)?|(command(s)?)?( )?(sender|executor)(s)?|damage cause(s)?|date(s)?|direction(s)?|enchantment(s)?|enchant(ing|ment) type(s)?|(tile )?entit(y|ies)|entity( )?type(s)?|game( )?mode(s)?|inventor(y|ies)|item( material)?|item( )?type(s)?|items( materials)?|meter(s)?|living( )?entit(y|ies)|location(s)?|num(ber)?(s)?|integer(s)?|offline( )?player(s)?|potion(( )?effect)?(( )?type)?(s)?|projectile(s)?|(inventory )?slot(s)?|sound(s)?|(text|string)(s)?|(relative )?time(s)?|time( )?period(s)?|duration(s)?|time( )?span(s)?|tree(( )?type)?(s)?|type(s)?|(visual|particle) effect(s)?|weather( )?type(s)?|weather( condition)?(s)?|world(s)?)\\b"
         name: "keyword.addon.type.main.skript"
       }
       {
@@ -498,7 +498,7 @@ repository:
         name: "keyword.addon.condition.skstuff.skript"
       }
       {
-        match: "\\b(is a mythicmob|is in (a )?car|is leashed)\\b"
+        match: "\\b(is a mythicmob|is in (a )?car|is leashed|is standing on)\\b"
         name: "keyword.adddon.condition.sksharp.skript"
       }
       {
@@ -565,7 +565,7 @@ repository:
         name: "keyword.addon.effect.skaction.skript"
       }
       {
-        match: "\\b(?i)(take|flight|random flight|(their )?dragon home|(stop|dismount from) dragon travel|(dragon )?station|stat(ionary)? dragon|remove riderless dragons|stopEffect( id)?|draw(((simple)?halo|spiral|complexcircle|band) particle| style|nyancat|atom)|particle(1|2|3)|(offset)?xyz(1|2)?|rgb(2|3)?|speed(2|3)|issingle|r(ainbow)?m(ode)?|visiblerange|start|dis(placement)?(x|y|z)|randomrotation|density|(x|y|z)r(otation)?|(inn|out)erpcount|innerradius|orbitcount|angle|space)\\b"
+        match: "\\b(?i)(take|station|(random )?flight|(their |stat(ionary)? )?dragon(travel|staion)?|dismount from|riderless dragons|stop emote|emote (smile|grin|frown|rage|cheeky|sleepy|cool|cry|surprised|wink)|with delay|stopeffect( id)?|draw(atom|band|complex(circle|spiral)|nyancat|(simple)?halo|image|arc|dragonbreath|cylinder|planet|dot|itemfountain|(warp)?rings|sphere|wings(69)?)|particle[0-9]|((offset)?xyz|rgb)|speed[0-9]|issingle|visiblerange|randomrotation|pixelstep(x|y|z)|itemtime|radius|density|dis(placement)?|yvelocity|r(ainbow)?m(ode)?|inner(pcount|radius)|outerpcount|orbitcount|start|rot(ation)?|(x|y|z)r(otation)?|solid|clockwise|scan|effectmod|scale|p(itch)?m(ultiplier)?|arc(pitch|count|density|steps|length)|style|issolid|sideratio|orbit((al)?(radius|step)?)?|precision|bumpheight|pulsedelay|keepfor|animated|ring(count|density)?|flap(speed|range)|height|space)\\b"
         name: "keyword.addon.effect.skdragon.skript"
       }
       {
@@ -695,10 +695,10 @@ repository:
         match: "\\b(?i)((teamspeak|ts) get client(s)? by (ip|address|description)|online clients)\\b"
         name: "keyword.addon.expression.skvoice.skript"
       }
-    #  {
-    #    match: "\\b(?i)\\b"
-    #    name: "keyword.addon.expression.umbaska.skript"
-    #  }
+      {
+        match: "\\b(?i)(unbreakable)\\b"
+        name: "keyword.addon.expression.umbaska.skript"
+      }
       {
         match: "\\b(?i)(bossbar|ping|(configuration )?section(s)?|result of connect|content of file|(allow|access to) end|(all )?file(s)?|ip|max players|(allow|access to) nether|online mode|random (char|color)|server('s)? (ip|name|port)|(clicked )?slot|(single )?value list|view distance|wildskript version|version of wildskript)\\b"
         name: "keyword.addon.expression.wildsk.skript"

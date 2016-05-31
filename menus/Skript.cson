@@ -1,6 +1,6 @@
 'menu': [
   {
-    'label': 'Lang-Skript: v2.0.2'
+    'label': 'Lang-Skript: v2.0.3'
     'submenu': [
       {
         'label': 'Addon Versions (23)'
@@ -45,7 +45,7 @@
             'label': 'skAction: v1.2'
           }
           {
-            'label': 'skDragon: v0.04.24'
+            'label': 'skDragon: v0.10.31b'
           }
           {
             'label': 'sKeeland: v0.5'
@@ -66,7 +66,7 @@
             'label': 'skRPG: v1.0.0'
           }
           {
-            'label': 'skSharp: v1.4.3'
+            'label': 'skSharp: v1.5.1'
           }
           {
             'label': 'skStuff: v1.4.2'
