@@ -1,3 +1,7 @@
+# 2.0.4
+* Added Skellett 1.2
+* Updated skUtilities to v0.5.7
+
 # 2.0.3
 * Fixed Bugs
 * Updated MundoSk to v1.6.3

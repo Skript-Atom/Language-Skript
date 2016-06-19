@@ -498,6 +498,10 @@ repository:
         name: "keyword.addon.condition.skstuff.skript"
       }
       {
+        match: "\\b(?i)((see|visibly see|line of sight)( can see)?)\\b"
+        name: "keyword.addon.condition.skellett.skript"
+      }
+      {
         match: "\\b(is a mythicmob|is in (a )?car|is leashed|is standing on)\\b"
         name: "keyword.adddon.condition.sksharp.skript"
       }
@@ -525,7 +529,7 @@ repository:
   effects:
     patterns: [
       {
-        match: "\\b(?i)((fake )?trial packet|generate( random)?|print (info|warning|error)|glide (state|ability|mode)|create|unzip|extract|move|restart|null|turn|copy)\\b"
+        match: "\\b(?i)((fake )?trial packet|generate( random)?|print (info|warning|error)|glide (state|ability|mode)|create|unzip|extract|move|restart|null|turn|copy|(force|make)|run c(m|omman)d|as op)\\b"
         name: "keyword.addon.effect.skutilities.skript"
       }
       {
@@ -589,6 +593,10 @@ repository:
         name: "keyword.addon.effect.skrpg.skript"
       }
       {
+        match: "\\b(?i)(skellett play sound|(set )?(toggle )? (ignored sleep|sprint(ing)?|sneak(ing)?)( state)?|(skellett )?(force )?respawn|(set )?collid(e|able)( state)?)\\b"
+        name: "keyword.addon.effect.skellett.skript"
+      }
+      {
         match: "\\b((join|leave)( all)?|(create|delete) light|pex (remove|add( timed)?) (permission|group)|pex ((add|remove|delete) permission|create group)|open (brewer|hopper)|rank of (the )?group|rank( )?ladder if (the )?group)\\b"
         name: "keyword.addon.effect.sksharp.skript"
       }
@@ -620,7 +628,7 @@ repository:
   expressions:
     patterns: [
       {
-        match: "\\b(?i)(convert|(en|de)c(ode|rypt)|mirror(ed)?|flip(ped)?|reverse(d)?|formatted as|(current )?system|hash(ed)?|using|line count|(readable|writable|hidden) attribute|(last (modified|access)|creation) value|contents|(total|free|usable) space)\\b"
+        match: "\\b(?i)((skutil )?(free|total|max) (ram|memory)|convert|(en|de)c(ode|rypt)|mirror(ed)?|flip(ped)?|reverse(d)?|formatted as|(current )?system|hash(ed)?|using|line count|(readable|writable|hidden) attribute|(last (modified|access)|creation) value|contents|(total|free|usable) space)\\b"
         name: "keyword.addon.expression.skutilities.skript"
       }
       {
@@ -678,6 +686,10 @@ repository:
       {
         match: "\\b(?i)(skillapi (max (mana|health|level)|main class|attribute points|class group|total experience|mana|required exp(erience)?|(mana|health) scale|(chat colo(u)?r|chatcolo(u)?r)|mana regen|(attacker|victim)|expsource|exp(erience )?(gained|Lost)|mana (gained|Lost)|skill casted|levels gained|class (group|base)?|unlocked skill))\\b"
         name: "keyword.addon.expression.skrpg.skript"
+      }
+      {
+        match: "\\b(?i)((ignored sleep|sneak(ing)?|sprint(ing)?|collid(e|able)) (state)?|(digit(s)?|place(s)?))\\b"
+        name: "keyword.addon.expression.skellett.skript"
       }
       {
         match: "\\b(glowing state)\\b"

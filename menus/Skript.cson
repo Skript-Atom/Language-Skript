@@ -1,9 +1,9 @@
 'menu': [
   {
-    'label': 'Lang-Skript: v2.0.3'
+    'label': 'Lang-Skript: v2.0.4'
     'submenu': [
       {
-        'label': 'Addon Versions (23)'
+        'label': 'Addon Versions (24)'
         'submenu': [
           {
             'label': 'Aliases: Coming soon'
@@ -15,7 +15,7 @@
             'label': 'skQuery: v3.21.4'
           }
           {
-            'label': 'skUtilities: v0.5.1'
+            'label': 'skUtilities: v0.5.7'
           }
           {
             'label': 'BioSphere: v1.0.4'
@@ -49,6 +49,9 @@
           }
           {
             'label': 'sKeeland: v0.5'
+          }
+          {
+            'label': 'Skellett: v1.2'
           }
           {
             'label': 'skMorkaz: v0.2'
