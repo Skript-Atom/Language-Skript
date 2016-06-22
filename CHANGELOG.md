@@ -1,3 +1,7 @@
+# 2.0.5
+* Updated skUtilities to v0.5.9
+* Added TraderSk v1.1
+
 # 2.0.4
 * Added Skellett 1.2
 * Updated skUtilities to v0.5.7

@@ -608,6 +608,10 @@ repository:
         match: "\\b(?i)((teamspeak|ts) (server )?(privilege key by group id|(dis)?connect|send (channel|broadcast) message|send private|poke|tempban|(change|remove) description|delete all ban entries)|user|login|credentials|on query port| flood level)\\b"
         name: "keyword.addon.effect.skvoice.skript"
       }
+      {
+        match: "\\b(?i)((create|make) (a )?(merchant )?trader|(remove|clear)( the)?( merchant)? trader|(open|show)( merchant)? trader|(merchant )?trader|output|input)\\b"
+        name: "keyword.addon.effect.tradersk.skript"
+      }
     #  {
     #    match: "\\b(?i)\\b"
     #    name: "keyword.addon.effect.umbaska.skript"
@@ -628,7 +632,7 @@ repository:
   expressions:
     patterns: [
       {
-        match: "\\b(?i)((skutil )?(free|total|max) (ram|memory)|convert|(en|de)c(ode|rypt)|mirror(ed)?|flip(ped)?|reverse(d)?|formatted as|(current )?system|hash(ed)?|using|line count|(readable|writable|hidden) attribute|(last (modified|access)|creation) value|contents|(total|free|usable) space)\\b"
+        match: "\\b(?i)((skutil )?(free|total|max) (ram|memory)|convert|extension|(en|de)c(ode|rypt)|mirror(ed)?|flip(ped)?|reverse(d)?|formatted as|(current )?system|hash(ed)?|using|line count|(readable|writable|hidden) attribute|(last (modified|access)|creation) value|contents|(total|free|usable) space)\\b"
         name: "keyword.addon.expression.skutilities.skript"
       }
       {

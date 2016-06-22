@@ -1,9 +1,9 @@
 'menu': [
   {
-    'label': 'Lang-Skript: v2.0.4'
+    'label': 'Lang-Skript: v2.0.5'
     'submenu': [
       {
-        'label': 'Addon Versions (24)'
+        'label': 'Addon Versions (25)'
         'submenu': [
           {
             'label': 'Aliases: Coming soon'
@@ -15,7 +15,7 @@
             'label': 'skQuery: v3.21.4'
           }
           {
-            'label': 'skUtilities: v0.5.7'
+            'label': 'skUtilities: v0.5.9'
           }
           {
             'label': 'BioSphere: v1.0.4'
@@ -73,6 +73,9 @@
           }
           {
             'label': 'skStuff: v1.4.2'
+          }
+          {
+            'label': 'TraderSk: v1.1'
           }
           {
             'label': 'MundoSK: v1.5.7'
