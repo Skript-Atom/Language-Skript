@@ -632,7 +632,7 @@ repository:
   expressions:
     patterns: [
       {
-        match: "\\b(?i)((skutil )?(free|total|max) (ram|memory)|convert|extension|(en|de)c(ode|rypt)|mirror(ed)?|flip(ped)?|reverse(d)?|formatted as|(current )?system|hash(ed)?|using|line count|(readable|writable|hidden) attribute|(last (modified|access)|creation) value|contents|(total|free|usable) space)\\b"
+        match: "\\b(?i)((skutil )?(free|total|max) (ram|memory)|(absolute|complete) path|convert|extension|(en|de)c(ode|rypt)|mirror(ed)?|flip(ped)?|reverse(d)?|formatted as|(current )?system|hash(ed)?|using|line count|(readable|writable|hidden) attribute|(last (modified|access)|creation) value|contents|(total|free|usable) space)\\b"
         name: "keyword.addon.expression.skutilities.skript"
       }
       {

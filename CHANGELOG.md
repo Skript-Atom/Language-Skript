@@ -1,3 +1,6 @@
+# 2.0.6
+* Updated skUtilities to v0.6.0
+
 # 2.0.5
 * Updated skUtilities to v0.5.9
 * Added TraderSk v1.1
