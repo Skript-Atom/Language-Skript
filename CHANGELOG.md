@@ -1,3 +1,6 @@
+# 2.0.9
+* added function as it's own object
+
 # 2.0.8
 * Updated skUtilities to v0.6.7
 

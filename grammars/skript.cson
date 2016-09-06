@@ -191,8 +191,12 @@ repository:
         name: "keyword.type.timespan.skript"
       }
       {
-        match: "\\b(?i)(trigger|(permission( message)?|description|usage|aliases|executable by): .+|function |command \/[a-zA-Z0-9._-]+|(s(k|c)ript )?options|aliases)\\b"
+        match: "\\b(?i)(trigger|(permission( message)?|description|usage|aliases|executable by): .+|command \/[a-zA-Z0-9._-]+|(s(k|c)ript )?options|aliases)\\b"
         name: "keyword.type.cmd.skript"
+      }
+      {
+        match: "\\b(?i)(function )\\b"
+        name: "keyword.type.function.skript"
       }
       {
         match: "\\b(?i)((north |south )?(north|east|south|west)|(back|down)ward(s)?|top|upper|front|horizontal|behind|direction|towards|forward(s)?|above|over|up|down|below|under|beneath|vertical)\\b"
