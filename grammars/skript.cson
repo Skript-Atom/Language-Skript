@@ -613,7 +613,7 @@ repository:
         name: "keyword.addon.effect.skvoice.skript"
       }
       {
-        match: "\\b(?i)((create|make) (a )?(merchant )?trader|(remove|clear)( the)?( merchant)? trader|(open|show)( merchant)? trader|(merchant )?trader|output|input)\\b"
+        match: "\\b(?i)((create|make) (a )?(merchant )?trader|(remove|clear)( the)?( merchant)? trader|(open|show)( merchant)? trader|merchant(s)?|trader(s)?|output|input)\\b"
         name: "keyword.addon.effect.tradersk.skript"
       }
     #  {

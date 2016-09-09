@@ -1,3 +1,7 @@
+# 2.1.0
+* Updated skUtilities to v0.7.0
+* Updated TraderSk to v1.2.4
+
 # 2.0.9
 * added function as it's own object
 
