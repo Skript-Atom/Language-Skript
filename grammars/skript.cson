@@ -411,7 +411,7 @@ repository:
         name: "keyword.addon.type.minelua.skript"
       }
       {
-        match: "\\b(?i)(profession|config|bin(ary)?|ascii|octal|hex(a)?|decimal|symbolic|shortcut|exec(utable)?|unicode|hex|rgb|unix|base( )?64|morse( code)?|functions|triggers|statements|commands|cmds|s(k|c)ript(s)?|variables|addons|plugins|effects|expressions|events|conditions|aliases|utf-8|ISO-8859-1|(normal|farmer|librarian|priest|blacksmith|butcher|husk)|key|program|app(lication)?|zip|file|dir(ectory)?|font(s)?|bytes|accented chars|disk|whitelist)\\b"
+        match: "\\b(?i)(profession|config|bin(ary)?|ascii|octal|hex(a)?|decimal|symbolic|shortcut|exec(utable)?|unicode|hex|rgb|unix|base( )?64|morse( code)?|functions|triggers|statements|commands|cmds|s(k|c)ript(s)?|variables|addons|plugins|effects|expressions|events|conditions|aliases|utf-8|ISO-8859-1|(normal|farmer|librarian|priest|blacksmith|butcher|husk)|key|program|app(lication)?|zip|file|dir(ectory)?|font(s)?|bytes|accented chars|disk|whitelist|time( )?zone(s)?|country code|region code|country|region|city)\\b"
         name: "keyword.addon.type.skutilities.skript"
       }
       {
