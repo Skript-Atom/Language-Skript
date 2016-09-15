@@ -1,6 +1,6 @@
 'menu': [
   {
-    'label': 'Lang-Skript: v2.1.1'
+    'label': 'Lang-Skript: v2.1.2'
     'submenu': [
       {
         'label': 'Addon Versions (25)'
@@ -15,7 +15,7 @@
             'label': 'skQuery: v3.21.4'
           }
           {
-            'label': 'skUtilities: v0.7.1'
+            'label': 'skUtilities: v0.7.4'
           }
           {
             'label': 'BioSphere: v1.0.4'
